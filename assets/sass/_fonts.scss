@@ -1,0 +1,30 @@
+
+@font-face {
+    font-family: "SSTLight";
+    src: url($font-path + "SST Arabic Light.ttf");
+    // font-weight: $w-normal;
+  }
+
+@font-face {
+    font-family: "SSTRoman";
+    src: url($font-path + "SST Arabic Roman.ttf");
+    font-weight: $w-normal;
+  }
+
+@font-face {
+    font-family: "SSTMedium";
+    src: url($font-path + "SST Arabic Medium.ttf");
+    font-weight: $w-normal;
+  }
+
+@font-face {
+    font-family: "SSTBold";
+    src: url($font-path + "SST Arabic Bold.ttf");
+    font-weight: $w-normal;
+  }
+@font-face {
+    font-family: "URWDINArabic";
+    src: url($font-path + "URWDINArabic.ttf");
+    font-weight: $w-normal;
+  }
+
