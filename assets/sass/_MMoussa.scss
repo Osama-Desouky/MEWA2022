@@ -1,0 +1,220 @@
+@media (min-width: 1800px){
+    .container {
+        max-width: 1440px !important;
+    }
+}
+
+.interactive-map{
+
+    .map-bg{
+        background: rgb(249,249,249);
+        background: url(../images/map/map-pattern.svg), radial-gradient(circle, rgba(249,249,249,1) 0%, rgba(225,232,238,1) 65%);
+        // background-image: url(../images/map/map-pattern.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 26px;
+        // overflow: hidden;
+        height: 610px;
+        padding-top: 75px;
+
+
+        .main-content{
+            margin-#{$start-direction}: 110px;
+            h2{
+                font-size: 35px;
+                font-weight: $w-bold;
+                color: $Blue003462;
+                position: relative;
+                margin-bottom: 15px;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    #{$start-direction}:-25px;
+                    top: 5px;
+                    width: 15px;
+                    height: 40px;
+                    background-image: url(../images/map/sh.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+            }
+            p{
+                font-size: 18px;
+                font-weight: $w-normal;
+                color: $darkBlue;
+                margin-bottom: 25px;
+                margin-#{$end-direction}: -100px;
+            }
+        }
+        .navigation-links{
+            margin-#{$start-direction}: 110px;
+            width:245px ;
+            a{
+                width: 100%;
+                height: 61px;
+                display: block;
+                margin-bottom: 15px;
+                background-color: #fff;
+                color: $grayColor;
+                font-size: 18px;
+                font-weight: $w-bold;
+                padding: 15px 30px;
+                text-align: #{$end-direction};
+                transition: 500ms;
+                &:hover{
+                    filter: drop-shadow(0 0 25px  rgba($color: #003462, $alpha: 0.25) );
+                }
+
+                &.active{
+                    filter: drop-shadow(0 0 25px  rgba($color: #003462, $alpha: 0.25) );
+                    color: $Blue003462;
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        width: 4px;
+                        height: 100%;
+                        #{$end-direction}:0;
+                        top: 0;
+                        background-color: $Blue003462;
+                    }
+
+                }
+            }
+        }
+        .svg-map{
+            margin-#{$start-direction}: -50px;
+            position: relative;
+            
+            svg{
+                width: 95%;
+
+            }
+        }
+    }
+}
+
+.marker-with-popup{
+    position: absolute;
+    // right: 415px;
+    // top: 215px;
+    .marker{
+        position: relative;
+    }
+
+    .map-popup{
+        width: 337px;
+        height: 255px;
+        background-color: #fff;
+        filter: drop-shadow(0 15px 45px  rgba($color: #003462, $alpha: 0.20) );
+        border-radius: 16px;
+        position: absolute;
+        top: -260px;
+        right: -162px;
+        visibility: visible;
+        transition: 300ms;
+        transform: translateY(0px);
+        opacity: 1;
+
+        &.hide{
+            visibility: hidden;
+            transform: translateY(35px);
+            opacity: 0;
+
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            width: 23px;
+            height: 16px;
+            #{$start-direction}:49%;
+            top: 98%;
+            z-index: -1;
+            background-image: url(../images/map/map-Polygon.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            filter: drop-shadow(0 15px 45px  rgba($color: #003462, $alpha: 0.20) );
+    
+        }
+    
+        .content-box{
+            padding-top: 15px;
+            padding-bottom: 20px;
+            padding-#{$start-direction}:20px ;
+            padding-#{$end-direction}:30px ;
+    
+            a.close-pop {
+                float: left;
+                margin-top: -10px;
+                margin-left: -20px;
+            }
+            
+            h2{
+                font-size: 18px;
+                font-weight: $w-bold;
+                color: $Blue003462;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 15px;
+                font-weight: $w-normal;
+                color: $grayColor;
+                margin-bottom: 10px;
+            }
+            .contact{
+                margin-bottom: 20px;
+                .two-in-row{
+                    
+                    a{
+                        &:first-child{
+                            margin-#{$end-direction}: 10px;
+                        }
+                    }
+                }
+                a{
+                    margin-bottom: 5px;
+                    display: inline-block;
+                    img{
+                        max-width: 20px;
+                        margin-#{$end-direction}: 5px;
+                    }
+                    span{
+                        font-size: 15px;
+                        font-weight: $w-normal;
+                        color: $grayColor;
+                    }
+                }
+            }
+            .btns{
+                a{
+                    width: 132px;
+                    height: 31px;
+                    font-size: 15px;
+                    font-weight: $w-bold;
+                    background-color:  rgba($color: #008941, $alpha: 0.12);
+                    border-radius:7px ;
+                    display: inline-block;
+                    padding: 2px 5px;
+                    text-align: center;
+                    img{
+                        max-width: 16px;
+                    }
+                }
+                .direction{
+                    color: #63BE6A;
+                    margin-#{$end-direction}: 15px;
+                    img{
+                        margin-#{$end-direction}: 4px;
+                    }
+                }
+                .contact-us{
+                    color: $Blue003462;
+                    
+                    img{
+                        margin-#{$start-direction}: 4px;
+                    }
+                }
+            }
+        }
+    }
+}

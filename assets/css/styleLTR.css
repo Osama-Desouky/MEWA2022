@@ -850,6 +850,237 @@ footer .reservedBar ul li a::after {
   left: 26px;
 }
 
+@media (min-width: 1800px) {
+  .container {
+    max-width: 1440px !important;
+  }
+}
+
+.interactive-map .map-bg {
+  background: #f9f9f9;
+  background: url(../images/map/map-pattern.svg), radial-gradient(circle, #f9f9f9 0%, #e1e8ee 65%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 26px;
+  height: 610px;
+  padding-top: 75px;
+}
+
+.interactive-map .map-bg .main-content {
+  margin-left: 110px;
+}
+
+.interactive-map .map-bg .main-content h2 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #003462;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.interactive-map .map-bg .main-content h2::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 5px;
+  width: 15px;
+  height: 40px;
+  background-image: url(../images/map/sh.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.interactive-map .map-bg .main-content p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #32383D;
+  margin-bottom: 25px;
+  margin-right: -100px;
+}
+
+.interactive-map .map-bg .navigation-links {
+  margin-left: 110px;
+  width: 245px;
+}
+
+.interactive-map .map-bg .navigation-links a {
+  width: 100%;
+  height: 61px;
+  display: block;
+  margin-bottom: 15px;
+  background-color: #fff;
+  color: #646D75;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 15px 30px;
+  text-align: right;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.interactive-map .map-bg .navigation-links a:hover {
+  -webkit-filter: drop-shadow(0 0 25px rgba(0, 52, 98, 0.25));
+          filter: drop-shadow(0 0 25px rgba(0, 52, 98, 0.25));
+}
+
+.interactive-map .map-bg .navigation-links a.active {
+  -webkit-filter: drop-shadow(0 0 25px rgba(0, 52, 98, 0.25));
+          filter: drop-shadow(0 0 25px rgba(0, 52, 98, 0.25));
+  color: #003462;
+  position: relative;
+}
+
+.interactive-map .map-bg .navigation-links a.active::after {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-color: #003462;
+}
+
+.interactive-map .map-bg .svg-map {
+  margin-left: -50px;
+  position: relative;
+}
+
+.interactive-map .map-bg .svg-map svg {
+  width: 95%;
+}
+
+.marker-with-popup {
+  position: absolute;
+}
+
+.marker-with-popup .marker {
+  position: relative;
+}
+
+.marker-with-popup .map-popup {
+  width: 337px;
+  height: 255px;
+  background-color: #fff;
+  -webkit-filter: drop-shadow(0 15px 45px rgba(0, 52, 98, 0.2));
+          filter: drop-shadow(0 15px 45px rgba(0, 52, 98, 0.2));
+  border-radius: 16px;
+  position: absolute;
+  top: -260px;
+  right: -162px;
+  visibility: visible;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
+}
+
+.marker-with-popup .map-popup.hide {
+  visibility: hidden;
+  -webkit-transform: translateY(35px);
+          transform: translateY(35px);
+  opacity: 0;
+}
+
+.marker-with-popup .map-popup::after {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 16px;
+  left: 49%;
+  top: 98%;
+  z-index: -1;
+  background-image: url(../images/map/map-Polygon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-filter: drop-shadow(0 15px 45px rgba(0, 52, 98, 0.2));
+          filter: drop-shadow(0 15px 45px rgba(0, 52, 98, 0.2));
+}
+
+.marker-with-popup .map-popup .content-box {
+  padding-top: 15px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.marker-with-popup .map-popup .content-box a.close-pop {
+  float: left;
+  margin-top: -10px;
+  margin-left: -20px;
+}
+
+.marker-with-popup .map-popup .content-box h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #003462;
+  margin-bottom: 10px;
+}
+
+.marker-with-popup .map-popup .content-box p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #646D75;
+  margin-bottom: 10px;
+}
+
+.marker-with-popup .map-popup .content-box .contact {
+  margin-bottom: 20px;
+}
+
+.marker-with-popup .map-popup .content-box .contact .two-in-row a:first-child {
+  margin-right: 10px;
+}
+
+.marker-with-popup .map-popup .content-box .contact a {
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.marker-with-popup .map-popup .content-box .contact a img {
+  max-width: 20px;
+  margin-right: 5px;
+}
+
+.marker-with-popup .map-popup .content-box .contact a span {
+  font-size: 15px;
+  font-weight: 400;
+  color: #646D75;
+}
+
+.marker-with-popup .map-popup .content-box .btns a {
+  width: 132px;
+  height: 31px;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: rgba(0, 137, 65, 0.12);
+  border-radius: 7px;
+  display: inline-block;
+  padding: 2px 5px;
+  text-align: center;
+}
+
+.marker-with-popup .map-popup .content-box .btns a img {
+  max-width: 16px;
+}
+
+.marker-with-popup .map-popup .content-box .btns .direction {
+  color: #63BE6A;
+  margin-right: 15px;
+}
+
+.marker-with-popup .map-popup .content-box .btns .direction img {
+  margin-right: 4px;
+}
+
+.marker-with-popup .map-popup .content-box .btns .contact-us {
+  color: #003462;
+}
+
+.marker-with-popup .map-popup .content-box .btns .contact-us img {
+  margin-left: 4px;
+}
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1350px;
