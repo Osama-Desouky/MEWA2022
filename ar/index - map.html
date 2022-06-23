@@ -10,13 +10,11 @@
     <!--  owl carousel CSS -->
     <link rel="stylesheet" href="../assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="../assets/css/owl.theme.default.css" />
-    <!-- swiper CSS -->
-    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css"/>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
 
     <!--  Font Awesome CSS -->
-    <link rel="stylesheet" href="../assets/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="../assets/css/all.min.css" /> -->
 
     <!-- custom style -->
     <link rel="stylesheet" href="../assets/css/styleRTL.css" />
@@ -27,7 +25,7 @@
   <body>
     <!-- AO start navbar -->
     <div class="navBar">
-      <div class="customContainer container">
+      <div class="container">
         <div class="row">
           <div class="col-md-6">
             <div class="linksNB">
@@ -93,7 +91,7 @@
     <!--- end navbar -->
     <!-- AO start menu  -->
     <div class="menuBg">
-      <div class="customContainer container">
+      <div class="container">
         <nav
           class="navbar navbarCustom navbar-expand-lg navbar-light bg-light sticky"
         >
@@ -117,7 +115,7 @@
               <!-- AO start single link -->
               <li class="nav-item">
                 <a class="nav-link" href="#"
-                  >الرئيسية</a
+                  >الرئيسية <span class="sr-only">(current)</span></a
                 >
               </li>
               <!-- end single link -->
@@ -478,7 +476,10 @@
               </li>
               <li class="nav-item searchBNT">
                 <button
-                type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
                 >
                   <img src="../assets/images/home/SearchMenu.svg" alt="" />
                 </button>
@@ -496,7 +497,14 @@
     </div>
     <!-- start popup search -->
     <!-- Button trigger modal -->
-    <div class="modal modalSearch fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div
+      class="modal modalSearch fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-body">
@@ -514,7 +522,10 @@
               </div>
               <div class="boxSloce">
                 <button
-                button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
                 >
                   <img src="../assets/images/home/closeSearch.svg" alt="" />
                 </button>
@@ -529,456 +540,30 @@
 
 
 
-    <!-- start header -->
-    <div class="MainHeader">
-      <div class="owl-carousel owl-carousel-header owl-theme">
-        <div class="item">
-          <div class="boxHeader greenArt">
-            <img src="../assets/images/Banners-slider.png" alt="">
-            <img src="../assets/images/home/artGreen.svg" alt="">
-            <!-- end img of header -->
-            <div class="customContainer container">
-              
-              <div class="row">
-                  <div class="headerText">
-                    <h1>أسبوع البيئة</h1>
-                    <p>البيئة هي جوهر الأرض وسر حياته، كان حقٌ أن يقام لأجله ولأجل هذه الأرض حملات توعوية عن أهمية البيئة والحفاظ عليها، لذا قد تعين علينا أن نعد برنامجًا متكاملاً لتفعيل هذا الأسبوع كما يجب</p>
-                    <a href="#" class="btnArrow">
-                      <span>المزيد</span>
-                      <img src="../assets/images/home/arrowBtn.svg" alt="">
-                    </a>
-                  </div>
-                   <!-- end text of header -->
-              </div>
-            </div>
-             <!-- end container -->
+    <!-- AO start header -->
+    <!-- <div class="headerBg">
+      <div class="container">
+        <div class="row">
+          <div class="owl-carousel owl-theme">
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
           </div>
         </div>
-        <!-- end item -->
-        <div class="item">
-          <div class="boxHeader blueArt">
-            <img src="../assets/images/Banners-sliderBlue.png" alt="">
-            <img src="../assets/images/home/artBlue.svg" alt="">
-            <!-- end img of header -->
-            <div class="customContainer container">
-              <div class="row">
-                  <div class="headerText">
-                    <h1>أسبوع البيئة</h1>
-                    <p>البيئة هي جوهر الأرض وسر حياته، كان حقٌ أن يقام لأجله ولأجل هذه الأرض حملات توعوية عن أهمية البيئة والحفاظ عليها، لذا قد تعين علينا أن نعد برنامجًا متكاملاً لتفعيل هذا الأسبوع كما يجب</p>
-                    <a href="#" class="btnArrow">
-                      <span>المزيد</span>
-                      <img src="../assets/images/home/arrowBtn.svg" alt="">
-                    </a>
-                  </div>
-                   <!-- end text of header -->
-              </div>
-            </div>
-             <!-- end container -->
-          </div>
-        </div>
-        <!-- end item -->
-    </div>
-    <div class="container postionRel">
-    <div class="headerIcons">
- 
-          <a href="#"><img src="../assets/images/home/youtHeader.svg" alt=""></a>
-          <a href="#"><img src="../assets/images/home/twitterHeader.svg" alt=""></a>
-          <div class="scrollDown">
-            <a href="#"><img src="../assets/images/home/Scroller2.svg" alt=""></a>
-            
-          </div>
-  
       </div>
-     </div>
-      <!-- end headerIcons of header -->
-    </div>
+    </div> -->
     <!-- End header -->
 
-    <!-- start services section -->
-    <div class="servicesBg">
-      <div class="container patternCr">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="font35pxBold">خدماتنا</h2>
-            <p class="font18P">
-              لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور <br> طريقه وضع النصوص بالتصاميم 
-            </p>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="sevBob">
-              <img src="../assets/images/home/serv1.svg" alt="" class="ServIcon">
-              <h3 class="">خدمات الأفراد</h3>
-              <div class="hiddenBox">
-                <ul class="sevUl">
-                  <li><span>خدمة بلغ</span></li>
-                  <li><span> خدمة إصدار سجل زراعي</span></li>
-                  <li><span> طلب إصدار سجل مربي</span></li>
-                </ul>
-                <a href="" class="servMore">
-                  <span>المزيد</span>
-                  <img src="../assets/images/home/arrowBtn.svg" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- end box -->
-          <div class="col-md-6 col-lg-3">
-            <div class="sevBob">
-              <img src="../assets/images/home/serv2.svg" alt="" class="ServIcon">
-              <h3 class="">خدمات قطاع الأعمال</h3>
-              <div class="hiddenBox">
-                <ul class="sevUl">
-                  <li><span>خدمة بلغ</span></li>
-                  <li><span> خدمة إصدار سجل زراعي</span></li>
-                  <li><span> طلب إصدار سجل مربي</span></li>
-                </ul>
-                <a href="" class="servMore">
-                  <span>المزيد</span>
-                  <img src="../assets/images/home/arrowBtn.svg" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- end box -->
-          <div class="col-md-6 col-lg-3">
-            <div class="sevBob">
-              <img src="../assets/images/home/serv3.svg" alt="" class="ServIcon">
-              <h3 class="">خدمات الجهات الحكومية</h3>
-              <div class="hiddenBox">
-                <ul class="sevUl">
-                  <li><span>خدمة بلغ</span></li>
-                  <li><span> خدمة إصدار سجل زراعي</span></li>
-                  <li><span> طلب إصدار سجل مربي</span></li>
-                </ul>
-                <a href="" class="servMore">
-                  <span>المزيد</span>
-                  <img src="../assets/images/home/arrowBtn.svg" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- end box -->
-          <div class="col-md-6 col-lg-3">
-            <div class="sevBob">
-              <img src="../assets/images/home/serv4.svg" alt="" class="ServIcon">
-              <h3 class="">خدمات زوار المملكة</h3>
-              <div class="hiddenBox">
-                <ul class="sevUl">
-                  <li><span>خدمة بلغ</span></li>
-                  <li><span> خدمة إصدار سجل زراعي</span></li>
-                  <li><span> طلب إصدار سجل مربي</span></li>
-                </ul>
-                <a href="" class="servMore">
-                  <span>المزيد</span>
-                  <img src="../assets/images/home/arrowBtn.svg" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- end box -->
-        </div>
-      </div>
+    
+    <div class="container">
+      <h1 class="patternIcon">Hello, world!</h1>
+      
     </div>
-    <!-- end services section -->
 
-
-    <!-- start brief section -->
-    <div class="briefNama">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7">
-            <div class="briefText">
-              <h2 class="patternIcon font35pxBold">نبذة عن بوابة نما للخدمات الإلكترونية</h2>
-              <p class="font18P">نما هي بوابة الخدمات الالكترونية الموحدة لمنظومة وزارة البيئة والمياه والزراعة في المملكة العربية السعودية وهي توفر للمستفيدين جميع الخدمات الالكترونية في مختلف قطاعات الوزارة (البيئة، المياه، الزراعة، الثروة حيوانية، الأراضي، الثروة سمكية...)</p>
-              <h3 class="font20Bold">:ومن أبرز ما تتميز به بوابة نما</h3>
-              <div class="twoBoxBF">
-                <div class="boxBF">
-                  <img src="../assets/images/home/mewa_icon.svg" alt="">
-                  <p>
-                    تحقيق تجربة مستفيد مبتكره وموحدة تعزز أهداف التنمية المستدامة في المملكة.
-                  </p>
-                </div>
-              <!-- end box -->
-                <div class="boxBF">
-                  <img src="../assets/images/home/mewa_icon.svg" alt="">
-                  <p>
-                    توفير واجهة ووصول موحد لجميع الخدمات الالكترونية لمنظومة الوزارة
-                  </p>
-                </div>
-              <!-- end box -->
-                <div class="boxBF">
-                  <img src="../assets/images/home/mewa_icon.svg" alt="">
-                  <p>
-                    تطبيق أفضل المعايير والممارسات العالمية في الحكومة الالكترونية
-                  </p>
-                </div>
-              <!-- end box -->
-                <div class="boxBF">
-                  <img src="../assets/images/home/mewa_icon.svg" alt="">
-                  <p>
-                    تطبيق سياسة طلب بيانات المستفيد لمره
-                    واحدة
-                  </p>
-                </div>
-              <!-- end box -->
-              </div>
-              <div class="actionBF">
-                <a href="#" class="btnArrow">
-                  <span>المزيد عن بوابة نما</span>
-                  <img src="../assets/images/home/arrowBtn.svg" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- end col -->
-          <div class="col-md-5">
-            <div class="briefImg">
-              <img src="../assets/images/home/briefImg.png" alt="">
-            </div>
-          </div>
-           <!-- end col -->
-        </div>
-      </div>
-    </div>
-    <!-- end brief section -->
-
-    <!-- start ADS section -->
-    <div class="ADSSecti">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="ADSBox">
-              <h2 class="font35pxBold">
-                الإعلانات
-              </h2>
-              <p class="font18P">
-                لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم 
-              </p>
-              <div class="actionBF">
-                <a href="#" class="btnArrow">
-                  <span>جميع الإعلانات</span>
-                  <img src="../assets/images/home/arrowBtn.svg" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- end col -->
-          <div class="col-md-9">
-            <div class="owl-carousel owl-carousel-center mainArrow  owl-theme">
-              <div class="item">
-                <a href="#"  class="boxADSSlide">
-                  <img src="../assets/images/home/sss.png" alt="">
-                  <div class="ADBoxTxt">
-                    <h1>الوزارة تفوز بجائزة الجهة الحكومية الأفضل عالميًا في قطاع المياه للعام 2021م</h1>
-                    <div class="dateBox">
-                      <img src="../assets/images/home/dateHN.svg" alt="">
-                      <span>&rlm;25 رمضان 1443</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-               <!-- end slide -->
-               <div class="item">
-                <a href="#"  class="boxADSSlide">
-                  <img src="../assets/images/home/ss.png" alt="">
-                  <div class="ADBoxTxt">
-                    <h1>الوزارة تفوز بجائزة الجهة الحكومية الأفضل عالميًا في قطاع المياه للعام 2021م</h1>
-                    <div class="dateBox">
-                      <img src="../assets/images/home/dateHN.svg" alt="">
-                      <span>&rlm;25 رمضان 1443</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-               <!-- end slide -->
-               <div class="item">
-                <a href="#" class="boxADSSlide">
-                  <img src="../assets/images/home/sss.png" alt="">
-                  <div class="ADBoxTxt">
-                    <h1>الوزارة تفوز بجائزة الجهة الحكومية الأفضل عالميًا في قطاع المياه للعام 2021م</h1>
-                    <div class="dateBox">
-                      <img src="../assets/images/home/dateHN.svg" alt="">
-                      <span>&rlm;25 رمضان 1443</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-               <!-- end slide -->
-               <div class="item">
-                <a href="#"  class="boxADSSlide">
-                  <img src="../assets/images/home/sss.png" alt="">
-                  <div class="ADBoxTxt">
-                    <h1>الوزارة تفوز بجائزة الجهة الحكومية الأفضل عالميًا في قطاع المياه للعام 2021م</h1>
-                    <div class="dateBox">
-                      <img src="../assets/images/home/dateHN.svg" alt="">
-                      <span>&rlm;25 رمضان 1443</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-               <!-- end slide -->
-               <div class="item">
-                <a href="#"  class="boxADSSlide">
-                  <img src="../assets/images/home/sss.png" alt="">
-                  <div class="ADBoxTxt">
-                    <h1>الوزارة تفوز بجائزة الجهة الحكومية الأفضل عالميًا في قطاع المياه للعام 2021م</h1>
-                    <div class="dateBox">
-                      <img src="../assets/images/home/dateHN.svg" alt="">
-                      <span>&rlm;25 رمضان 1443</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-               <!-- end slide -->
-               <div class="item">
-                <a href="#"  class="boxADSSlide">
-                  <img src="../assets/images/home/ss.png" alt="">
-                  <div class="ADBoxTxt">
-                    <h1>الوزارة تفوز بجائزة الجهة الحكومية الأفضل عالميًا في قطاع المياه للعام 2021م</h1>
-                    <div class="dateBox">
-                      <img src="../assets/images/home/dateHN.svg" alt="">
-                      <span>&rlm;25 رمضان 1443</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-               <!-- end slide -->
-          </div>
-           <!-- end carousel -->
-          </div>
-           <!-- end col -->
-        </div>
-      </div>
-    </div>
-    <!-- end ADS section -->
-
-
-    <!-- start news section -->
-    <div class="newSection">
-      <div class="container patternCr">
-        <div class="row">
-          <div class="col-md-12">
-          <div class="text-center">
-            <h2 class="font35pxBold">أحدث الأخبار</h2>
-            <p class="font18P">
-              لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم 
-            </p>
-          </div>
-          </div>
-          <!-- end heading -->
-          <div class="owl-carousel owl-carousel-news owl-theme">
-            <div class="item">
-              <div class="boxNews">
-                <div class="newsImg">
-                  <img src="../assets/images/home/NewsImg1.png" alt="">
-                  <p>
-                    <span>يحدث الآن</span>
-                    <img src="../assets/images/home/Newsnotificationsoutline.svg" alt="">
-                  </p>
-                </div>
-                <!-- end img -->
-                <div class="newsTxt">
-                  <div class="dateBox">
-                    <img src="../assets/images/home/calendar-dates2.png" alt="">
-                    <span>‏6 رمضان 1443</span>
-                    </div>
-                    <h2 class="titleNews">بالتعاون مع المركز الوطني للأرصاد بدء تدشين   عمليات الإستمطار الصناعي في 3 مناطق بالمملكة</h2>
-                    <div class="hiddenNew">
-                      <a href="" class="servMore">
-                        <span>اقرأ المزيد</span>
-                        <img src="../assets/images/home/arrowBlueSmall.svg" alt="">
-                      </a>
-                    </div>
-                </div>
-              </div>
-            </div>
-            <!-- end slide -->
-            <div class="item">
-              <div class="boxNews">
-                <div class="newsImg">
-                  <img src="../assets/images/home/NewsImg2.png" alt="">
-                </div>
-                <!-- end img -->
-                <div class="newsTxt">
-                  <div class="dateBox">
-                    <img src="../assets/images/home/calendar-dates2.png" alt="">
-                    <span>‏6 رمضان 1443</span>
-                    </div>
-                    <h2 class="titleNews">"البيئة" تناقش آليات تسجيل مدخلات الصحة النباتية والحد من تأثيرها على البيئة والإنسان</h2>
-                    <div class="hiddenNew">
-                      <a href="" class="servMore">
-                        <span>اقرأ المزيد</span>
-                        <img src="../assets/images/home/arrowBlueSmall.svg" alt="">
-                      </a>
-                    </div>
-                </div>
-              </div>
-            </div>
-            <!-- end slide -->
-            <div class="item">
-              <div class="boxNews">
-                <div class="newsImg">
-                  <img src="../assets/images/home/NewsImg3.png" alt="">
-                </div>
-                <!-- end img -->
-                <div class="newsTxt">
-                  <div class="dateBox">
-                    <img src="../assets/images/home/calendar-dates2.png" alt="">
-                    <span>‏6 رمضان 1443</span>
-                    </div>
-                    <h2 class="titleNews">"البيئة" تدشن الزي الموحد لموظفي المحاجر في المنافذ البرية والبحرية والجوية في المملكة</h2>
-                    <div class="hiddenNew">
-                      <a href="" class="servMore">
-                        <span>اقرأ المزيد</span>
-                        <img src="../assets/images/home/arrowBlueSmall.svg" alt="">
-                      </a>
-                    </div>
-                </div>
-              </div>
-            </div>
-            <!-- end slide -->
-            <div class="item">
-              <div class="boxNews">
-                <div class="newsImg">
-                  <img src="../assets/images/home/NewsImg1.png" alt="">
-                  <p>
-                    <span>يحدث الآن</span>
-                    <img src="../assets/images/home/Newsnotificationsoutline.svg" alt="">
-                  </p>
-                </div>
-                <!-- end img -->
-                <div class="newsTxt">
-                  <div class="dateBox">
-                    <img src="../assets/images/home/calendar-dates2.png" alt="">
-                    <span>‏6 رمضان 1443</span>
-                    </div>
-                    <h2 class="titleNews">"البيئة" تناقش آليات تسجيل مدخلات الصحة النباتية والحد من تأثيرها على البيئة والإنسان</h2>
-                    <div class="hiddenNew">
-                      <a href="" class="servMore">
-                        <span>اقرأ المزيد</span>
-                        <img src="../assets/images/home/arrowBlueSmall.svg" alt="">
-                      </a>
-                    </div>
-                </div>
-              </div>
-            </div>
-            <!-- end slide -->
-
-        </div>
- <!-- end carousel -->
-
-        <div class="col-md-12">
-          <div class="actionBF">
-            <a href="#" class="btnArrow">
-              <span> جميع الأخبار</span>
-              <img src="../assets/images/home/arrowBtn.svg" alt="">
-            </a>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-    <!-- end news section -->
     <section class="interactive-map">
       <div class="container">
         <div class="map-bg">
@@ -1174,654 +759,12 @@
         </div>
       </div>
     </section>
-
-    <!-- start events section -->
-    <div class="eventsSection">
-     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="font35pxBold">
-            الأحداث والفعاليات
-          </h2>
-        </div>
-        <!-- end title -->
-        <ul class="nav nav-tabs tabsCustom" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">الفعاليات</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">مناسبات عالمية</button>
-          </li>
-        </ul>
-      </div>
-     </div>
-      <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-          <div class="tabContent1">
-            <div class="container">
-              <div class="row">
-                <div class="owl-carousel owl-carousel-event1 owl-theme">
-                  <div class="item">
-                    <a href="#" class="patternBox">
-                      <div class="boxImgPT">
-                        <img src="../assets/images/home/event1.png" alt="">
-                        <div class="HBNew">
-                          <span>يحدث الآن</span>
-                          <img src="../assets/images/home/Newsnotificationsoutline.svg" alt="">
-                        </div>
-                        <div class="eventPT publicEvent">
-                          فعالية عامة
-                        </div>
-                      </div>
-                      <!-- end box of image -->
-                      <div class="boxTxtPT">
-                        <h2 class="font20Bold">انطلاق فعاليات أسبوع البيئة السعودي 2022</h2>
-                        <div class="locationDate">
-                          <div class="dateBox">
-                            <img src="../assets/images/home/calendar-dates2.png" alt="">
-                            <span>&rlm;6 رمضان 1443</span>
-                            </div>
-                            <!-- end date -->
-                            <div class="dateBox">
-                              <img src="../assets/images/home/locationGreen.svg" alt="">
-                              <span>الرياض</span> 
-                              </div>
-                              <!-- end location -->
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <!-- end slide -->
-                  <div class="item">
-                    <a href="#" class="patternBox">
-                      <div class="boxImgPT">
-                        <img src="../assets/images/home/event22.png" alt="">
-                        <div class="eventPT forum">
-                          منتدى
-                        </div>
-                      </div>
-                      <!-- end box of image -->
-                      <div class="boxTxtPT">
-                        <h2 class="font20Bold">انطلاق فعاليات "السنة الدولية للفواكه والخضروات" بالمملكة تزامناً مع الاحتفال العالمي</h2>
-                        <div class="locationDate">
-                          <div class="dateBox">
-                            <img src="../assets/images/home/calendar-dates2.png" alt="">
-                            <span>&rlm;6 رمضان 1443</span>
-                            </div>
-                            <!-- end date -->
-                            <div class="dateBox">
-                              <img src="../assets/images/home/locationGreen.svg" alt="">
-                              <span>حائل</span> 
-                              </div>
-                              <!-- end location -->
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <!-- end slide -->
-                  <div class="item">
-                    <a href="#" class="patternBox">
-                      <div class="boxImgPT">
-                        <img src="../assets/images/home/event3.png" alt="">
-                        <div class="eventPT communityPart">
-                          مشاركة مجتمعية
-                        </div>
-                      </div>
-                      <!-- end box of image -->
-                      <div class="boxTxtPT">
-                        <h2 class="font20Bold">مشاورة بإستبيان حول مُقدم للمستفيدين لتقييم خدمة بلّغ</h2>
-                        <div class="locationDate">
-                          <div class="dateBox">
-                            <img src="../assets/images/home/calendar-dates2.png" alt="">
-                            <span>&rlm;6 رمضان 1443</span>
-                            </div>
-                            <!-- end date -->
-                            <div class="dateBox">
-                              <img src="../assets/images/home/locationGreen.svg" alt="">
-                              <span>غرناطة سكوير بمدينة الرياض</span> 
-                              </div>
-                              <!-- end location -->
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <!-- end slide -->
-                  <div class="item">
-                    <a href="#" class="patternBox">
-                      <div class="boxImgPT">
-                        <img src="../assets/images/home/event1.png" alt="">
-                        <div class="HBNew">
-                          <span>يحدث الآن</span>
-                          <img src="../assets/images/home/Newsnotificationsoutline.svg" alt="">
-                        </div>
-                        <div class="eventPT">
-                           عامة
-                        </div>
-                      </div>
-                      <!-- end box of image -->
-                      <div class="boxTxtPT">
-                        <h2 class="font20Bold">انطلاق فعاليات "السنة الدولية للفواكه والخضروات" بالمملكة تزامناً مع الاحتفال العالمي</h2>
-                        <div class="locationDate">
-                          <div class="dateBox">
-                            <img src="../assets/images/home/calendar-dates2.png" alt="">
-                            <span>&rlm;6 رمضان 1443</span>
-                            </div>
-                            <!-- end date -->
-                            <div class="dateBox">
-                              <img src="../assets/images/home/locationGreen.svg" alt="">
-                              <span>الرياض</span> 
-                              </div>
-                              <!-- end location -->
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <!-- end slide -->
-
-
-              </div>
-              </div>
-              <div class="col-md-12">
-                <div class="actionBF">
-                  <a href="#" class="btnArrow">
-                    <span> جميع الأخبار</span>
-                    <img src="../assets/images/home/arrowBtn.svg" alt="">
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end content tab 1 -->
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-          <div class="event2Ctr">
-            <div class="container">
-              <div class="row">
-                <div class="owl-carousel mainArrow owl-carousel-event2 owl-theme">
-                  <div class="item">
-                    <div class="event2Box">
-                      <div class="EVImg">
-                        <p class="Date2Box">
-                          <strong>05</strong>
-                          <span>مايو</span>
-                        </p>
-                      </div>
-                      <!-- end date -->
-                      <div class="font20Bold">اليوم العالمي لمكافحة الصيد غير القانوني دون إبلاغ ودون تنظيم </div>
-                      <div class="locationDate">
-                        <div class="dateBox">
-                          <img src="../assets/images/home/locationGreen.svg" alt="">
-                          <span>الرياض</span> 
-                          </div>
-                          <!-- end location -->
-                          <div class="dateBox">
-                            <img src="../assets/images/home/Update.svg" alt="">
-                            <span>‏11ص : 02 م</span> 
-                            </div>
-                            <!-- end location -->
-                          <a href="#" class="dateBox addCln">
-                          <img src="../assets/images/home/calendarAdd2.svg" alt="">
-                          <span>أضف الى التقويم</span>
-                          </a>
-                          <!-- end date -->
- 
-                      </div>
-                    </div>
-                  </div>
-                  <!-- end item of slide -->
-                  <div class="item">
-                    <div class="event2Box">
-                      <div class="EVImg">
-                        <p class="Date2Box">
-                          <strong>05</strong>
-                          <span>مايو</span>
-                        </p>
-                        <div class="HBNew">
-                          <span>يحدث الآن</span>
-                          <img src="../assets/images/home/Newsnotificationsoutline.svg" alt="">
-                        </div>
-                      </div>
-                      <!-- end date -->
-                      <div class="font20Bold">اليوم العالمي لمكافحة الصيد غير القانوني دون إبلاغ ودون تنظيم </div>
-                      <div class="locationDate">
-                        <div class="dateBox">
-                          <img src="../assets/images/home/locationGreen.svg" alt="">
-                          <span>الرياض</span> 
-                          </div>
-                          <!-- end location -->
-                          <div class="dateBox">
-                            <img src="../assets/images/home/Update.svg" alt="">
-                            <span>‏11ص : 02 م</span> 
-                            </div>
-                            <!-- end location -->
-                          <a href="#" class="dateBox addCln">
-                          <img src="../assets/images/home/calendarAdd2.svg" alt="">
-                          <span>أضف الى التقويم</span>
-                          </a>
-                          <!-- end date -->
- 
-                      </div>
-                    </div>
-                  </div>
-                  <!-- end item of slide -->
-                  <div class="item">
-                    <div class="event2Box">
-                      <div class="EVImg">
-                        <p class="Date2Box">
-                          <strong>05</strong>
-                          <span>مايو</span>
-                        </p>
-                      </div>
-                      <!-- end date -->
-                      <div class="font20Bold">اليوم العالمي لمكافحة الصيد غير القانوني دون إبلاغ ودون تنظيم </div>
-                      <div class="locationDate">
-                        <div class="dateBox">
-                          <img src="../assets/images/home/locationGreen.svg" alt="">
-                          <span>الرياض</span> 
-                          </div>
-                          <!-- end location -->
-                          <div class="dateBox">
-                            <img src="../assets/images/home/Update.svg" alt="">
-                            <span>‏11ص : 02 م</span> 
-                            </div>
-                            <!-- end location -->
-                          <a href="#" class="dateBox addCln">
-                          <img src="../assets/images/home/calendarAdd2.svg" alt="">
-                          <span>أضف الى التقويم</span>
-                          </a>
-                          <!-- end date -->
- 
-                      </div>
-                    </div>
-                  </div>
-                  <!-- end item of slide -->
-                  <div class="item">
-                    <div class="event2Box">
-                      <div class="EVImg">
-                        <p class="Date2Box">
-                          <strong>05</strong>
-                          <span>مايو</span>
-                        </p>
-                      </div>
-                      <!-- end date -->
-                      <div class="font20Bold">اليوم العالمي لمكافحة الصيد غير القانوني دون إبلاغ ودون تنظيم </div>
-                      <div class="locationDate">
-                        <div class="dateBox">
-                          <img src="../assets/images/home/locationGreen.svg" alt="">
-                          <span>الرياض</span> 
-                          </div>
-                          <!-- end location -->
-                          <div class="dateBox">
-                            <img src="../assets/images/home/Update.svg" alt="">
-                            <span>‏11ص : 02 م</span> 
-                            </div>
-                            <!-- end location -->
-                          <a href="#" class="dateBox addCln">
-                          <img src="../assets/images/home/calendarAdd2.svg" alt="">
-                          <span>أضف الى التقويم</span>
-                          </a>
-                          <!-- end date -->
- 
-                      </div>
-                    </div>
-                  </div>
-                  <!-- end item of slide -->
-                  <div class="item">
-                    <div class="event2Box">
-                      <div class="EVImg">
-                        <p class="Date2Box">
-                          <strong>05</strong>
-                          <span>مايو</span>
-                        </p>
-                      </div>
-                      <!-- end date -->
-                      <div class="font20Bold">اليوم العالمي لمكافحة الصيد غير القانوني دون إبلاغ ودون تنظيم </div>
-                      <div class="locationDate">
-                        <div class="dateBox">
-                          <img src="../assets/images/home/locationGreen.svg" alt="">
-                          <span>الرياض</span> 
-                          </div>
-                          <!-- end location -->
-                          <div class="dateBox">
-                            <img src="../assets/images/home/Update.svg" alt="">
-                            <span>‏11ص : 02 م</span> 
-                            </div>
-                            <!-- end location -->
-                          <a href="#" class="dateBox addCln">
-                          <img src="../assets/images/home/calendarAdd2.svg" alt="">
-                          <span>أضف الى التقويم</span>
-                          </a>
-                          <!-- end date -->
- 
-                      </div>
-                    </div>
-                  </div>
-                  <!-- end item of slide -->
-                  <div class="item">
-                    <div class="event2Box">
-                      <div class="EVImg">
-                        <p class="Date2Box">
-                          <strong>05</strong>
-                          <span>مايو</span>
-                        </p>
-                      </div>
-                      <!-- end date -->
-                      <div class="font20Bold">اليوم العالمي لمكافحة الصيد غير القانوني دون إبلاغ ودون تنظيم </div>
-                      <div class="locationDate">
-                        <div class="dateBox">
-                          <img src="../assets/images/home/locationGreen.svg" alt="">
-                          <span>الرياض</span> 
-                          </div>
-                          <!-- end location -->
-                          <div class="dateBox">
-                            <img src="../assets/images/home/Update.svg" alt="">
-                            <span>‏11ص : 02 م</span> 
-                            </div>
-                            <!-- end location -->
-                          <a href="#" class="dateBox addCln">
-                          <img src="../assets/images/home/calendarAdd2.svg" alt="">
-                          <span>أضف الى التقويم</span>
-                          </a>
-                          <!-- end date -->
- 
-                      </div>
-                    </div>
-                  </div>
-                  <!-- end item of slide -->
-              </div>
-              <!-- end sider -->
-              <div class="col-md-12">
-                <div class="actionBF">
-                  <a href="#" class="btnArrow">
-                    <span>جميع الفعاليات</span>
-                    <img src="../assets/images/home/arrowBtn.svg" alt="">
-                  </a>
-                </div>
-              </div>
-              <!-- end box -->
-              </div>
-
-            </div>
-          </div>
-        </div>
-        <!-- end content tab 1 -->
-      </div>
-    </div>
-    <!-- end events section -->
-
-
-
-    <!-- Start happening Now -->
-    <div class="happeningNow">
-      <div class="container">
-        <div class="swiper swiperMain">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="boxHN">
-                <div class="boxImgHN patternIcon">
-                  <img src="../assets/images/home/HN1.svg" alt="">
-                </div>
-                <div class="boxTextHN">
-                  <h2>البدء في الإستمطار الصناعي في 3 مناطق بالمملكة</h2>
-                  <div class="forFlex">
-                    <a href="" class="moreHn">
-                      <span>التفاصيل</span>
-                      <img src="../assets/images/home/arrowMore.svg" alt="">
-                    </a>
-                    <div class="date">
-                      <img src="../assets/images/home/dateHN.svg" alt="">
-                      <span>‏25 رمضان 1443</span>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div class="moreBox">
-                  <a href="" class="btnArrow">
-                    <span>عرض الكل</span>
-                    <img src="../assets/images/home/arrowBlue.svg" alt="">
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- end slid -->
-            <div class="swiper-slide">
-              <div class="boxHN">
-                <div class="boxImgHN">
-                  <img src="../assets/images/home/HN2.svg" alt="">
-                </div>
-                <div class="boxTextHN">
-                  <h2>البدء في الإستمطار الصناعي في 3 مناطق بالمملكة</h2>
-                  <div class="forFlex">
-                    <a href="" class="moreHn">
-                      <span>التفاصيل</span>
-                      <img src="../assets/images/home/arrowMore.svg" alt="">
-                    </a>
-                    <div class="date">
-                      <img src="../assets/images/home/dateHN.svg" alt="">
-                      <span>‏25 رمضان 1443</span>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div class="moreBox">
-                  <a href="" class="btnArrow">
-                    <span>عرض الكل</span>
-                    <img src="../assets/images/home/arrowBlue.svg" alt="">
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- end slid -->
-          </div>
-          <!-- If we need pagination -->
-          <!-- <div class="swiper-pagination"></div> -->
-        
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        
-          <!-- If we need scrollbar -->
-          <!-- <div class="swiper-scrollbar"></div> -->
-        </div>
-        <!-- end  -->
-        <img src="../assets/images/home/closeX.svg" alt="" class="closeUp HappensNowOpen">
-      </div>
-    </div>
-   <!-- end Start happening Now -->
-
-
-    <!-- start home Tenders -->
-    <div class="homeTenders">
-      <div class="container">
-        <div class="row">
-         <div class="col-md-4 col-sm-6 col-xs-12">
-          <h3 class="headingTeT">كلمات دلالية</h3>
-          <div class="boxTags">
-            <a href="#">
-              <img src="../assets/images/home/hashtag.svg" alt="">
-              <span>دليل الخدمات</span>
-            </a>
-            <!-- end link -->
-            <a href="#">
-              <img src="../assets/images/home/hashtag.svg" alt="">
-              <span>تواصل معنا</span>
-            </a>
-            <!-- end link -->
-            <a href="#">
-              <img src="../assets/images/home/hashtag.svg" alt="">
-              <span>تسجيل مورد</span>
-            </a>
-            <!-- end link -->
-            <a href="#">
-              <img src="../assets/images/home/hashtag.svg" alt="">
-              <span>نماذج الوزارة</span>
-            </a>
-            <!-- end link -->
-            <a href="#">
-              <img src="../assets/images/home/hashtag.svg" alt="">
-              <span>البيانات المفتوحة</span>
-            </a>
-            <!-- end link -->
-            <a href="#">
-              <img src="../assets/images/home/hashtag.svg" alt="">
-              <span>كيف يمكننا مساعدتك</span>
-            </a>
-            <!-- end link -->
-            <a href="#">
-              <img src="../assets/images/home/hashtag.svg" alt="">
-              <span>صوت المواطن</span>
-            </a>
-            <!-- end link -->
-            <a href="#">
-              <img src="../assets/images/home/hashtag.svg" alt="">
-              <span>التحول الوطني 2020</span>
-            </a>
-            <!-- end link -->
-            <a href="#">
-              <img src="../assets/images/home/hashtag.svg" alt="">
-              <span>الأخبار</span>
-            </a>
-            <!-- end link -->
-          </div>
-         </div>
-         <!-- end col -->
-         <div class="col-md-4 col-sm-6 col-xs-12">
-          <h3 class="headingTeT">الاكثر مشاهدة</h3>
-          <div class="mostWatched">
-            <ol>
-              <li><a href="#"> برنامج دعم صغار مربي الماشية</a></li>
-              <li><a href="#">خدمة اصدار سجل زراعي</a></li>
-              <li><a href="#">طلب إصدار سجل مربي</a></li>
-              <li><a href="#">منصة زراعي</a></li>
-              <li><a href="#">خدمات الافراد</a></li>
-              <li><a href="#">مشروع تقديم خدمات تأهيل المستفيدين في الثروة الحي ...</a></li>
-              <li><a href="#">صوت المواطن</a></li>
-              <li><a href="#">البيئة" تطلق بوابة "ريف" الإلكترونية لدعم المزارعين </a></li>
-              <li><a href="#">ميعاد</a></li>
-            </ol>
-          </div>
-         </div>
-         <!-- end col -->
-         <div class="col-md-4 col-sm-6 col-xs-12">
-          <h3 class="headingTeT">تويتر</h3>
-          <div class="mostTwt">
-            تويتر
-          </div>
-         </div>
-         <!-- end col -->
-        </div>
-      </div>
-    </div>
-    <!-- end home Tenders -->
-
-    <!-- start media center -->
-   <div class="mediaCenter">
-    <div class="container ">
-      <div class="row patternCr">
-        <div class="col-md-12">
-          <h2 class="font35pxBold">المركز الإعلامي</h2>
-          <p class="font16Roma">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم </p>
-        </div>
-        <!-- end heading -->
-        <div class="col-md-12">
-          <ul class="nav nav-tabs tabsCustom" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="tab01" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true">البيانات اللحظية</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="tab02" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false">الصور</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="tab03" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false">الفيديو</button>
-            </li>
-          </ul>
-          <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab01">
-
- 
-              <div class="boxCounter">
-                <div class="boxCt">
-                  <img src="../assets/images/home/countIcon1.svg" alt="">
-                  <h4 class="counter">
-                    1,595,229
-                  </h4>
-                  <p class="counterTxt">عدد الابل المرقمة في المملكة حالياً</p>
-                </div>
-                 <!-- end box -->
-                <div class="boxCt">
-                  <img src="../assets/images/home/countIcon2.svg" alt="">
-                  <h4 class="counter">
-                    1,194,014
-                  </h4>
-                  <p class="counterTxt">عدد خلايا النحل المرخصة في المملكة حالياً</p>
-                </div>
-                 <!-- end box -->
-                <div class="boxCt">
-                  <img src="../assets/images/home/countIcon3.svg" alt="">
-                  <h4 class="counter">
-                    20,217
-                  </h4>
-                  <p class="counterTxt">عدد الصيادين المرخصين بالمملكة</p>
-                </div>
-                 <!-- end box -->
-                <div class="boxCt">
-                  <img src="../assets/images/home/countIcon4.svg" alt="">
-                  <h4 class="counter">
-                    265,901
-                  </h4>
-                  <p class="counterTxt">عدد الابار الغير مهجورة في الحيازات الزراعية المحصورة</p>
-                </div>
-                 <!-- end box -->
-              </div>
-              <!-- end container of box -->
-              <div class="text-center">
-                <div class="APISec">
-                  <img src="../assets/images/home/Api.svg" alt="">
-                  <p>
-                    <strong>يمكن الربط عن طريق واجهات برمجة التطبيقات (API)</strong>
-                    للحصول على المعلومات بشكل آلى من <a href="#">هنا</a>
-                  </p>
-                </div>
-               </div>
-               <!-- end api app -->
-            </div>
-            <!-- end tab content 1 -->
-            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab02">...tab2</div>
-               <!-- end tab content 2 -->
-            <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab03">..tab3.</div>
-               <!-- end tab content 3 -->
-          </div>
-        </div>
-        <!-- end tabs col -->
-      </div>
-    </div>
-   </div>
-    <!-- end media center -->
-   
-
-    <a href="#" class="HappensNowPuple HappensNowOpen">
-      <img src="../assets/images/home/HappensNow_PupleEmp.png" alt="">
-      <img class="asbo" src="../assets/images/home/notifications-outline.svg" alt="">
-      <span>يحدث الآن</span>
-      <strong class="animatedCr"></strong>
-
-    </a>
-
     <a href="#" class="chatNow">
       <img src="../assets/images/home/Chat.svg" alt="">
       <span>تحدث إلى</span>
     </a>
-    <div class="chatNowBox">
-      chat box
-    </div>
     <!-- AO start footer -->
     <footer>
-      <a href="#" class="scrollTop">
-        <img src="../assets/images/home/ScrollTop.svg" alt="">
-        <span class="font16Roma">العودة للأعلى</span>
-      </a>
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-lg-5">
@@ -1982,38 +925,29 @@
     <!-- end footer -->
     <script src="../assets/js/jQueryV3.5.js"></script>
     <script src="../assets/js/owl.carousel.min.js"></script>
-    <script src="../assets/js/swiper-bundle.min.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/jquery.counterup.min.js"></script>
-    <script src="../assets/js/indexMap.js"></script>
     <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/indexMap.js"></script>
     <script>
-  jQuery(function ($) {
-    "use strict";
-    
-    var counterUp = window.counterUp["default"]; // import counterUp from "counterup2"
-    
-    var $counters = $(".counter");
-    
-    
-    
-    /* Start counting, do this on DOM ready or with Waypoints. */
-    $counters.each(function (ignore, counter) {
-      var waypoint = new Waypoint({
-        element: $(this),
-        handler: function () {
-          counterUp(counter, {
-                  duration: 2000,
-                  delay: 10
-                });
-                // this.destroy();
-              },
-              offset: 'bottom-in-view',
-            });
-          });
-          
-        });
-
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    rtl: true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+});
 
     </script>
   </body>
