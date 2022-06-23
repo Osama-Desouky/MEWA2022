@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="690" viewBox="0 0 1920 690">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="mask" width="1920" height="690" transform="translate(0 145)" fill="red"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.667" y1="0.936" x2="0.788" y2="0.338" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4789c8" stop-opacity="0"/>
+      <stop offset="0.473" stop-color="#4789c8"/>
+      <stop offset="1" stop-color="#4789c8"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.014" y1="0.629" x2="0.99" y2="0.481" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="artBlue" transform="translate(0 -145)" clip-path="url(#clip-path)">
+    <g id="Slide02">
+      <g id="Caption">
+        <g id="caption-bg2">
+          <circle id="Ellipse_204" data-name="Ellipse 204" cx="505" cy="505" r="505" transform="translate(1149 -207)" fill="url(#linear-gradient)"/>
+          <circle id="Ellipse_196" data-name="Ellipse 196" cx="563.5" cy="563.5" r="563.5" transform="translate(1051 -294)" fill="url(#linear-gradient-2)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

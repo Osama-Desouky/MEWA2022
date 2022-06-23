@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="184" height="184" viewBox="0 0 184 184">
+  <defs>
+    <filter id="Path_125118" x="0" y="0" width="184" height="184" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12.5" result="blur"/>
+      <feFlood flood-color="#003462" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 30 30">
+      <image width="30" height="30" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABHNCSVQICAgIfAhkiAAAARBJREFUSEvtlDEOAUEUht+bgqBAS8MRuAANpawbcBCRuAg3sFoaLsARKERrFQjFPPuERFZi34RYidl2duab/5t/BiGiDyPiggV/zbxVbVU/GdhWncwhjhWtdZkHlVLz5Ilm2anrmegyKtem7jgaoI8ImUcIEXgKoJ0bu64ULgYzlBCGrxZGgqYULgKz3n0MlsGkwU1w8tQZihLtIrAk7X0T0tQi8LrW6KFSHdH5aerlJ6Nu2L+/DY5M9a1cK79c6VcK/XLt/HIVPlYuhklSS4vF64nO+J7y9oAMgsk5qf+AtKR32BjME1j7MQZVIipdF0BcJM4wleh9PCajxGFXxGTcgk1svfWvVf2WPpPJ/6f6Ai7TZx+wPoQsAAAAAElFTkSuQmCC"/>
+    </pattern>
+  </defs>
+  <g id="HappensNow_Puple" transform="translate(-22.5 -788.5)">
+    <g id="Ellipse_194" data-name="Ellipse 194" transform="translate(48 814)" fill="none" stroke="#f05349" stroke-width="2">
+      <circle cx="67" cy="67" r="67" stroke="none"/>
+      <circle cx="67" cy="67" r="66" fill="none"/>
+    </g>
+    <g id="Ellipse_195" data-name="Ellipse 195" transform="translate(36 802)" fill="none" stroke="#f05349" stroke-width="1" opacity="0.4">
+      <circle cx="79" cy="79" r="79" stroke="none"/>
+      <circle cx="79" cy="79" r="78.5" fill="none"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 22.5, 788.5)" filter="url(#Path_125118)">
+      <g id="Path_125118-2" data-name="Path 125118" transform="translate(37.5 37.5)" fill="#fff">
+        <path d="M 54.5 104 C 47.81534576416016 104 41.33329010009766 102.6919250488281 35.23390960693359 100.1120910644531 C 29.34007263183594 97.61921691894531 24.04581832885742 94.04940032958984 19.49821853637695 89.50178527832031 C 14.95059967041016 84.95418548583984 11.38078212738037 79.65992736816406 8.887908935546875 73.76610565185547 C 6.308072566986084 67.66670989990234 5 61.18465423583984 5 54.5 C 5 47.81534576416016 6.308072566986084 41.33329010009766 8.887908935546875 35.23390960693359 C 11.38078212738037 29.34007263183594 14.95061779022217 24.04581832885742 19.49821853637695 19.49821853637695 C 24.04581832885742 14.95061779022217 29.34007263183594 11.38078212738037 35.23390960693359 8.887908935546875 C 41.33329010009766 6.308072566986084 47.81534576416016 5 54.5 5 C 61.18465423583984 5 67.66670989990234 6.308072566986084 73.76610565185547 8.887908935546875 C 79.65992736816406 11.38078212738037 84.95418548583984 14.95059967041016 89.50178527832031 19.49821853637695 C 94.04940032958984 24.04581832885742 97.61921691894531 29.34007263183594 100.1120910644531 35.23390960693359 C 102.6919250488281 41.33329010009766 104 47.81534576416016 104 54.5 C 104 61.18465423583984 102.6919250488281 67.66670989990234 100.1120910644531 73.76610565185547 C 97.61921691894531 79.65992736816406 94.04940032958984 84.95418548583984 89.50178527832031 89.50178527832031 C 84.95418548583984 94.04940032958984 79.65992736816406 97.61921691894531 73.76610565185547 100.1120910644531 C 67.66670989990234 102.6919250488281 61.18465423583984 104 54.5 104 Z" stroke="none"/>
+        <path d="M 54.5 10 C 29.96261596679688 10 10 29.96261596679688 10 54.5 C 10 79.03738403320312 29.96261596679688 99 54.5 99 C 79.03738403320312 99 99 79.03738403320312 99 54.5 C 99 29.96261596679688 79.03738403320312 10 54.5 10 M 54.5 0 C 84.59952545166016 0 109 24.40047454833984 109 54.5 C 109 84.59952545166016 84.59952545166016 109 54.5 109 C 24.40047454833984 109 0 84.59952545166016 0 54.5 C 0 24.40047454833984 24.40047454833984 0 54.5 0 Z" stroke="none" fill="#003462"/>
+      </g>
+    </g>
+    <text id="يحدث_الآن" data-name="يحدث الآن" transform="translate(82 899.047)" fill="#003462" font-size="16" font-family="SSTArabic-Medium, SST Arabic" font-weight="500"><tspan x="0" y="0">يحدث الآن</tspan></text>
+    <g id="notifications-outline" transform="translate(23.612 805.953)">
+      <path id="Path_125116" data-name="Path 125116" d="M101.658,67.033c-1.611-1.972-2.748-2.975-2.748-8.41,0-4.977-2.542-6.751-4.634-7.612a1.117,1.117,0,0,1-.624-.662,2.8,2.8,0,0,0-5.523,0,1.107,1.107,0,0,1-.624.661c-2.094.862-4.634,2.63-4.634,7.612,0,5.435-1.14,6.439-2.751,8.41A1.265,1.265,0,0,0,81.2,69.076h19.375A1.266,1.266,0,0,0,101.658,67.033Z" transform="translate(0)" fill="none" stroke="#003462" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_125117" data-name="Path 125117" d="M200.029,384v1A4.015,4.015,0,1,1,192,385v-1" transform="translate(-105.126 -314.924)" fill="none" stroke="#003462" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+    <rect id="_103008" data-name="103008" width="44" height="44" transform="translate(130 827)" fill="url(#pattern)"/>
+  </g>
+</svg>

@@ -1,14 +1,85 @@
 
+@media(min-width:993px) and (max-width:1600px) {
+
+    .menuBg {
+        .navbarCustom {
+            .nav-item {
+                padding: 0;
+                margin: 0;
+                padding-#{$start-direction}: 15px;
+                .nav-link {
+                    padding: 0 5px;
+                    font-size: 13px;
+                    white-space: nowrap;
+                }
+            }
+            .searchBNT {
+                button {
+                    padding-#{$end-direction}: 14px;
+                }
+            }
+            >.navbar-brand {
+                img {
+                    max-width: 220px;
+                }
+            }
+            .borderWidth {
+                img {
+                    width: 100px;
+                }
+            }
+        }
+    }
+    .MainHeader {
+        .owl-nav {
+            max-width: 1330px;
+            // background: red;
+            width: 100%;
+            margin: 0 auto !important;
+            display: flex;
+            #{$end-direction}: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .briefImg {
+        img {
+          max-width: 100%;
+        }
+      }
+      .eventsSection .event2Ctr .container {
+        max-width: 1300px;
+      }
+}
+
 @media(min-width:1400px) {
-    .container {
+    .customContainer {
         max-width: 1350px;
         // background-color: red;
     }
-}
 
-@media(min-width:1800px) {
+}
+@media(min-width:1650px) {
     .container {
+        max-width: 1440px;
+    }
+}
+@media(min-width:1800px) {
+    .customContainer {
         max-width: 1750px;
         // background-color: red;
+    }
+    .servicesBg .container::before {
+        #{$end-direction}: -100px;
+    }
+    .servicesBg .container::after {
+        #{$start-direction}: -100px;
+    }
+    .eventsSection .event2Ctr .owl-carousel .owl-dots ,
+    .eventsSection .event2Ctr .actionBF .btnArrow {
+        transform: translateX(40px);
+    }
+    .ADSSecti .container {
+        margin-left: 0;
+        max-width: 1600px;
     }
 }
