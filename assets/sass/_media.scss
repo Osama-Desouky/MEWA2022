@@ -1,86 +1,753 @@
-
-@media(min-width:993px) and (max-width:1600px) {
-
-    .menuBg {
-        .navbarCustom {
-            .nav-item {
-                padding: 0;
-                margin: 0;
-                padding-#{$start-direction}: 15px;
-                .nav-link {
-                    padding: 0 5px;
-                    font-size: 13px;
-                    white-space: nowrap;
-                }
-            }
-            .searchBNT {
-                button {
-                    padding-#{$end-direction}: 14px;
-                }
-            }
-            >.navbar-brand {
-                img {
-                    max-width: 220px;
-                }
-            }
-            .borderWidth {
-                img {
-                    width: 100px;
-                }
-            }
+// fixing issues in some media
+@media (min-width: 993px) and (max-width: 1600px) {
+  .menuBg {
+    .navbarCustom {
+      .nav-item {
+        padding: 0;
+        margin: 0;
+        padding-#{$start-direction}: 15px;
+        .nav-link {
+          padding: 0 5px;
+          font-size: 13px;
+          white-space: nowrap;
         }
+      }
+      .searchBNT {
+        button {
+          padding-#{$end-direction}: 14px;
+        }
+      }
+      > .navbar-brand {
+        img {
+          max-width: 220px;
+        }
+      }
+      .borderWidth {
+        img {
+          width: 100px;
+        }
+      }
     }
-    .MainHeader {
-        .owl-nav {
-            max-width: 1330px;
-            // background: red;
-            width: 100%;
-            margin: 0 auto !important;
-            display: flex;
-            #{$end-direction}: 50%;
-            transform: translateX(-50%);
+  }
+  .MainHeader {
+    .owl-nav {
+      max-width: 1330px;
+      // background: red;
+      width: 100%;
+      margin: 0 auto !important;
+      display: flex;
+      #{$end-direction}: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .briefImg {
+    img {
+      max-width: 100%;
+    }
+  }
+  .eventsSection .event2Ctr .container {
+    max-width: 1300px;
+  }
+}
+// fix issue of menu and footer
+@media (min-width: 993px) and (max-width: 1200px) {
+  .patternCr {
+    &::after {
+      #{$start-direction}: 0;
+    }
+  }
+  .newSection {
+    .patternCr {
+      &::before {
+        #{$end-direction}: 0;
+      }
+    }
+  }
+  .menuBg {
+    .navbarCustom {
+      > .navbar-brand {
+        margin: 0;
+        img {
+          max-width: 175px;
         }
+      }
+      .nav-item {
+        .nav-link {
+          font-size: 12px;
+          padding: 0 2px;
+        }
+      }
+      .borderWidth {
+        img {
+          width: 70px;
+        }
+      }
+    }
+  }
+  .borderWidth {
+    &::after {
+      display: none;
+    }
+  }
+  body {
+    .MainHeader {
+      .owl-nav {
+        max-width: 931px;
+      }
+    }
+  }
+}
+@media (min-width: 1400px) {
+  .customContainer {
+    max-width: 1350px;
+    // background-color: red;
+  }
+}
+@media (min-width: 1650px) {
+  .container {
+    max-width: 1440px;
+  }
+  .newSection .patternCr::before {
+    #{$end-direction}: -145px;
+  }
+}
+@media (min-width: 1800px) {
+  .customContainer {
+    max-width: 1750px;
+    // background-color: red;
+  }
+
+  .servicesBg .container::before {
+    #{$end-direction}: -100px;
+    bottom: 25px;
+  }
+  .servicesBg .container::after {
+    #{$start-direction}: -100px;
+    top: 118px;
+  }
+  .eventsSection .event2Ctr .owl-carousel .owl-dots,
+  .eventsSection .event2Ctr .actionBF .btnArrow {
+    transform: translateX(40px);
+  }
+  .ADSSecti .container {
+    margin-#{$end-direction}: 0;
+    max-width: 1800px;
+  }
+}
+
+// responsive media
+
+@media (max-width: 1400px) {
+  .container {
+    // border: 1px solid red;
+  }
+  .happeningNow {
+    .boxHN {
+      .boxTextHN {
+        h2 {
+          font-size: 30px;
+        }
+      }
+      .moreBox {
+        .btnArrow {
+          padding: 11px 14px;
+          min-width: 130px;
+          span {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  .MainHeader {
+    .owl-nav {
+      max-width: 1125px;
+    }
+    .boxHeader {
+      .headerText {
+        h1 {
+          font-size: 44px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .homeTenders {
+    .boxTags {
+      a {
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+    .mostWatched {
+      ol {
+        li {
+          a {
+            line-height: 1.4;
+          }
+          &::before {
+            flex-shrink: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .interactive-map {
+    .map-bg {
+      .svg-map {
+        margin-right: 0;
+      }
+      height: auto;
+      .col-lg-8 {
+        width: 100%;
+      }
+    }
+
+  }
+}
+@media (max-width: 992px) {
+  .interactive-map {
+    
+    display: none;
+  }
+  
+
+  .servicesBg {
+    .patternCr {
+      &::after {
+        top: 44px;
+      }
+    }
+  }
+  .MainHeader {
+    .boxHeader {
+      > img {
+        &:last-of-type {
+          width: 150%;
+        }
+      }
+    }
+  }
+  .happeningNow {
+    .closeUp {
+      transform: scale(.5);
+      #{$start-direction}: 0px;
+    }
+    .boxHN {
+      .boxTextHN {
+        h2 {
+          font-size: 16px;
+        }
+      }
+      .boxImgHN {
+        img {
+          height: 180px;
+          max-width: 170px;
+        }
+      }
+    }
+  }
+
+  .patternCr {
+    &::before {
+      #{$end-direction}: 0;
+    }
+    &::after {
+      #{$start-direction}: 0;
+    }
+  }
+  .navBar {
+    .linksNB {
+      line-height: normal;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      ul {
+        li.paddingGap {
+          padding-#{$start-direction}: 20px;
+        }
+        li {
+          a {
+            span {
+              font-size: 12px;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+    }
+  }
+  .menuBg {
+    .navbarCustom {
+      padding: 12px 0;
+      height: unset;
+      .navbar-collapse {
+        text-align: center;
+      }
+      .nav-item {
+        text-align: center;
+        .nav-link {
+          height: auto;
+          padding: 5px 0;
+          margin: 0;
+          justify-content: center;
+          &:hover {
+            background-color: unset;
+          }
+        }
+      }
+      .searchBNT {
+        button {
+          border-#{$end-direction}: 0px solid rgba(167, 173, 174, 0.5);
+          padding-#{$end-direction}: 0;
+        }
+      }
+      .dropdown-menu {
+        margin-top: 0;
+      }
+      .colMenu {
+        text-align: #{$start-direction};
+        padding-#{$start-direction}: 20px;
+        margin-top: 30px;
+        margin-bottom: 0;
+        h4 {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+        ul {
+          li {
+            a {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .borderWidth {
+    &::after {
+      display: none;
+    }
+  }
+  .btnArrow {
+    padding: 15px 15px;
+    border-radius: 25px;
+    min-width: auto;
+    img {
+      max-width: 15px;
+      margin-#{$start-direction}: 10px;
+    }
+    span {
+      font-size: 12px;
+      color: #fff;
+      margin-top: -4px;
+    }
+  }
+  .MainHeader {
+    .boxHeader {
+      .headerText {
+        .btnArrow {
+          padding: 10px 15px;
+          border: 2px solid #fff;
+          span {
+            font-size: 16px;
+            margin-top: -7px;
+          }
+        }
+        width: 50%;
+        margin-top: 136px;
+      }
+      height: 500px;
+    }
+    .owl-dots {
+      width: auto;
+      position: absolute;
+      bottom: 100px;
+      #{$start-direction}: 50%;
+      margin-inline-start: unset;
+      transform: translateX(50%);
+    }
+    .postionRel {
+      margin-top: -75px;
+    }
+  }
+  .ADSSecti {
+    .col-md-3 {
+      width: 100%;
+    }
+    .col-md-9 {
+      width: 100%;
+    }
+    .boxADSSlide {
+      height: 340px;
+      .ADBoxTxt {
+        h1 {
+          font-size: 15px;
+          line-height: 24px;
+        }
+        .dateBox {
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .ADSBox {
+      .font18P {
+        margin: 18px 0;
+        min-height: auto;
+      }
+    }
+    .owl-nav {
+      .owl-next {
+        #{$start-direction}: 12px;
+      }
+    }
+  }
+  .briefNama {
+    .col-md-5 {
+      width: 100%;
+    }
+    .col-md-7 {
+      width: 100%;
+    }
+    .font20Bold {
+      font-size: 16px;
     }
     .briefImg {
-        img {
-          max-width: 100%;
+      img {
+        max-width: 100%;
+      }
+    }
+    .briefText {
+      .twoBoxBF {
+        .boxBF {
+          p {
+            font-size: 14px;
+          }
         }
       }
-      .eventsSection .event2Ctr .container {
-        max-width: 1300px;
+      .actionBF {
+        margin-top: 0;
+        margin-bottom: 30px;
       }
+    }
+    padding: 30px 0 20px;
+    .font35pxBold {
+      font-size: 25px;
+    }
+  }
+  .owl-carousel {
+    .owl-item {
+      .dateBox {
+        img {
+          display: block;
+          width: 20px;
+        }
+      }
+    }
+  }
+  .tabsCustom {
+    .nav-item {
+      .nav-link {
+        font-size: 16px;
+        padding: 9px 30px 13px 30px;
+      }
+    }
+  }
+  .homeTenders {
+    .col-md-4 {
+      width: 100%;
+    }
+  }
+  .servicesBg {
+    .font35pxBold {
+      margin-top: 30px;
+      margin-bottom: 5px;
+      font-size: 30px;
+    }
+    .font18P {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .sevBob {
+      margin-bottom: 25px;
+      h3 {
+        font-size: 16px;
+      }
+    }
+  }
+  .mediaCenter {
+    .nav-item {
+      .nav-link {
+        margin-bottom: 10px;
+        font-size: 14px;
+        padding: 9px 30px 13px 30px;
+      }
+    }
+    .boxCounter {
+      flex-wrap: wrap;
+      justify-content: #{$start-direction};
+      margin: 25px 0 40px;
+      .boxCt {
+        img {
+          max-height: 80px;
+        }
+        .counter {
+          font-size: 20px;
+        }
+        margin-bottom: 20px;
+        width: 50%;
+        .counterTxt {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .APISec {
+    p {
+      font-size: 14px;
+      strong {
+        display: block;
+      }
+    }
+  }
+  footer {
+    .websiteSupport {
+      padding-#{$start-direction}: 0;
+      ul {
+        flex-wrap: wrap;
+        li {
+          margin-bottom: 8px;
+        }
+      }
+    }
+    .reservedBar {
+      ul {
+        flex-wrap: wrap;
+        li {
+          &:first-of-type {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    .row {
+      .logoFooter {
+        h4 {
+          font-size: 16px;
+        }
+      }
+      .footerLinks {
+        h4 {
+          font-size: 16px;
+        }
+        ul {
+          li {
+            a {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .socialIcon {
+        li {
+          a {
+            width: 38px;
+            height: 38px;
+            img {
+              max-width: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .font18P {
+    font-size: 14px;
+  }
+  .MainHeader {
+    .boxHeader {
+      .headerText {
+        h1 {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+  .eventsSection {
+    .event2Ctr {
+      .event2Box {
+        .font20Bold {
+          font-size: 18px;
+          line-height: 1.3;
+        }
+      }
+    }
+  }
+  .homeTenders {
+    .mostWatched {
+      min-height: auto;
+      margin-bottom: 20px;
+      ol {
+        li {
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .boxTags {
+      min-height: auto;
+      margin-bottom: 20px;
+    }
+  }
 }
-
-@media(min-width:1400px) {
-    .customContainer {
-        max-width: 1350px;
-        // background-color: red;
+@media (max-width: 767px) {
+  .happeningNow {
+    .swiper {
+      width: 100%;
+      height: 400px;
     }
-
-}
-@media(min-width:1650px) {
-    .container {
-        max-width: 1440px;
+    .boxHN {
+      .boxImgHN {
+        img {
+          height: 100px;
+          max-width: 83px;
+        }
+      }
+      .moreBox {
+        .btnArrow {
+          padding: 10px 10px;
+          min-width: 80px;
+          margin-top: 20px;
+        }
+      }
     }
-}
-@media(min-width:1800px) {
-    .customContainer {
-        max-width: 1750px;
-        // background-color: red;
+    .swiper-button-prev {
+      left: 0;
     }
-
-    .servicesBg .container::before {
-        #{$end-direction}: -100px;
+    .swiper-button-next {
+      left: 0;
     }
-    .servicesBg .container::after {
-        #{$start-direction}: -100px;
+  }
+  .happeningNow.openUpSection {
+    bottom: 0;
+    z-index: 999999;
+  }
+  
+  .menuBg {
+    .navbarCustom {
+      .dropdown-menu {
+        div[class*="col"] {
+          margin-bottom: 0;
+        }
+      }
+      padding: 12px 15px;
+      >.navbar-brand {
+        margin: 0;
+        width: 75%;
+        img {
+          width: 75%;
+        }
+      }
     }
-    .eventsSection .event2Ctr .owl-carousel .owl-dots ,
-    .eventsSection .event2Ctr .actionBF .btnArrow {
-        transform: translateX(40px);
+  }
+  .navBar {
+    padding: 5px 0;
+  }
+  body {
+    .MainHeader {
+      .owl-nav {
+        max-width: 402px;
+        top: 34px;
+      }
     }
-    .ADSSecti .container {
-        margin-left: 0;
-        max-width: 1600px;
+  }
+  .MainHeader {
+    .postionRel {
+      margin-top: -51px;
     }
+    .boxHeader {
+      >img {
+        &:last-of-type {
+          width: 200%;
+        }
+      }
+      .headerText {
+        width: 70%;
+        margin-top: 110px;
+      }
+    }
+  }
+  .briefNama {
+    .briefText {
+      .twoBoxBF {
+        .boxBF {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .ADSSecti {
+    padding-bottom: 40px;
+    .ADSBox {
+      padding-top: 0px;
+    }
+    .owl-dots {
+      text-align: center;
+      padding-#{$start-direction}: 0;
+    }
+  }
+  .newSection {
+    background: #f8fafe;
+    padding: 50px 0 50px;
+  }
+  .eventsSection {
+    .event2Ctr {
+      .event2Box {
+        .locationDate {
+          flex-wrap: wrap;
+        }
+        .EVImg {
+          .Date2Box {
+            width: 80px;
+            height: 80px;
+            strong {
+              font-size: 30px;
+            }
+            span {
+              font-size: 12px;
+              margin-top: -3px;
+            }
+          }
+        }
+        .dateBox {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  .tabsCustom {
+    .nav-item {
+      .nav-link {
+        font-size: 14px;
+      }
+    }
+  }
+  .mediaCenter {
+    .patternCr {
+      padding: 18px 30px 40px;
+    }
+    .boxCounter {
+      .boxCt {
+        width: 100%;
+      }
+    }
+  }
+  
 }

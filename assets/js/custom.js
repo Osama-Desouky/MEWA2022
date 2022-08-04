@@ -33,7 +33,12 @@ $(document).ready(function () {
     }
   });
   
-
+  /*
+  .. fix issue of scrolling wen open menu
+  */
+  $(".menuBg  .navbar-toggler").on("click", function () {
+    $(".menuBg ").toggleClass("preventScrolling");
+  });
   /*
   .. scroll top 
   */
@@ -95,13 +100,13 @@ $(document).ready(function () {
     // responsiveClass:true,
     responsive: {
       0: {
-        items: 1,
-      },
-      600: {
-        items: 1,
+        items: 1.2,
       },
       1000: {
-        items: 3,
+        items: 2.2,
+      },
+      1400: {
+        items: 2.5
       },
     },
   });
@@ -154,7 +159,7 @@ $(document).ready(function () {
     // items:3.5,
     responsive: {
       0: {
-        items: 1,
+        items: 1.2,
       },
       1000: {
         items: 2.5,
@@ -167,10 +172,10 @@ $(document).ready(function () {
   const swiper = new Swiper(".swiperMain", {
     // Optional parameters
     direction: "vertical",
-    loop: false,
-    // autoplay: {
-    //     delay: 5000,
-    //   },
+    loop: true,
+    autoplay: {
+        delay: 3000,
+      },
     // If we need pagination
     pagination: {
       //   el: '.swiper-pagination',

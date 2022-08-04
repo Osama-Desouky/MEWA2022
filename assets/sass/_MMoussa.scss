@@ -1,7 +1,13 @@
 
+
 .interactive-map{
     margin-top: -140px;
+    background: $backgroundf3f6fb;
+    padding-bottom: 20px;
     .map-bg{
+        
+        box-shadow: 4px 15px 30px -22px  rgba(0, 0, 0, 0.2);
+      
         background: rgb(249,249,249);
         background: url(../images/map/map-pattern.svg), radial-gradient(circle, rgba(249,249,249,1) 0%, rgba(225,232,238,1) 65%);
         // background-image: url(../images/map/map-pattern.svg);

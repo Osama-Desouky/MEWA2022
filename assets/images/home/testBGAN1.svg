@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2160" height="491.632" viewBox="0 0 2160 491.632">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.074" y1="-0.485" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#003462" stop-opacity="0.58"/>
+      <stop offset="0.149" stop-color="#4789c8" stop-opacity="0.412"/>
+      <stop offset="0.25" stop-color="#fff"/>
+      <stop offset="1" stop-color="#f2f7fc"/>
+    </linearGradient>
+    <filter id="testBGAN1" x="0" y="0" width="2160" height="491.632" filterUnits="userSpaceOnUse">
+      <feOffset dy="-70" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feFlood flood-color="#003462" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#testBGAN1)">
+    <rect id="testBGAN1-2" data-name="testBGAN1" width="1920" height="251.632" transform="translate(120 190)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
