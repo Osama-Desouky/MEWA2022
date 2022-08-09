@@ -15,23 +15,23 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 $(document).ready(function () {
-  $("a").click(function (e) {
-    e.preventDefault();
+  // $("a").click(function (e) {
+  //   e.preventDefault();
 
-    if (this.hash) {
-      var target = "#" + this.hash.substr(1);
-      var destination = $(target).offset().top - 10;
+  //   if (this.hash) {
+  //     var target = "#" + this.hash.substr(1);
+  //     var destination = $(target).offset().top - 10;
 
-      $("#main")
-        .stop()
-        .animate(
-          {
-            scrollTop: "+=" + destination,
-          },
-          1000
-        );
-    }
-  });
+  //     $("#main")
+  //       .stop()
+  //       .animate(
+  //         {
+  //           scrollTop: "+=" + destination,
+  //         },
+  //         1000
+  //       );
+  //   }
+  // });
   
   /*
   .. fix issue of scrolling wen open menu
