@@ -2323,7 +2323,7 @@ footer .reservedBar ul li a::after {
 
 .ADSSecti .owl-dots {
   text-align: left;
-  padding-left: 215px;
+  padding-left: 28%;
 }
 
 .ADSSecti .owl-dots span {
@@ -2496,6 +2496,54 @@ footer .reservedBar ul li a::after {
   background-color: #fff;
 }
 
+/* start fixing issue in live demo */
+.owl-theme .owl-nav [class*='owl-'],
+.owl-theme .owl-dots .owl-dot {
+  min-width: unset;
+}
+
+.ms-webpart-zone, div.ms-webpart-cell-vertical-inline-table, .ms-webpart-cell-vertical, .ms-webpart-chrome-vertical {
+  display: block !important;
+}
+
+body, #s4-workspace {
+  overflow: visible !important;
+}
+
+.ms-webpartzone-cell {
+  margin-bottom: 0 !important;
+}
+
+.eventsSection .patternBox .boxImgPT > img {
+  height: 270px;
+}
+
+.mostTwt > iframe {
+  -webkit-box-shadow: 30px 15px 60px rgba(0, 0, 0, 0.1);
+          box-shadow: 30px 15px 60px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  height: 490px !important;
+}
+
+iframe .timeline-Viewport::-webkit-scrollbar {
+  width: 5px;
+}
+
+iframe .timeline-Viewport::-webkit-scrollbar-track {
+  background: #C2CED8;
+  border-radius: 10px;
+}
+
+iframe .timeline-Viewport::-webkit-scrollbar-thumb {
+  background: #003462;
+  border-radius: 10px;
+}
+
+iframe .timeline-Viewport::-webkit-scrollbar-thumb:hover {
+  background: #012444;
+}
+
+/* end fixing issue in live demo */
 .interactive-map {
   margin-top: -140px;
   background: #f3f6fb;

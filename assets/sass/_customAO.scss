@@ -1845,7 +1845,7 @@ footer {
   }
   .owl-dots {
     text-align: #{$start-direction};
-    padding-#{$start-direction}: 215px;
+    padding-#{$start-direction}: 28%;
     span {
       background: $green63BE6A !important;
       opacity: 0.5;
@@ -1985,6 +1985,48 @@ footer {
 .owl-carousel-center .owl-stage > .active {
   background-color: #fff;
 }
+
+/* start fixing issue in live demo */
+
+.owl-theme .owl-nav [class*='owl-'],
+.owl-theme .owl-dots .owl-dot {
+    min-width: unset;
+}
+.ms-webpart-zone,div.ms-webpart-cell-vertical-inline-table,.ms-webpart-cell-vertical,.ms-webpart-chrome-vertical{
+	display: block!important;
+}
+body,#s4-workspace {
+	overflow:visible!important;
+}
+.ms-webpartzone-cell{
+	margin-bottom:0!important
+}
+
+.eventsSection .patternBox .boxImgPT > img {
+    height: 270px;
+}
+.mostTwt > iframe {
+    box-shadow: 30px 15px 60px rgba(0,0,0,.1);
+    border-radius: 16px;
+        height: 490px !important
+}
+iframe .timeline-Viewport::-webkit-scrollbar {
+  width: 5px;
+}
+iframe .timeline-Viewport::-webkit-scrollbar-track {
+  background: #C2CED8;
+    border-radius: 10px;
+}
+
+iframe .timeline-Viewport::-webkit-scrollbar-thumb {
+  background: #003462;
+    border-radius: 10px;
+}
+
+iframe .timeline-Viewport::-webkit-scrollbar-thumb:hover {
+  background: #012444;
+}
+/* end fixing issue in live demo */
 
 // body {
 //   overflow-x: hidden;
