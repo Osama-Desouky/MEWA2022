@@ -15,6 +15,22 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 $(document).ready(function () {
+
+
+  $("a.fancybox").fancybox({
+    // openEffect	: 'none',
+    // closeEffect	: 'none'
+    loop: true,
+});
+$("a.fancyboxVideo").fancybox({
+    // openEffect	: 'none',
+    // closeEffect	: 'none'
+    type: "iframe",
+    youtube: {
+        autoplay: 1, // enable autoplay
+    }
+});
+
   // $("a").click(function (e) {
   //   e.preventDefault();
 
@@ -50,7 +66,8 @@ $(document).ready(function () {
   /*
   .. open slide down
   */
-  $(".HappensNowOpen").click(function () {
+  $(".HappensNowOpen").click(function (e) {
+    e.preventDefault();
     $(".happeningNow").toggleClass("openUpSection");
   });
 
@@ -58,7 +75,8 @@ $(document).ready(function () {
   .. open chat
   */
 
-  $(".chatNow").click(function () {
+  $(".chatNow").click(function (e) {
+    e.preventDefault();
     $(".chatNowBox").fadeToggle();
   });
 

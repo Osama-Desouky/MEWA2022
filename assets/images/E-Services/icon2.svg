@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="0 0 110 110">
+  <g id="icon2" transform="translate(-1453 -6238)">
+    <g id="Ellipse_180" data-name="Ellipse 180" transform="translate(1453 6238)" fill="none" stroke="#63be6a" stroke-width="3">
+      <circle cx="55" cy="55" r="55" stroke="none"/>
+      <circle cx="55" cy="55" r="53.5" fill="none"/>
+    </g>
+    <g id="buildings-2" transform="translate(1485 6270)">
+      <path id="Path_129837" data-name="Path 129837" d="M11.87,35.6H6.515C3.512,35.6,2,34.088,2,31.085V6.515C2,3.512,3.512,2,6.515,2h9.03c3,0,4.515,1.512,4.515,4.515V10.4" fill="none" stroke="#63be6a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_129838" data-name="Path 129838" d="M29.107,11.082V34.518c0,3.381-1.68,5.082-5.061,5.082H11.782C8.4,39.6,6.7,37.9,6.7,34.518V11.082C6.7,7.7,8.4,6,11.782,6H24.046C27.427,6,29.107,7.7,29.107,11.082Z" transform="translate(5.17 4.4)" fill="none" stroke="#63be6a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_129839" data-name="Path 129839" d="M13.4,10.4V6.515c0-3,1.512-4.515,4.515-4.515h9.03c3,0,4.515,1.512,4.515,4.515v24.57c0,3-1.512,4.515-4.515,4.515H21.737" transform="translate(12.54)" fill="none" stroke="#63be6a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_129840" data-name="Path 129840" d="M10,11h8.4" transform="translate(8.8 9.9)" fill="none" stroke="#63be6a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_129841" data-name="Path 129841" d="M10,14h8.4" transform="translate(8.8 13.2)" fill="none" stroke="#63be6a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_129842" data-name="Path 129842" d="M12,25.3V19" transform="translate(11 18.7)" fill="none" stroke="#63be6a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
