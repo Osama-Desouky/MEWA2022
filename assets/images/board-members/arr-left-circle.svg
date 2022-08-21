@@ -1,0 +1,12 @@
+<svg id="arr-left-circle" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="Ellipse_171" data-name="Ellipse 171" fill="none" stroke="#63be6a" stroke-width="1.5">
+    <circle cx="15" cy="15" r="15" stroke="none"/>
+    <circle cx="15" cy="15" r="14.25" fill="none"/>
+  </g>
+  <g id="Group_23077" data-name="Group 23077" transform="translate(9.932 11.264)">
+    <g id="Group_8" data-name="Group 8" transform="translate(10.018) rotate(90)">
+      <line id="Line_1" data-name="Line 1" y2="9.341" transform="translate(3.883 0)" fill="none" stroke="#63be6a" stroke-linecap="round" stroke-width="1.5"/>
+      <path id="Path_92" data-name="Path 92" d="M7.767,0,3.883,3.974,0,0" transform="translate(0 6.043)" fill="none" stroke="#63be6a" stroke-linecap="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>
