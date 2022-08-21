@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="0 0 110 110">
+  <g id="icon10" transform="translate(-1453 -6238)">
+    <g id="Ellipse_180" data-name="Ellipse 180" transform="translate(1453 6238)" fill="none" stroke="#63be6a" stroke-width="3">
+      <circle cx="55" cy="55" r="55" stroke="none"/>
+      <circle cx="55" cy="55" r="53.5" fill="none"/>
+    </g>
+    <g id="document-text-1" transform="translate(1487.971 6272.971)">
+      <path id="Path_129876" data-name="Path 129876" d="M38.059,16.423v9.015c0,9.015-3.606,12.621-12.621,12.621H14.621C5.606,38.059,2,34.453,2,25.438V14.621C2,5.606,5.606,2,14.621,2h9.015" transform="translate(0 0)" fill="none" stroke="#63be6a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_129877" data-name="Path 129877" d="M28.423,16.423H21.212C15.8,16.423,14,14.621,14,9.212V2Z" transform="translate(9.635 0)" fill="none" stroke="#63be6a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_129878" data-name="Path 129878" d="M7,13H17.818" transform="translate(4.015 8.832)" fill="none" stroke="#63be6a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_129879" data-name="Path 129879" d="M7,17h7.212" transform="translate(4.015 12.044)" fill="none" stroke="#63be6a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

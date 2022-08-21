@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="0 0 110 110">
+  <g id="icon1" transform="translate(-1453 -6238)">
+    <g id="Ellipse_180" data-name="Ellipse 180" transform="translate(1453 6238)" fill="none" stroke="#63be6a" stroke-width="3">
+      <circle cx="55" cy="55" r="55" stroke="none"/>
+      <circle cx="55" cy="55" r="53.5" fill="none"/>
+    </g>
+    <g id="Group_125126" data-name="Group 125126" transform="translate(20655.924 10766.669)">
+      <path id="Path_123227" data-name="Path 123227" d="M1325.942,584.323v-1.767c0-4.843-6.159-7.066-9.561-7.066s-9.561,2.182-9.561,7.025v1.808" transform="translate(-20443 -5051.534)" fill="none" stroke="#63be6a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_123228" data-name="Path 123228" d="M1316.381,575.49a5.6,5.6,0,0,0,5.464-5.857V567.68a5.477,5.477,0,1,0-10.927,0v1.953A5.6,5.6,0,0,0,1316.381,575.49Z" transform="translate(-20443 -5051.534)" fill="none" stroke="#63be6a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_123229" data-name="Path 123229" d="M1306.82,597.372v-1.917c0-5.252-6.159-7.666-9.561-7.666s-9.561,2.367-9.561,7.621v1.962" transform="translate(-20445 -5055)" fill="none" stroke="#63be6a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_123230" data-name="Path 123230" d="M1297.259,587.789a5.6,5.6,0,0,0,5.463-5.857v-1.953a5.477,5.477,0,1,0-10.927,0v1.953A5.6,5.6,0,0,0,1297.259,587.789Z" transform="translate(-20445 -5055)" fill="none" stroke="#63be6a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_123231" data-name="Path 123231" d="M1286.332,588.022c0-4.841-6.159-7.066-9.561-7.066s-9.561,2.182-9.561,7.025v1.808" transform="translate(-20446 -5057)" fill="none" stroke="#63be6a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_123232" data-name="Path 123232" d="M1276.771,580.956a5.6,5.6,0,0,0,5.463-5.856v-1.954a5.477,5.477,0,1,0-10.927,0V575.1A5.6,5.6,0,0,0,1276.771,580.956Z" transform="translate(-20446 -5057)" fill="none" stroke="#63be6a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

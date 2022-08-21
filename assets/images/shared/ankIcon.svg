@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29.791" height="29.791" viewBox="0 0 29.791 29.791">
+  <g id="ankIcon" transform="translate(-2 -2)">
+    <g id="Ellipse_171" data-name="Ellipse 171" transform="translate(2 2)" fill="none" stroke="#63be6a" stroke-width="1.5">
+      <circle cx="14.896" cy="14.896" r="14.896" stroke="none"/>
+      <circle cx="14.896" cy="14.896" r="14.146" fill="none"/>
+    </g>
+    <g id="Group_23077" data-name="Group 23077" transform="translate(13.464 14.366)">
+      <g id="Group_8" data-name="Group 8" transform="translate(9.029 -1.741) rotate(90)">
+        <line id="Line_1" data-name="Line 1" y2="10.513" transform="translate(4.37 0)" fill="none" stroke="#63be6a" stroke-linecap="round" stroke-width="1.5"/>
+        <path id="Path_92" data-name="Path 92" d="M8.741,0,4.371,4.473,0,0" transform="translate(0 6.802)" fill="none" stroke="#63be6a" stroke-linecap="round" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

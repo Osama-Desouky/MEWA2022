@@ -27,6 +27,6 @@ $(".navigation-links a").on("click", function () {
 $(document).click(function (e) {
     if (!$(e.target).is('.map-bg , .map-bg *')) {
         $(".map-popup").addClass("hide");
-        console.log("hhhhhhhhhhh");
+        // console.log("hhhhhhhhhhh");
     }
 });

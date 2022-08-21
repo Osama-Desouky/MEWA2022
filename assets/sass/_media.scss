@@ -31,11 +31,12 @@
   }
   .MainHeader {
     .owl-nav {
+      
       max-width: 1330px;
       // background: red;
       width: 100%;
       margin: 0 auto !important;
-      display: flex;
+      display: none;
       #{$end-direction}: 50%;
       transform: translateX(-50%);
     }
