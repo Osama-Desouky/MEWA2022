@@ -2,9 +2,9 @@ body {
   font-family: "SSTRoman";
   background-color: $backgroundf3f6fb;
 }
-html {
-  font-size: 62.5%;
-}
+// html {
+//   font-size: 62.5%;
+// }
 /* global */
 .btnSmall {
   border: unset;
@@ -13,7 +13,7 @@ html {
   padding: 5px 10px;
   min-height: 36px;
   font-family: 'SSTMedium';
-  font-size: 18px;
+  font-size: 1.125rem;;
   color: #727F7C;
   transition: .2s;
 }
@@ -40,7 +40,7 @@ html {
     border-radius: 6px;
     box-shadow: 0 3px 15px #00000017;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;;
     &:hover {
       background: #008941;
       color: #fff;
@@ -52,7 +52,7 @@ html {
     max-width: 25px;
   }
   span {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #32383d;
     margin-#{$start-direction}: 8px;
   }
@@ -92,7 +92,7 @@ html {
   min-height: 38px;
   margin: 0;
   span {
-    font-size: 14px;
+    font-size: 0.875rem;
     // color: #fff;
     color: $Blue003462;
     white-space: nowrap;
@@ -139,12 +139,12 @@ html {
     margin-#{$start-direction}: 25px;
   }
   span {
-    font-size: 16px;
+    font-size: 1rem;;
     color: #fff;
   }
 }
 .headingArrow {
-  font-size: 25px;
+  font-size: 1.5625rem;;
   font-weight: bold;
   padding-#{$start-direction}: 40px;
   color: $blue041A2D;
@@ -164,23 +164,23 @@ a {
   text-decoration: none;
 }
 .font35pxBold {
-  font-size: 35px;
+  font-size: 2.1875rem;
   font-weight: bold;
   color: $blue041A2D;
 }
 .font18P {
-  font-size: 18px;
+  font-size: 1.125rem;;
   color: #32383d;
   line-height: 1.8;
 }
 .font16Roma {
-  font-size: 16px;
+  font-size: 1rem;;
   color: #fff;
   font-family: "SSTRoman";
 }
 
 .font20Bold {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #fff;
   font-family: "SSTBold";
 }
@@ -218,11 +218,11 @@ a {
     height: 100%;
     width: 80%;
     border: unset;
-    font-size: 16px;
+    font-size: 1rem;;
     font-family: "SSTRoman";
     color: #727f7c;
     &::placeholder {
-      font-size: 16px;
+      font-size: 1rem;;
       font-family: "SSTRoman";
       color: #727f7c;
     }
@@ -255,7 +255,7 @@ a {
     }
     .nav-link {
       border: unset;
-      font-size: 18px;
+      font-size: 1.125rem;;
       font-weight: bold;
       background: #e0e5e9;
       padding: 9px 40px 13px 40px;
@@ -302,12 +302,12 @@ a {
         padding-#{$start-direction}: 24px;
         a {
           color: #fff;
-          font-size: 14px;
+          font-size: 0.875rem;
           display: flex;
           align-items: center;
           span {
             color: #fff;
-            font-size: 14px;
+            font-size: 0.875rem;
             padding-#{$start-direction}: 8px;
             font-family: "SSTRoman";
           }
@@ -322,7 +322,7 @@ a {
           }
           strong {
             font-family: "SSTBold";
-            font-size: 18px;
+            font-size: 1.125rem;;
             color: $green63BE6A;
             padding: 0 10px;
           }
@@ -415,7 +415,7 @@ a {
         margin: 0;
         display: flex;
         align-items: center;
-        font-size: 16px;
+        font-size: 1rem;;
         color: $Blue003462;
         font-family: "SSTMedium";
         &:hover {
@@ -459,7 +459,7 @@ a {
       padding-#{$start-direction}: 60px;
       margin-top: 38px;
       h4 {
-        font-size: 20px;
+        font-size: 1.25rem;
         color: $Blue003462;
         font-family: "SSTRoman";
         margin-bottom: 20px;
@@ -475,7 +475,7 @@ a {
         li {
           a {
             color: $Blue003462;
-            font-size: 16px;
+            font-size: 1rem;;
             font-family: "SSTRoman";
             margin-bottom: 4px;
             display: flex;
@@ -495,7 +495,7 @@ a {
     }
     .dropdown-menu {
       div[class*="col"] {
-        margin-bottom: 1rem;
+        margin-bottom: 10px;
       }
     }
   }
@@ -538,8 +538,8 @@ a {
     padding-bottom: 0px;
     position: unset;
     .nav-item {
-      padding: 0.5rem 0.5rem;
-      margin: 0 0.25rem;
+      padding: 5px;
+      margin: 0 2.5px;
     }
     .dropdown {
       position: static;
@@ -603,7 +603,7 @@ footer {
       .searchInput {
         background: transparent;
         color: #a3b2af;
-        font-size: 16px;
+        font-size: 1rem;;
         &::placeholder {
           color: #a3b2af;
         }
@@ -636,7 +636,7 @@ footer {
     }
     .footerLinks {
       h4 {
-        font-size: 25px;
+        font-size: 1.5625rem;;
         color: $green63BE6A;
         font-family: "SSTBold";
         margin-bottom: 26px;
@@ -678,7 +678,7 @@ footer {
               span {
                 // font-weight: bold;
                 strong {
-                  font-size: 18px;
+                  font-size: 1.125rem;;
                 }
               }
             }
@@ -693,7 +693,7 @@ footer {
     p {
       @extend .font16Roma;
       margin: 0;
-      font-size: 15px;
+      font-size: 0.9375rem;
       margin-#{$start-direction}: 8px;
     }
   }
@@ -710,7 +710,7 @@ footer {
       li {
         margin-#{$end-direction}: 8px;
         @extend .font16Roma;
-        font-size: 15px;
+        font-size: 0.9375rem;
       }
     }
   }
@@ -735,7 +735,7 @@ footer {
       display: flex;
       li {
         @extend .font16Roma;
-        font-size: 15px;
+        font-size: 0.9375rem;
         &:first-of-type {
           margin-#{$end-direction}: 62px;
         }
@@ -748,7 +748,7 @@ footer {
         }
         a {
           @extend .font16Roma;
-          font-size: 15px;
+          font-size: 0.9375rem;
           margin-#{$end-direction}: 46px;
           position: relative;
           &::after {
@@ -844,7 +844,7 @@ footer {
       width: 32%;
       margin-top: 182px;
       h1 {
-        font-size: 58px;
+        font-size: 3.625rem;
         font-weight: bold;
         color: #fff;
         margin-bottom: 20px;
@@ -859,7 +859,7 @@ footer {
         border: 3px solid #fff;
         padding: 13px 20px;
         span {
-          font-size: 20px;
+          font-size: 1.25rem;
         }
       }
     }
@@ -1047,7 +1047,7 @@ footer {
     }
     .boxTextHN {
       h2 {
-        font-size: 35px;
+        font-size: 2.1875rem;
         font-weight: bold;
         margin-bottom: 22px;
         // margin-top: 20px;
@@ -1058,14 +1058,14 @@ footer {
         justify-content: space-between;
         .date {
           span {
-            font-size: 14px;
+            font-size: 0.875rem;
             color: $Blue003462;
             margin-#{$start-direction}: 8px;
           }
         }
         .moreHn {
           span {
-            font-size: 18px;
+            font-size: 1.125rem;;
             color: $Blue003462;
             margin-#{$end-direction}: 8px;
           }
@@ -1082,7 +1082,7 @@ footer {
         padding: 13px 18px;
         span {
           color: $Blue003462;
-          font-size: 20px;
+          font-size: 1.25rem;
           margin-top: -4px;
         }
       }
@@ -1142,7 +1142,7 @@ footer {
     margin-top: -12px;
   }
   span {
-    font-size: 16px;
+    font-size: 1rem;;
     font-weight: 600;
     color: $Blue003462;
     margin-top: 15px;
@@ -1181,7 +1181,7 @@ footer {
   }
   .font35pxBold {
     color: $Blue003462;
-    font-size: 45px;
+    font-size: 2.8125rem;
     text-align: center;
     margin-top: 65px;
     margin-bottom: 10px;
@@ -1211,7 +1211,7 @@ footer {
         filter: brightness(0) invert(1);
       }
       h3 {
-        font-size: 20px;
+        font-size: 1.25rem;
         color: #fff;
         margin-top: 2px;
         transition: 0.25s;
@@ -1233,7 +1233,7 @@ footer {
       object-fit: scale-down;
     }
     h3 {
-      font-size: 20px;
+      font-size: 1.25rem;
       color: $blue041A2D;
       margin-top: 30px;
       font-weight: bold;
@@ -1258,7 +1258,7 @@ footer {
           background-size: 100%;
         }
         span {
-          font-size: 16px;
+          font-size: 1rem;;
           color: #fff;
         }
       }
@@ -1321,7 +1321,7 @@ footer {
         }
 
         p {
-          font-size: 16px;
+          font-size: 1rem;;
           color: #fff;
           margin: 0;
         }
@@ -1362,7 +1362,7 @@ footer {
       #{$end-direction}: 16px;
       top: 16px;
       background: #2c7857;
-      font-size: 14px;
+      font-size: 0.875rem;
       font-weight: 600;
       padding: 5px 10px;
       border-radius: 8px;
@@ -1384,7 +1384,7 @@ footer {
         height: 75px;
         line-height: 34px;
         overflow: hidden;
-        font-size: 20px;
+        font-size: 1.25rem;
         margin-bottom: 19px;
       }
       .locationDate {
@@ -1438,13 +1438,13 @@ footer {
           justify-content: center;
           flex-direction: column;
           strong {
-            font-size: 40px;
+            font-size: 2.5rem;
             font-weight: bold;
             color: #fff;
           }
           span {
             color: #fff;
-            font-size: 16px;
+            font-size: 1rem;;
             font-weight: 600;
             margin-top: 5px;
           }
@@ -1598,7 +1598,7 @@ footer {
         }
       }
       .titleNews {
-        font-size: 19px;
+        font-size: 1.1875rem;
         color: #32383d;
         font-weight: 600;
         height: 73px;
@@ -1613,7 +1613,7 @@ footer {
           display: flex;
           align-items: center;
           span {
-            font-size: 16px;
+            font-size: 1rem;;
             color: $Blue003462;
             font-weight: 600;
           }
@@ -1702,14 +1702,14 @@ footer {
         max-height: 110px;
       }
       .counter {
-        font-size: 32px;
+        font-size: 2rem;
         font-weight: bold;
         // color: rgb(255, 255, 255);
         color: $Blue003462;
         margin: 19px 0px 8px;
       }
       .counterTxt {
-        font-size: 20px;
+        font-size: 1.25rem;
         // color: #fff;
         color: $darkBlue;
         width: 75%;
@@ -1839,7 +1839,7 @@ footer {
           padding: 24px 16px;
           color: $Blue003462;
           font-weight: bold;
-          font-size: 28px;
+          font-size: 1.75rem;
           text-align: center;
           line-height: 35px;
           margin: 0;
@@ -1893,7 +1893,7 @@ footer {
   border-radius: 32px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   p {
-    font-size: 18px;
+    font-size: 1.125rem;;
     color: #32383d;
     margin: 0;
     text-align: #{$start-direction};
@@ -1953,7 +1953,7 @@ footer {
     }
     .ADBoxTxt {
       h1 {
-        font-size: 22px;
+        font-size: 1.375rem;
         font-weight: bold;
         color: #fff;
         text-align: center;
@@ -2033,7 +2033,7 @@ footer {
   background-color: #edf0f5;
   padding: 73px 0 55px;
   .headingTeT {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: bold;
     text-align: center;
     margin-bottom: 22px;
@@ -2056,7 +2056,7 @@ footer {
       margin-#{$end-direction}: 10px;
       transition: 0.25s;
       span {
-        font-size: 18px;
+        font-size: 1.125rem;;
         font-weight: 600;
         color: $Blue003462;
         margin-#{$start-direction}: 8px;
@@ -2105,7 +2105,7 @@ footer {
           border-radius: 6px;
         }
         a {
-          font-size: 16px;
+          font-size: 1rem;;
           font-weight: bold;
           color: $grayColor;
           &:hover {
@@ -2165,9 +2165,9 @@ footer {
   .breadcrumb {
     margin-bottom: 20px;
     li {
-      font-size: 14px;
+      font-size: 0.875rem;
       a {
-        font-size: 14px;
+        font-size: 0.875rem;
         color: $Blue003462;
       }
       &:last-of-type {
@@ -2285,7 +2285,7 @@ footer {
         li {
           a {
             background: #ddeee5;
-            font-size: 16px;
+            font-size: 1rem;;
             font-weight: bold;
             color: #239157;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -2330,7 +2330,7 @@ footer {
     }
     strong,
     a span {
-      font-size: 16px;
+      font-size: 1rem;;
       font-weight: bold;
       font-family: 'SSTBold';
     }
@@ -2359,7 +2359,7 @@ footer {
     padding: 12px 30px;
     border-radius: 50px;
     border: unset;
-    font-size: 18px;
+    font-size: 1.125rem;;
     font-weight: 500;
     color: $grayColor;
     min-width: 150px;
@@ -2390,14 +2390,14 @@ footer {
     height: 110px;
       }
       h5 {
-        font-size: 32px;
+        font-size: 2rem;
         font-weight: bold;
         color: $Blue003462;
         margin: 0;
         padding: 30px 0 12px 0;
       }
       span {
-        font-size: 20px;
+        font-size: 1.25rem;
       color: $darkBlue;
       }
     }
@@ -2420,12 +2420,12 @@ footer {
     margin: 0;
     strong {
       color: #32383D;
-      font-size: 16px;
+      font-size: 1rem;;
       font-weight: bold;
       margin-#{$end-direction}: 10px;
     }
     span {
-      font-size: 16px;
+      font-size: 1rem;;
     color: #727F7C;
     }
   }
@@ -2448,7 +2448,7 @@ footer {
     margin-bottom: 46px;
     .right {
       strong {
-        font-size: 2rem;
+        font-size: 1.25rem;
         padding: 0 23px;
         font-weight: bold;
       }
@@ -2461,7 +2461,7 @@ footer {
       p {
         margin: 0;
         margin-#{$end-direction}: 20px;
-        font-size: 18px;
+        font-size: 1.125rem;;
         color: #32383D;
         .number {
           min-width: 39px;
@@ -2496,7 +2496,7 @@ footer {
     }
     .sharePage {
       span {
-        font-size: 16px;
+        font-size: 1rem;;
     padding-#{$start-direction}: 6px;
     padding-#{$end-direction}: 5px;
     color: #727F7C;
@@ -2521,7 +2521,7 @@ footer {
   }
   .tagHeading {
     text-align: center;
-    font-size: 25px;
+    font-size: 1.5625rem;;
     font-weight: bold;
     color: $Blue003462;
     margin-bottom: 20px;
@@ -2555,7 +2555,7 @@ footer {
     transition: 0.25s;
     background: #fff;
     span {
-      font-size: 18px;
+      font-size: 1.125rem;;
       font-weight: 600;
       color: $Blue003462;
       margin-#{$start-direction}: 8px;
