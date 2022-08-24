@@ -1,5 +1,5 @@
 body {
-  font-family: "SSTRoman";
+  font-family: "SSTArabic";
   background-color: $backgroundf3f6fb;
 }
 // html {
@@ -12,7 +12,8 @@ body {
   min-width: 60px;
   padding: 5px 10px;
   min-height: 36px;
-  font-family: 'SSTMedium';
+  font-family: 'SSTArabic';
+  font-weight: $w-medium;
   font-size: 1.125rem;;
   color: #727F7C;
   transition: .2s;
@@ -176,13 +177,14 @@ a {
 .font16Roma {
   font-size: 1rem;;
   color: #fff;
-  font-family: "SSTRoman";
+  font-family: "SSTArabic";
 }
 
 .font20Bold {
   font-size: 1.25rem;
   color: #fff;
-  font-family: "SSTBold";
+  font-family: "SSTArabic";
+  font-weight: $w-bold;
 }
 .patternIcon {
   position: relative;
@@ -219,11 +221,12 @@ a {
     width: 80%;
     border: unset;
     font-size: 1rem;;
-    font-family: "SSTRoman";
+    font-family: "SSTArabic";
+    
     color: #727f7c;
     &::placeholder {
       font-size: 1rem;;
-      font-family: "SSTRoman";
+      font-family: "SSTArabic";
       color: #727f7c;
     }
   }
@@ -309,7 +312,7 @@ a {
             color: #fff;
             font-size: 0.875rem;
             padding-#{$start-direction}: 8px;
-            font-family: "SSTRoman";
+            font-family: "SSTArabic";
           }
         }
         &:first-of-type {
@@ -318,10 +321,12 @@ a {
         &.paddingGap {
           padding-#{$start-direction}: 60px;
           span {
-            font-family: "SSTMedium";
+            font-family: "SSTArabic";
+            font-weight: $w-medium;
           }
           strong {
-            font-family: "SSTBold";
+            font-family: "SSTArabic";
+            font-weight: $w-bold;
             font-size: 1.125rem;;
             color: $green63BE6A;
             padding: 0 10px;
@@ -417,7 +422,8 @@ a {
         align-items: center;
         font-size: 1rem;;
         color: $Blue003462;
-        font-family: "SSTMedium";
+        font-family: "SSTArabic";
+        font-weight: $w-medium;
         &:hover {
           background-color: #f2f5f8;
         }
@@ -461,7 +467,7 @@ a {
       h4 {
         font-size: 1.25rem;
         color: $Blue003462;
-        font-family: "SSTRoman";
+        font-family: "SSTArabic";
         margin-bottom: 20px;
         @extend .patternIcon;
         &::after {
@@ -476,7 +482,7 @@ a {
           a {
             color: $Blue003462;
             font-size: 1rem;;
-            font-family: "SSTRoman";
+            font-family: "SSTArabic";
             margin-bottom: 4px;
             display: flex;
             padding: 4px 12px;
@@ -638,7 +644,8 @@ footer {
       h4 {
         font-size: 1.5625rem;;
         color: $green63BE6A;
-        font-family: "SSTBold";
+        font-family: "SSTArabic";
+        font-weight: $w-bold;
         margin-bottom: 26px;
       }
       ul {
@@ -2332,7 +2339,8 @@ footer {
     a span {
       font-size: 1rem;;
       font-weight: bold;
-      font-family: 'SSTBold';
+      font-family: 'SSTArabic';
+      font-weight: $w-bold;
     }
     strong {
       color: #32383D;
@@ -2616,7 +2624,7 @@ iframe .timeline-Viewport::-webkit-scrollbar-thumb:hover {
   background: #012444;
 }
 h2, h3, .ms-h2, .ms-h3, .ms-headerFont {
-  font-family: "SSTRoman";
+  font-family: "SSTArabic";
 }
 // backend asked to do this
 .mostTwt .twitter-timeline {

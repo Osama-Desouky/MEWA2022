@@ -1,25 +1,25 @@
 /*** RTL websites ***/
 @font-face {
-  font-family: "SSTLight";
+  font-family: "SSTArabic";
   src: url("../fonts/SST Arabic Light.ttf");
 }
 
 @font-face {
-  font-family: "SSTRoman";
+  font-family: "SSTArabic";
   src: url("../fonts/SST Arabic Roman.ttf");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "SSTMedium";
+  font-family: "SSTArabic";
   src: url("../fonts/SST Arabic Medium.ttf");
-  font-weight: 400;
+  font-weight: 500;
 }
 
 @font-face {
-  font-family: "SSTBold";
+  font-family: "SSTArabic";
   src: url("../fonts/SST Arabic Bold.ttf");
-  font-weight: 400;
+  font-weight: 700;
 }
 
 @font-face {
@@ -29,13 +29,13 @@
 }
 
 body {
-  font-family: "SSTRoman";
+  font-family: "SSTArabic";
   direction: rtl;
   text-align: right;
 }
 
 html[dir="rtl"] body {
-  font-family: "SSTRoman";
+  font-family: "SSTArabic";
 }
 
 *,
@@ -148,7 +148,7 @@ ol li {
 }
 
 body {
-  font-family: "SSTRoman";
+  font-family: "SSTArabic";
   background-color: #f3f6fb;
 }
 
@@ -159,7 +159,8 @@ body {
   min-width: 60px;
   padding: 5px 10px;
   min-height: 36px;
-  font-family: 'SSTMedium';
+  font-family: 'SSTArabic';
+  font-weight: 500;
   font-size: 1.125rem;
   color: #727F7C;
   -webkit-transition: .2s;
@@ -361,13 +362,14 @@ a {
 .font16Roma, footer .row .footerLinks ul li a, footer .lastUpdate p, footer .websiteSupport ul li, footer .reservedBar ul li, footer .reservedBar ul li a, .MainHeader .boxHeader .headerText p, .servicesBg .sevBob .servMore span {
   font-size: 1rem;
   color: #fff;
-  font-family: "SSTRoman";
+  font-family: "SSTArabic";
 }
 
 .font20Bold, footer .row .logoFooter h4 {
   font-size: 1.25rem;
   color: #fff;
-  font-family: "SSTBold";
+  font-family: "SSTArabic";
+  font-weight: 700;
 }
 
 .patternIcon, .menuBg .navbarCustom .colMenu h4, .servicesBg .sevBob:hover h3 {
@@ -416,31 +418,31 @@ a {
   width: 80%;
   border: unset;
   font-size: 1rem;
-  font-family: "SSTRoman";
+  font-family: "SSTArabic";
   color: #727f7c;
 }
 
 .SearchCustom .searchInput::-webkit-input-placeholder {
   font-size: 1rem;
-  font-family: "SSTRoman";
+  font-family: "SSTArabic";
   color: #727f7c;
 }
 
 .SearchCustom .searchInput:-ms-input-placeholder {
   font-size: 1rem;
-  font-family: "SSTRoman";
+  font-family: "SSTArabic";
   color: #727f7c;
 }
 
 .SearchCustom .searchInput::-ms-input-placeholder {
   font-size: 1rem;
-  font-family: "SSTRoman";
+  font-family: "SSTArabic";
   color: #727f7c;
 }
 
 .SearchCustom .searchInput::placeholder {
   font-size: 1rem;
-  font-family: "SSTRoman";
+  font-family: "SSTArabic";
   color: #727f7c;
 }
 
@@ -562,7 +564,7 @@ a {
   color: #fff;
   font-size: 0.875rem;
   padding-right: 8px;
-  font-family: "SSTRoman";
+  font-family: "SSTArabic";
 }
 
 .navBar .linksNB ul li:first-of-type {
@@ -574,11 +576,13 @@ a {
 }
 
 .navBar .linksNB ul li.paddingGap span {
-  font-family: "SSTMedium";
+  font-family: "SSTArabic";
+  font-weight: 500;
 }
 
 .navBar .linksNB ul li.paddingGap strong {
-  font-family: "SSTBold";
+  font-family: "SSTArabic";
+  font-weight: 700;
   font-size: 1.125rem;
   color: #63BE6A;
   padding: 0 10px;
@@ -698,7 +702,8 @@ a {
           align-items: center;
   font-size: 1rem;
   color: #003462;
-  font-family: "SSTMedium";
+  font-family: "SSTArabic";
+  font-weight: 500;
 }
 
 .menuBg .navbarCustom .nav-item .nav-link:hover {
@@ -746,7 +751,7 @@ a {
 .menuBg .navbarCustom .colMenu h4 {
   font-size: 1.25rem;
   color: #003462;
-  font-family: "SSTRoman";
+  font-family: "SSTArabic";
   margin-bottom: 20px;
 }
 
@@ -763,7 +768,7 @@ a {
 .menuBg .navbarCustom .colMenu ul li a {
   color: #003462;
   font-size: 1rem;
-  font-family: "SSTRoman";
+  font-family: "SSTArabic";
   margin-bottom: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -941,7 +946,8 @@ footer .row .socialIcon li a img {
 footer .row .footerLinks h4 {
   font-size: 1.5625rem;
   color: #63BE6A;
-  font-family: "SSTBold";
+  font-family: "SSTArabic";
+  font-weight: 700;
   margin-bottom: 26px;
 }
 
@@ -2895,7 +2901,8 @@ footer .reservedBar ul li a::after {
 .alertInfo .boxAlert a span {
   font-size: 1rem;
   font-weight: bold;
-  font-family: 'SSTBold';
+  font-family: 'SSTArabic';
+  font-weight: 700;
 }
 
 .alertInfo .boxAlert strong {
@@ -3247,7 +3254,7 @@ iframe .timeline-Viewport::-webkit-scrollbar-thumb:hover {
 }
 
 h2, h3, .ms-h2, .ms-h3, .ms-headerFont {
-  font-family: "SSTRoman";
+  font-family: "SSTArabic";
 }
 
 .mostTwt .twitter-timeline {
@@ -4427,6 +4434,178 @@ p + p.main-p {
 .arrowz-news .owl-carousel .owl-nav button.disabled {
   opacity: 0.5;
   cursor: auto;
+}
+
+.page-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 0 80px;
+  position: relative;
+}
+
+.pagination {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.pagination li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 5px;
+  margin: 0 2.5px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #727F7C;
+}
+
+.pagination li a.Disabled {
+  cursor: unset;
+  opacity: 0.5;
+}
+
+.pagination li a.current {
+  background-color: #63BE6A;
+  color: #fff;
+  cursor: unset;
+}
+
+.pagination li a.NextPagi, .pagination li a.prePagi {
+  background-color: transparent;
+  border: 0;
+}
+
+.pagination-count {
+  position: absolute;
+  left: 0;
+  top: 25%;
+}
+
+.pagination-count span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #727F7C;
+  margin-left: 10px;
+}
+
+.pagination-count span.number {
+  min-width: 34px;
+  height: 34px;
+  padding: 0 5px;
+  color: #008941;
+  background-color: #E6E9EF;
+  border-radius: 6px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pagination-count span:last-child {
+  margin-left: 0;
+}
+
+.media-center-list .media-card {
+  height: 360px;
+  background-color: #fff;
+  margin-bottom: 40px;
+}
+
+.media-center-list .media-card .img-box {
+  overflow: hidden;
+  position: relative;
+  height: 247px;
+}
+
+.media-center-list .media-card .img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.media-center-list .media-card .img-box::before {
+  position: absolute;
+  content: '';
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.media-center-list .media-card .content-box {
+  background-color: #fff;
+  padding: 19px 16px;
+  height: 113px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.media-center-list .media-card .content-box h3 {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  color: #32383D;
+  text-align: center;
+  margin-bottom: 0;
+  line-height: 27px;
+  max-height: calc(27px * 2);
+  overflow: hidden;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.media-center-list .media-card.vid .img-box::before {
+  background-image: url(../images/shared/playVideoGreen.svg);
+}
+
+.media-center-list .media-card:hover .img-box img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.media-center-list .media-card:hover .content-box h3 {
+  color: #003462;
 }
 
 .mt-70 {
