@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37.323" height="37.293" viewBox="0 0 37.323 37.293">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2.543px;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="key_shadow_copy_10" data-name="key shadow copy 10" class="cls-1" d="M1033.48,3297.81a17.38,17.38,0,1,0,17.38-17.38A17.376,17.376,0,0,0,1033.48,3297.81Z" transform="translate(-1032.198 -3279.168)"/>
+  <path id="Rectangle_74_copy_10" data-name="Rectangle 74 copy 10" class="cls-2" d="M1052.97,3302.48l-5.07-4.66,5.07-4.66" transform="translate(-1032.198 -3279.168)"/>
+</svg>
