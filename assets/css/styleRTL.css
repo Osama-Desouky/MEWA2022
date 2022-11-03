@@ -4637,6 +4637,234 @@ p + p.main-p {
   }
 }
 
+.table-head {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #041A2D;
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.mezanya-main {
+  padding-top: 43px;
+  padding-bottom: 127px;
+}
+
+.mezanya-main .table-head {
+  margin-bottom: 46px;
+}
+
+.mezanya-archive {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  min-height: 775px;
+  background-color: #E1EBF7;
+}
+
+.mezanya-archive .noData-box {
+  margin-top: 119px;
+}
+
+.data-archive {
+  padding-top: 55px;
+  padding-bottom: 100px;
+  min-height: 550px;
+}
+
+.data-archive .noData-box {
+  margin-top: 77px;
+}
+
+.mezanya-box {
+  margin-top: 42px;
+  text-align: center;
+}
+
+.mezanya-box h4 {
+  font-size: 1.5625rem;
+  font-weight: 700;
+  color: #041A2D;
+  margin-bottom: 22px;
+  line-height: 49px;
+}
+
+.mezanya-box p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #32383D;
+  margin-bottom: 34px;
+}
+
+.mezanya-box a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 27px;
+  padding-right: 35px;
+  padding-left: 43px;
+  background-color: #fff;
+  border-radius: 18px;
+  border: 1px solid #D9DFE6;
+  -webkit-filter: drop-shadow(0 5px 45px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0 5px 45px rgba(0, 0, 0, 0.1));
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.mezanya-box a img {
+  width: 28px;
+  height: 31px;
+  margin-left: 25px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.mezanya-box a span {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #646D75;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.mezanya-box a:hover {
+  background-color: #003462;
+}
+
+.mezanya-box a:hover img {
+  -webkit-filter: brightness(5);
+          filter: brightness(5);
+}
+
+.mezanya-box a:hover span {
+  color: #fff;
+}
+
+table.table caption {
+  text-align: center;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  height: 65px;
+  padding: 15px;
+}
+
+table.table caption.bg-blue {
+  background-color: #4789C8;
+}
+
+table.table caption.bg-green {
+  background-color: #63BE6A;
+}
+
+table.table tbody, table.table td, table.table tfoot, table.table th, table.table thead, table.table tr {
+  border-color: #fff;
+}
+
+table.table thead {
+  background-color: #003462;
+}
+
+table.table thead tr {
+  border-top: none;
+}
+
+table.table thead tr th {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  height: 65px;
+  vertical-align: middle;
+  border-top: none;
+}
+
+table.table tbody {
+  background-color: #fff;
+}
+
+table.table tbody td {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #32383D;
+  text-align: center;
+  height: 65px;
+  vertical-align: middle;
+}
+
+.select-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 42px;
+}
+
+.select-box select {
+  width: 480px;
+  font-size: 22px;
+  font-weight: 700;
+  border: 1px solid #ADC8BA;
+  border-radius: 12px;
+  height: 70px;
+  background-image: url(../images/shared/select-arr.svg);
+  background-repeat: no-repeat;
+  background-position: 3% 55%;
+  padding-right: 18px;
+  padding-left: 40px;
+}
+
+.select-box select:focus {
+  border: 1px solid #ADC8BA;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.noData-box {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid #D9DFE6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 16px;
+  max-width: 855px;
+  padding: 43px 50px 48px;
+  margin: 0 auto;
+}
+
+.noData-box img {
+  width: 37px;
+  height: 37px;
+}
+
+.noData-box p {
+  margin-top: 20px;
+  font-size: 1.375rem;
+  font-weight: 500;
+  color: #727F7C;
+}
+
 @media (min-width: 993px) and (max-width: 1600px) {
   .menuBg .navbarCustom .nav-item {
     padding: 0;
