@@ -4746,7 +4746,7 @@ p + p.main-p {
   color: #fff;
 }
 
-table.table caption {
+table caption {
   text-align: center;
   color: #fff;
   font-size: 1.25rem;
@@ -4755,27 +4755,27 @@ table.table caption {
   padding: 15px;
 }
 
-table.table caption.bg-blue {
+table caption.bg-blue {
   background-color: #4789C8;
 }
 
-table.table caption.bg-green {
+table caption.bg-green {
   background-color: #63BE6A;
 }
 
-table.table tbody, table.table td, table.table tfoot, table.table th, table.table thead, table.table tr {
+table tbody, table td, table tfoot, table th, table thead, table tr {
   border-color: #fff;
 }
 
-table.table thead {
+table thead {
   background-color: #003462;
 }
 
-table.table thead tr {
+table thead tr {
   border-top: none;
 }
 
-table.table thead tr th {
+table thead tr th {
   font-size: 1rem;
   font-weight: 700;
   color: #fff;
@@ -4785,17 +4785,30 @@ table.table thead tr th {
   border-top: none;
 }
 
-table.table tbody {
+table tbody {
   background-color: #fff;
 }
 
-table.table tbody td {
+table tbody tr:first-child {
+  background-color: #003462;
+  border-top: 0;
+}
+
+table tbody tr:first-child td, table tbody tr:first-child th {
+  color: #fff;
+  border: 1px solid #fff;
+  border-top: 0;
+  text-align: center;
+  height: 65px;
+}
+
+table tbody td {
   font-size: 1rem;
   font-weight: 500;
   color: #32383D;
   text-align: center;
   height: 65px;
-  vertical-align: middle;
+  vertical-align: middle !important;
 }
 
 .select-box {

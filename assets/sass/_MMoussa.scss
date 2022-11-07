@@ -1279,7 +1279,7 @@ p + p.main-p{
 
   }
   
-  table.table{
+  table{
       caption{
         text-align: center;
         color: #fff;
@@ -1315,13 +1315,26 @@ p + p.main-p{
     }
     tbody{
         background-color: #fff;
+        tr{
+            &:first-child{
+                background-color: #003462;
+                border-top: 0;
+                td,th{
+                    color: #fff;
+                    border: 1px solid #fff;
+                    border-top: 0;
+                    text-align: center;
+                    height: 65px;
+                }
+            }
+        }
         td{
             font-size: 1rem;
             font-weight: $w-medium;
             color: $darkBlue;
             text-align: center;
             height: 65px;
-            vertical-align: middle;
+            vertical-align: middle !important;
         }
     }
   }
