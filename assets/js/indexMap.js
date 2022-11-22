@@ -3,6 +3,24 @@ $(".navigation-links a").on("click", function () {
     $(".navigation-links a").removeClass("active")
     $(this).addClass("active");
     $(".map-popup").addClass("hide");
+    if( $("#location").hasClass("active")){
+      $(".locations-section").removeClass("d-none")
+      // $(".locations-section").addClass("d-block")
+      $(".braches-section").addClass("d-none")
+      $(".services-section").addClass("d-none")
+    }
+    else if( $("#branch").hasClass("active")){
+      $(".braches-section").removeClass("d-none")
+      // $(".locations-section").addClass("d-block")
+      $(".locations-section").addClass("d-none")
+      $(".services-section").addClass("d-none")
+    }
+    else if( $("#service").hasClass("active")){
+      $(".services-section").removeClass("d-none")
+      // $(".locations-section").addClass("d-block")
+      $(".locations-section").addClass("d-none")
+      $(".braches-section").addClass("d-none")
+    }
   })
 
 

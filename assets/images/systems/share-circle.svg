@@ -1,0 +1,26 @@
+<svg id="share-circle" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <g id="Rectangle_15531" data-name="Rectangle 15531" fill="none" stroke="#239157" stroke-width="1.5">
+    <rect width="36" height="36" rx="18" stroke="none"/>
+    <rect x="0.75" y="0.75" width="34.5" height="34.5" rx="17.25" fill="none"/>
+  </g>
+  <g id="Page-1" transform="translate(8.999 9)">
+    <g id="Icon-Set">
+      <g id="icon">
+        <g id="Ellipse_9920" data-name="Ellipse 9920" transform="translate(0 6)" fill="none" stroke="#239157" stroke-width="1.5">
+          <circle cx="3.5" cy="3.5" r="3.5" stroke="none"/>
+          <circle cx="3.5" cy="3.5" r="2.75" fill="none"/>
+        </g>
+        <g id="Ellipse_9921" data-name="Ellipse 9921" transform="translate(11)" fill="none" stroke="#239157" stroke-width="1.5">
+          <circle cx="3.5" cy="3.5" r="3.5" stroke="none"/>
+          <circle cx="3.5" cy="3.5" r="2.75" fill="none"/>
+        </g>
+        <g id="Ellipse_9922" data-name="Ellipse 9922" transform="translate(11 12)" fill="none" stroke="#239157" stroke-width="1.5">
+          <circle cx="3.5" cy="3.5" r="3.5" stroke="none"/>
+          <circle cx="3.5" cy="3.5" r="2.75" fill="none"/>
+        </g>
+        <line id="Line_8610" data-name="Line 8610" y1="3" x2="6" transform="translate(5.5 4.5)" fill="none" stroke="#239157" stroke-width="1.5"/>
+        <line id="Line_8611" data-name="Line 8611" x2="6" y2="3.5" transform="translate(5.5 11)" fill="none" stroke="#239157" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>
