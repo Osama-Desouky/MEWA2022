@@ -1874,3 +1874,46 @@ p + p.main-p{
         }
     }
   }
+
+
+
+  .shared-dev{
+    .main-top{
+        h2.with-arrow{
+            font-size: 1.5625rem;
+            color: $blue041A2D;
+            font-weight: $w-bold;
+            // line-height: 50px;
+            margin-bottom: 24px;
+        }
+        p{
+            font-size: 1rem;
+            font-weight: $w-medium;
+            color: $darkBlue;
+            margin-bottom: 24px;
+            line-height: 36px;
+        }
+    }
+    .top-list-sec{
+        margin-top: 50px;
+        margin-bottom: 100px;
+        h2{
+            font-size: 1.875rem;
+            font-weight: $w-bold;
+            color: $blue041A2D;
+            text-align: center;
+            margin-bottom: 22px;
+            
+        }
+        p{
+            font-size: 1rem;
+            font-weight: $w-medium;
+            color: $darkBlue;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+    }
+        .shred-dev-card{
+
+    }
+  }

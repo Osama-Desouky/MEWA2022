@@ -5481,6 +5481,42 @@ p + p.main-p {
   color: #fff;
 }
 
+.shared-dev .main-top h2.with-arrow {
+  font-size: 1.5625rem;
+  color: #041A2D;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.shared-dev .main-top p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #32383D;
+  margin-bottom: 24px;
+  line-height: 36px;
+}
+
+.shared-dev .top-list-sec {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.shared-dev .top-list-sec h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #041A2D;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.shared-dev .top-list-sec p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #32383D;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
 @media (min-width: 993px) and (max-width: 1600px) {
   .menuBg .navbarCustom .nav-item {
     padding: 0;
