@@ -5509,6 +5509,146 @@ p.p-20 {
   margin-bottom: 0px;
 }
 
+@-webkit-keyframes come-down {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes come-down {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes line-main {
+  0% {
+    height: 0;
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100% {
+    height: 400px;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes line-main {
+  0% {
+    height: 0;
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100% {
+    height: 400px;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes showMe {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showMe {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes line-sub1 {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 105px;
+    opacity: 1;
+  }
+}
+
+@keyframes line-sub1 {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 105px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes circled-lines {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    height: 255px;
+  }
+}
+
+@keyframes circled-lines {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    height: 255px;
+  }
+}
+
+@-webkit-keyframes line-sub2 {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    height: 260px;
+    opacity: 1;
+  }
+}
+
+@keyframes line-sub2 {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    height: 260px;
+    opacity: 1;
+  }
+}
+
 .org-chart {
   position: relative;
   min-height: 1400px;
@@ -5520,6 +5660,8 @@ p.p-20 {
   color: #003462;
   text-align: center;
   margin-bottom: 50px;
+  -webkit-animation: come-down 0.5s ease-in-out 0s forwards;
+          animation: come-down 0.5s ease-in-out 0s forwards;
 }
 
 .org-chart .main-sec-chart {
@@ -5538,20 +5680,24 @@ p.p-20 {
   border: 1px solid #AEBDCB;
   height: 400px;
   z-index: 0;
+  opacity: 0;
+  -webkit-animation: line-main 0.7s ease-in-out 0.5s forwards;
+          animation: line-main 0.7s ease-in-out 0.5s forwards;
 }
 
 .org-chart .main-sec-chart::after {
   content: "";
   position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
+  left: calc(50% - 5px);
   top: 475px;
   width: 11px;
   height: 11px;
   background-color: #4789C8;
   z-index: 3;
   border-radius: 50%;
+  opacity: 0;
+  -webkit-animation: showMe 0.7s ease-in-out 1s forwards;
+          animation: showMe 0.7s ease-in-out 1s forwards;
 }
 
 .org-chart .main-sec-chart .saudi-logo {
@@ -5559,10 +5705,11 @@ p.p-20 {
   border-radius: 8px;
   width: 80px;
   height: 80px;
-  left: 50%;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
+  left: calc(50% - 40px);
   top: 0;
+  opacity: 0;
+  -webkit-animation: come-down 0.5s ease-in-out 0.5s forwards;
+          animation: come-down 0.5s ease-in-out 0.5s forwards;
 }
 
 .org-chart .main-sec-chart .saudi-head {
@@ -5585,10 +5732,11 @@ p.p-20 {
           justify-content: center;
   -webkit-box-shadow: 0 10px 30px rgba(0, 52, 98, 0.7);
           box-shadow: 0 10px 30px rgba(0, 52, 98, 0.7);
-  left: 50%;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
+  left: calc(50% - 232.5px);
   top: 105px;
+  opacity: 0;
+  -webkit-animation: come-down 0.5s ease-in-out 0.5s forwards;
+          animation: come-down 0.5s ease-in-out 0.5s forwards;
 }
 
 .org-chart .level-one {
@@ -5620,6 +5768,9 @@ p.p-20 {
   -webkit-transition: 500ms;
   transition: 500ms;
   position: absolute;
+  opacity: 0;
+  -webkit-animation: showMe 0.7s ease-in-out .8s forwards;
+          animation: showMe 0.7s ease-in-out .8s forwards;
 }
 
 .org-chart .level-one a:hover {
@@ -5635,12 +5786,15 @@ p.p-20 {
 
 .org-chart .level-one a.level-one-R1::before {
   content: "";
-  width: 142px;
+  width: 105px;
   height: 2px;
   border: 1px solid #AEBDCB;
   position: absolute;
   left: 101%;
   top: 37px;
+  opacity: 0;
+  -webkit-animation: line-sub1 0.7s ease-in-out .6s forwards;
+          animation: line-sub1 0.7s ease-in-out .6s forwards;
 }
 
 .org-chart .level-one a.level-one-R1:hover {
@@ -5654,12 +5808,15 @@ p.p-20 {
 
 .org-chart .level-one a.level-one-R2::before {
   content: "";
-  width: 142px;
+  width: 105px;
   height: 2px;
   border: 1px solid #AEBDCB;
   position: absolute;
   left: 101%;
   top: 37px;
+  opacity: 0;
+  -webkit-animation: line-sub1 0.7s ease-in-out .6s forwards;
+          animation: line-sub1 0.7s ease-in-out .6s forwards;
 }
 
 .org-chart .level-one a.level-one-R2:hover {
@@ -5692,7 +5849,7 @@ p.p-20 {
 
 .org-chart .level-two span {
   width: 738px;
-  height: 255px;
+  height: 0px;
   position: absolute;
   top: 0;
   left: 50%;
@@ -5701,6 +5858,9 @@ p.p-20 {
   border: 2px solid #AEBDCB;
   border-bottom: 0;
   border-radius: 30px 30px 0 0;
+  opacity: 0;
+  -webkit-animation: circled-lines 0.5s ease-in-out 1.2s forwards;
+          animation: circled-lines 0.5s ease-in-out 1.2s forwards;
 }
 
 .org-chart .level-two span::before {
@@ -5753,6 +5913,9 @@ p.p-20 {
   position: absolute;
   top: 30px;
   left: 1175px;
+  opacity: 0;
+  -webkit-animation: showMe 0.7s ease-in-out 1.5s forwards;
+          animation: showMe 0.7s ease-in-out 1.5s forwards;
 }
 
 .org-chart .level-two .top-two-sub {
@@ -5781,6 +5944,9 @@ p.p-20 {
   position: absolute;
   top: 140px;
   left: 1080px;
+  opacity: 0;
+  -webkit-animation: showMe 0.7s ease-in-out 1.5s forwards;
+          animation: showMe 0.7s ease-in-out 1.5s forwards;
 }
 
 .org-chart .level-two .top-two-sub::before {
@@ -5827,6 +5993,9 @@ p.p-20 {
   border-bottom: 0;
   border-radius: 50px 50px 0 0;
   left: 55px;
+  -webkit-animation: showMe 0.7s ease-in-out 1.7s forwards;
+          animation: showMe 0.7s ease-in-out 1.7s forwards;
+  opacity: 0;
 }
 
 .org-chart .level-three .left-cards a {
@@ -5855,6 +6024,9 @@ p.p-20 {
   height: 75px;
   position: absolute;
   top: 38px;
+  -webkit-animation: showMe 0.5s ease-in-out 1.8s forwards;
+          animation: showMe 0.5s ease-in-out 1.8s forwards;
+  opacity: 0;
 }
 
 .org-chart .level-three .left-cards a:hover {
@@ -5950,6 +6122,9 @@ p.p-20 {
   border-bottom: 0;
   border-radius: 50px 50px 0 0;
   left: 55px;
+  -webkit-animation: showMe 0.7s ease-in-out 1.7s forwards;
+          animation: showMe 0.7s ease-in-out 1.7s forwards;
+  opacity: 0;
 }
 
 .org-chart .level-three .right-cards a {
@@ -5978,6 +6153,9 @@ p.p-20 {
   height: 75px;
   position: absolute;
   top: 38px;
+  -webkit-animation: showMe 0.5s ease-in-out 1.8s forwards;
+          animation: showMe 0.5s ease-in-out 1.8s forwards;
+  opacity: 0;
 }
 
 .org-chart .level-three .right-cards a:hover {
@@ -6132,6 +6310,9 @@ p.p-20 {
   border-radius: 50px 50px 0 0;
   left: 55px;
   top: -35px;
+  -webkit-animation: showMe 0.7s ease-in-out 2s forwards;
+          animation: showMe 0.7s ease-in-out 2s forwards;
+  opacity: 0;
 }
 
 .org-chart .level-four .four-content::after {
@@ -6143,6 +6324,9 @@ p.p-20 {
   background-color: #4789C8;
   left: calc(50% - 9px);
   top: -39px;
+  -webkit-animation: showMe 0.7s ease-in-out 2s forwards;
+          animation: showMe 0.7s ease-in-out 2s forwards;
+  opacity: 0;
 }
 
 .org-chart .level-four .four-content span {
@@ -6152,6 +6336,9 @@ p.p-20 {
   position: absolute;
   left: 326px;
   top: -260px;
+  -webkit-animation: line-sub2 0.7s ease-in-out 1.7s forwards;
+          animation: line-sub2 0.7s ease-in-out 1.7s forwards;
+  opacity: 0;
 }
 
 .org-chart .level-four .four-content a {
@@ -6177,6 +6364,9 @@ p.p-20 {
   position: absolute;
   -webkit-transition: 500ms;
   transition: 500ms;
+  -webkit-animation: showMe 0.7s ease-in-out 2s forwards;
+          animation: showMe 0.7s ease-in-out 2s forwards;
+  opacity: 0;
 }
 
 .org-chart .level-four .four-content a:hover {
@@ -6282,6 +6472,9 @@ p.p-20 {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  -webkit-animation: showMe 0.7s ease-in-out 2.5s forwards;
+          animation: showMe 0.7s ease-in-out 2.5s forwards;
+  opacity: 0;
 }
 
 .org-chart .colors-sec .grey-sec div {
@@ -6317,6 +6510,9 @@ p.p-20 {
   border-top: 1px solid #B7C1BE;
   padding-top: 10px;
   padding-bottom: 70px;
+  -webkit-animation: showMe 0.7s ease-in-out 2.8s forwards;
+          animation: showMe 0.7s ease-in-out 2.8s forwards;
+  opacity: 0;
 }
 
 .org-chart .last-with-date .content-box {
@@ -6599,6 +6795,244 @@ p.p-20 {
 .feedback-slider.arrowz-news .owl-dots .owl-dot.active span {
   background: #4789C8;
   width: 40px;
+}
+
+.ads-list {
+  margin-bottom: 100px;
+}
+
+.ads-list .boxADSSlide {
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  border-radius: 16px;
+  border: 4px solid #fff;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+}
+
+.ads-list .boxADSSlide::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), color-stop(transparent), color-stop(#003462f5), to(#003462));
+  background-image: linear-gradient(180deg, transparent, transparent, transparent, #003462f5, #003462);
+  border-radius: 16px;
+  z-index: -1;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.ads-list .boxADSSlide > img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: -1;
+  border-radius: 16px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.ads-list .boxADSSlide .ADBoxTxt {
+  padding: 0 10px;
+}
+
+.ads-list .boxADSSlide .ADBoxTxt h1 {
+  font-size: 1.375rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+  max-height: calc(35px *2);
+  overflow: hidden;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  margin-bottom: 15px;
+}
+
+.ads-list .boxADSSlide .ADBoxTxt .dateBox {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 39px;
+}
+
+.ads-list .boxADSSlide .ADBoxTxt .dateBox img {
+  max-width: 25px;
+}
+
+.ads-list .boxADSSlide .ADBoxTxt .dateBox span {
+  color: #fff;
+}
+
+.ads-list .boxADSSlide:hover > img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.ads-list .boxADSSlide:hover .ADBoxTxt h1 {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.ads-list .boxADSSlide:hover::after {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0034622e), color-stop(#0034622e), color-stop(#0034622e), color-stop(#003462f5), to(#003462));
+  background-image: linear-gradient(180deg, #0034622e, #0034622e, #0034622e, #003462f5, #003462);
+}
+
+.open-data .content-box {
+  margin-bottom: 50px;
+}
+
+.open-data .content-box p {
+  font-size: 1.0625rem;
+  color: #0B261F;
+  margin-bottom: 15px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.open-data .content-box p a {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #63BE6A;
+  margin-left: 10px;
+}
+
+.open-data .content-box p a img {
+  margin-left: 8px;
+}
+
+.open-data .alertInfo {
+  margin-bottom: 80px;
+}
+
+.open-data .social-card.sharing-card {
+  height: 305px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.open-data .social-card.sharing-card h3 {
+  font-size: 1.5rem;
+  line-height: 32px;
+  text-align: center;
+}
+
+.open-data .social-card.sharing-card:hover .img-box {
+  -webkit-transform: translateY(-10px) scale(1.2);
+          transform: translateY(-10px) scale(1.2);
+}
+
+.open-data-top {
+  margin-bottom: 140px;
+}
+
+.open-data-top h2.with-arrow {
+  font-size: 1.5625rem;
+  color: #041A2D;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.open-data-top h2.with-arrow img {
+  margin-right: 10px;
+}
+
+.open-data-top p {
+  padding-left: 45px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #32383D;
+  margin-bottom: 24px;
+  line-height: 36px;
+}
+
+.open-data-top .data-card {
+  background-color: #fff;
+  border: 1px solid #D9DFE6;
+  border-radius: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 86px;
+  padding: 15px 35px;
+  margin-left: 45px;
+  margin-bottom: 24px;
+}
+
+.open-data-top .data-card .content-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.open-data-top .data-card .content-box img {
+  margin-right: 15px;
+}
+
+.open-data-top .data-card .content-box span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #63BE6A;
+}
+
+.open-data-top .data-card .btns a {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 24px;
+  display: inline-block;
+}
+
+.open-data-top .data-card .btns a img {
+  margin-right: 12px;
+}
+
+.open-data-top .data-card .btns a.show {
+  color: #003462;
+}
+
+.open-data-top .data-card .btns a.download {
+  color: #008941;
+}
+
+.mapIframe {
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 45px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 45px rgba(0, 0, 0, 0.1);
+  margin-bottom: 140px;
+}
+
+.mapIframe iframe {
+  width: 100%;
+  height: 1000px;
 }
 
 @media (min-width: 993px) and (max-width: 1600px) {

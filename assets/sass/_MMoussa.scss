@@ -1926,6 +1926,76 @@ p + p.main-p{
     }
   }
 
+
+// keyframes
+@keyframes come-down {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+@keyframes line-main {
+    0% {
+      height: 0;
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    100% {
+      height: 400px;
+      opacity: 1;
+      transform: translateY(0px);
+
+    }
+  }
+
+  @keyframes showMe {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes line-sub1 {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+    100% {
+      width: 105px;
+      opacity: 1;
+
+    }
+  }
+  @keyframes circled-lines {
+    0% {
+      opacity: 0;
+      height: 0;
+    }
+    100% {
+      opacity: 1;
+      height: 255px;
+    }
+  }
+
+  @keyframes line-sub2 {
+    0% {
+      height: 0;
+      opacity: 0;
+    }
+    100% {
+      height: 260px;
+      opacity: 1;
+
+    }
+  }
+
   .org-chart{
     position: relative;
     min-height: 1400px;
@@ -1935,6 +2005,7 @@ p + p.main-p{
         color: $Blue003462;
         text-align: center;
         margin-bottom: 50px;
+        animation: come-down 0.5s ease-in-out 0s forwards;
     }
     .main-sec-chart{
         position: relative;
@@ -1949,27 +2020,34 @@ p + p.main-p{
                 border:1px solid #AEBDCB;
                 height: 400px;
                 z-index: 0;
+                opacity: 0;
+                animation: line-main 0.7s ease-in-out 0.5s forwards;
+
             }
             &::after{
                 content: "";
                 position: absolute;
-                #{$start-direction}:50%;
-                transform: translateX(50%);
+                #{$start-direction}:calc(50% - 5px);
+                // transform: translateX(50%);
                 top: 475px;
                 width: 11px;
                 height: 11px;
                 background-color: #4789C8;
                 z-index: 3;
                 border-radius: 50%;
+                opacity: 0;
+                animation: showMe 0.7s ease-in-out 1s forwards;
             }
         .saudi-logo{
             position: absolute;
             border-radius: 8px;
             width: 80px;
             height: 80px;
-            #{$start-direction}:50%;
-            transform: translateX(50%);
+            #{$start-direction}:calc(50% - 40px);
+            // transform: translateX(50%);
             top: 0;
+            opacity: 0;
+            animation: come-down 0.5s ease-in-out 0.5s forwards;
             img{}
         }
         .saudi-head{
@@ -1985,9 +2063,11 @@ p + p.main-p{
             align-items: center;
             justify-content: center;
             box-shadow: 0 10px 30px rgba($color:  $Blue003462, $alpha: 0.7);
-            #{$start-direction}:50%;
-            transform: translateX(50%);
+            #{$start-direction}:calc(50% - 232.5px);
+            // transform: translateX(50%);
             top: 105px;
+            opacity: 0;
+            animation: come-down 0.5s ease-in-out 0.5s forwards;
           
         }
     }
@@ -2012,7 +2092,8 @@ p + p.main-p{
             position: absolute;
             // #{$start-direction}:50%;
             // transform: translateX(50%);
-           
+            opacity: 0;
+            animation: showMe 0.7s ease-in-out .8s forwards;
             &:hover{
                 background-color: #E5F3FF;
                 width: 200px;
@@ -2021,14 +2102,17 @@ p + p.main-p{
             &.level-one-R1{
                 top: 42px;
                 #{$start-direction}:715px;
-                 &::before{
+                &::before{
                     content: "";
-                    width: 142px;
+                    width: 105px;
                     height: 2px;
                     border: 1px solid #AEBDCB;
                     position: absolute;
                     #{$start-direction}: 101%;
                     top: 37px;
+                    opacity: 0;
+                    animation: line-sub1 0.7s ease-in-out .6s forwards;
+
                 }
                 &:hover{
                   #{$start-direction}:705px;
@@ -2040,12 +2124,14 @@ p + p.main-p{
                 #{$start-direction}:715px;
                 &::before{
                     content: "";
-                    width: 142px;
+                    width: 105px;
                     height: 2px;
                     border: 1px solid #AEBDCB;
                     position: absolute;
                     #{$start-direction}: 101%;
                     top: 37px;
+                    opacity: 0;
+                    animation: line-sub1 0.7s ease-in-out .6s forwards;
                 }
                 &:hover{
                     #{$start-direction}:705px;
@@ -2073,7 +2159,7 @@ p + p.main-p{
         z-index: 1;
         span{
             width: 738px;
-            height: 255px;
+            height: 0px;
             position: absolute;
             top: 0;
             #{$start-direction}:50%;
@@ -2081,6 +2167,9 @@ p + p.main-p{
             border: 2px solid #AEBDCB;
             border-bottom: 0;
             border-radius: 30px 30px 0 0;
+            opacity: 0;
+            animation: circled-lines 0.5s ease-in-out 1.2s forwards;
+            
             &::before{
                 content: "";
                 position: absolute;
@@ -2123,6 +2212,8 @@ p + p.main-p{
             position: absolute;
             top: 30px;
             #{$start-direction}:1175px;
+            opacity: 0;
+            animation: showMe 0.7s ease-in-out 1.5s forwards;
         }
         .top-two-sub{
             display: flex;
@@ -2142,6 +2233,8 @@ p + p.main-p{
             position: absolute;
             top: 140px;
             #{$start-direction}:1080px;
+            opacity: 0;
+            animation: showMe 0.7s ease-in-out 1.5s forwards;
             &::before{
                 content: "";
                 width: 54px;
@@ -2179,7 +2272,10 @@ p + p.main-p{
                 border: 2px solid #AEBDCB;
                 border-bottom: 0;
                 border-radius: 50px 50px 0 0;
-                #{$start-direction}:55px
+                #{$start-direction}:55px;
+                animation: showMe 0.7s ease-in-out 1.7s forwards;
+                opacity: 0;
+                
             }
             a{
                 font-size: 18px;
@@ -2199,6 +2295,9 @@ p + p.main-p{
                 height: 75px;
                 position: absolute;
                 top: 38px;
+                animation: showMe 0.5s ease-in-out 1.8s forwards;
+                opacity: 0;
+
                 &:hover{
                     background-color: #399241;
                     width: 129px;
@@ -2225,6 +2324,8 @@ p + p.main-p{
                     #{$start-direction}:57px;
                     border: 1px solid #AEBDCB;
                     transition: 500ms;
+                    // animation: showMe 0.7s ease-in-out 2s forwards;
+                    // opacity: 0;
                 }
                 &:hover{
                     #{$end-direction}: 128px;
@@ -2248,6 +2349,8 @@ p + p.main-p{
                     #{$start-direction}:57px;
                     border: 1px solid #AEBDCB;
                     transition: 500ms;
+                    // animation: showMe 0.7s ease-in-out 2s forwards;
+                    // opacity: 0;
                 }
                 &:hover{
                     #{$start-direction}: 128px;
@@ -2279,7 +2382,9 @@ p + p.main-p{
                 border: 2px solid #AEBDCB;
                 border-bottom: 0;
                 border-radius: 50px 50px 0 0;
-                #{$start-direction}:55px
+                #{$start-direction}:55px;
+                animation: showMe 0.7s ease-in-out 1.7s forwards;
+                opacity: 0;
             }
             a{
                 font-size: 18px;
@@ -2299,6 +2404,8 @@ p + p.main-p{
                 height: 75px;
                 position: absolute;
                 top: 38px;
+                animation: showMe 0.5s ease-in-out 1.8s forwards;
+                opacity: 0;
                 &:hover{
                     background-color: #399241;
                     width: 129px;
@@ -2426,6 +2533,8 @@ p + p.main-p{
                 border-radius: 50px 50px 0 0;
                 #{$start-direction}:55px;
                 top: -35px;
+                animation: showMe 0.7s ease-in-out 2s forwards;
+                opacity: 0;
             }
             &::after{
                 content: "";
@@ -2436,6 +2545,8 @@ p + p.main-p{
                 background-color: #4789C8;
                 #{$start-direction}: calc(50% - 9px);
                 top: -39px;
+                animation: showMe 0.7s ease-in-out 2s forwards;
+                opacity: 0;
             }
             span{
                 width: 2px;
@@ -2443,7 +2554,10 @@ p + p.main-p{
                 border: 1px solid #AEBDCB;
                 position: absolute;
                 #{$start-direction}:326px;
-                top: -260px
+                top: -260px;
+                animation: line-sub2 0.7s ease-in-out 1.7s forwards;
+                opacity: 0;
+
             }
             a{
                 display: flex;
@@ -2461,6 +2575,8 @@ p + p.main-p{
                 text-align: center;
                 position: absolute;
                 transition: 500ms;
+                animation: showMe 0.7s ease-in-out 2s forwards;
+                opacity: 0;
                 &:hover{
                     background-color: #E5F3FF;
                     width: 131px;
@@ -2553,6 +2669,8 @@ p + p.main-p{
             border-radius: 12px;
             padding: 25px 18px;
             width: max-content;
+            animation: showMe 0.7s ease-in-out 2.5s forwards;
+            opacity: 0;
             div{
                 font-size: 15px;
                 color: #464749;
@@ -2590,6 +2708,8 @@ p + p.main-p{
         border-top: 1px solid #B7C1BE;
         padding-top: 10px;
         padding-bottom: 70px;
+        animation: showMe 0.7s ease-in-out 2.8s forwards;
+        opacity: 0;
         .content-box{
             display: flex;
             justify-content: flex-end;
@@ -2786,3 +2906,202 @@ p + p.main-p{
         width: 40px;
     }
   }
+  
+//   ads list
+
+.ads-list{
+    margin-bottom: 100px;
+    .boxADSSlide{
+        height: 450px;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        z-index: 1;
+        align-items: end;
+        border-radius: 16px;
+        border: 4px solid #fff;
+        margin-bottom: 50px;
+        box-shadow: 0 15px 45px rgba($color:  #000, $alpha: 0.1);
+
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(180deg, transparent, transparent, transparent, #003462f5, #003462);
+            border-radius: 16px;
+            z-index: -1;
+            transition: 0.25s;
+        }
+        
+         > img {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            z-index: -1;
+            border-radius: 16px;
+            transition: 0.25s;
+        }
+        .ADBoxTxt{
+            padding: 0 10px;
+            h1{
+                font-size: 1.375rem;
+                font-weight: bold;
+                color: #fff;
+                text-align: center;
+                line-height: 35px;
+                max-height: calc(35px *2);
+                overflow: hidden;
+                transition: 0.25s;
+                margin-bottom: 15px;
+            }
+            .dateBox {
+                justify-content: center;
+                padding-bottom: 39px;
+                img{
+                    max-width: 25px;
+                }
+                span{
+                    color: #fff;
+                }
+            }
+        }
+        &:hover{
+            > img{
+                transform: scale(1.05);   
+            }
+            .ADBoxTxt{
+                h1{
+                    transform: translateY(-10px);
+                }
+            }
+            &::after{
+                background-image: linear-gradient(180deg, #0034622e, #0034622e, #0034622e, #003462f5, #003462);
+            }
+        }
+    }
+}
+
+// open-data
+.open-data{
+    .content-box{
+        margin-bottom: 50px;
+        p{
+            font-size: 1.0625rem;
+            color: $color2;
+            margin-bottom: 15px;
+            font-weight: $w-normal;
+            text-align: #{$start-direction};
+            a{
+                font-size: 1rem;
+                font-weight: $w-bold;
+                color: $green63BE6A;
+                margin-#{$start-direction}: 10px;
+                img{
+                    margin-#{$start-direction}: 8px;
+                }
+            }
+        }
+    }
+    .alertInfo{
+        margin-bottom: 80px;
+    }
+    .social-card.sharing-card{
+        height: 305px;
+        padding-#{$start-direction}:25px ;
+        padding-#{$end-direction}:25px ;
+        h3{
+            font-size: 1.5rem;
+            line-height: 32px;
+            text-align: center;
+        }
+        &:hover{
+            .img-box{
+                transform: translateY(-10px) scale(1.2);
+            }
+        }
+    }
+    
+}
+
+.open-data-top{
+    margin-bottom: 140px;
+    .content-box{
+
+    }
+    h2.with-arrow{
+        font-size: 1.5625rem;
+        color: $blue041A2D;
+        font-weight: 700;
+        margin-bottom: 24px;
+        img{
+            margin-#{$end-direction}: 10px;
+        }
+    }
+    p{
+        padding-#{$start-direction}: 45px;
+        font-size: 1rem;
+        font-weight: 500;
+        color: $darkBlue;
+        margin-bottom: 24px;
+        line-height: 36px;
+    }
+    .data-card{
+        background-color: #fff;
+        border: 1px solid #D9DFE6;
+        border-radius: 18px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 86px;
+        padding: 15px 35px;
+        margin-#{$start-direction}: 45px;
+        margin-bottom: 24px;
+        .content-box{
+            display: flex;
+            max-width: 80%;
+            align-items: center;
+            img{
+                margin-#{$end-direction}:15px ;
+            }
+            span{
+                font-size: 1rem;
+                font-weight: $w-medium;
+                color: $green63BE6A;
+            }
+        }
+        .btns{
+            a{
+                font-size: 1rem;
+                font-weight: $w-normal;
+                margin-#{$start-direction}: 24px;
+                display: inline-block;
+                img{
+                    margin-#{$end-direction}: 12px;
+                }
+                &.show{
+                    color: $Blue003462;
+                }
+                &.download{
+                    color: $color5;
+                }
+            }
+        }
+
+    }
+}
+
+.mapIframe{
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 45px rgba($color:  #000, $alpha: 0.1);
+    margin-bottom: 140px;
+    iframe{
+        width: 100%;
+        height: 1000px;
+    }
+}
