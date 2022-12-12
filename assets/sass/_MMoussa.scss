@@ -3262,3 +3262,252 @@ p + p.main-p{
         }
     }
 }
+
+.under-const{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 75px;
+    margin-bottom: 100px;
+    .img-box{
+        margin-bottom: 40px;
+    }
+    .content-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h4{
+            color: $Blue003462;
+            font-size: 2.5rem;
+            font-weight: $w-bold;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 1.125rem;
+            font-weight: $w-medium;
+            color: $grayColor;
+            margin-bottom: 40px;
+        }
+        a.back-home{
+            background-color: $green63BE6A;
+            border-radius: 26px;
+            color: #fff;
+            font-size: 1.25rem;
+            font-weight: $w-normal;
+            filter: drop-shadow(0 5px 25px rgba($color:  $Blue003462, $alpha: 0.3));
+            padding: 14px 25px 18px;
+            img{
+                margin-#{$start-direction}:30px ;
+            }
+        }
+    }
+}
+
+
+// ntp-2020
+.scroll-sec{
+    background-color: $Blue003462;
+    padding: 22px 10px;
+    margin-top: -60px;
+    // transition: 300ms;
+    &.fixed-ntp2020{
+        position: fixed;
+        width: 100%;
+        top: 95px;
+        #{$start-direction}: 0;
+        z-index: 99;
+        margin-top: 0;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin-bottom: 0;
+        li{
+            margin-#{$end-direction}:40px ;
+
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                img{
+                    width: 36px;
+                    height: 36px;
+                    margin-#{$end-direction}:15px ;
+                    filter: grayscale(1);
+                    transition: 500ms;
+                }
+                span{
+                    font-size: 1.0625rem;
+                    font-weight: $w-medium;
+                    color: #BDBDBD;
+                    transition: 500ms;
+
+                }
+                &::before{
+                    content:"";
+                    position: absolute;
+                    width: 0;
+                    height: 3px;
+                    background-color: $green63BE6A;
+                    #{$start-direction}:0;
+                    bottom: -22px;
+                    transition: 500ms;
+
+                }
+
+                &.active{
+                    span{
+                        color: $green63BE6A;
+                    }
+                    img{
+                        filter: none;
+                    }
+                    &::before{
+                       width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.ntp-header{
+    font-size: 2.5rem;
+    font-weight: $w-bold;
+    color: $Blue003462;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 45px;
+    img{
+        width: 60px;
+        height: 60px;
+        margin-#{$end-direction}: 25px;
+    }
+}
+.offset-lg-1{
+    margin-#{$start-direction}: 8.33333333%;
+    margin-#{$end-direction}: 0;
+}
+.challenge{
+    margin-top: 75px;
+    margin-bottom: 75px;
+    .white-card{
+        background-color: #fff;
+        box-shadow: 0 3px 25px rgba($color:  #000, $alpha: 0.08);
+        .content-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            padding: 35px 70px;
+            img{
+                width: 86px;
+                height: 86px;
+                margin-bottom: 33px;
+            }
+            h5{
+                font-size: 1.5625rem;
+                font-weight: $w-bold;
+                color: $blue041A2D;
+            }
+        }
+        .img-box{
+            display: flex;
+            justify-content: flex-end;
+            img{}
+        }
+    }
+}
+
+.ntp-list{
+    background-color: #EAEFF6;
+    padding-top: 60px;
+    padding-bottom: 75px;
+    ul{
+        padding: 0;
+        li{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 9px 16px;
+            font-size: 1.125rem;
+            color: $color2;
+            margin-bottom: 25px;
+            width: 100%;
+            .number{
+                border: 2px solid #4789C8;
+                border-radius: 8px;
+                color: #4789C8;
+                font-size: 1.25rem;
+                font-weight: $w-bold;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                margin-#{$end-direction}: 20px;
+
+            }
+           
+        }
+    }
+    .show-more{
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        display: block;
+        text-align: center;
+        padding-top: 8px;
+        width: 200px;
+        height: 48px;
+        font-size: 1.125rem;
+        font-weight: $w-bold;
+        color: #78838C;
+        background-color: #E0E5E9;
+        border-radius: 23px;
+        transition: 500ms;
+        margin-top: 40px;
+       span{
+        margin: 0 8px;
+       }
+       &:hover{
+        background-color: #D6DBDF;
+       }
+    }
+}
+.ntp-goals{
+    background-image: url(../images/ntp-2020/golas-bg.svg);
+    background-repeat: no-repeat;
+    background-position: 60px 220px;
+}
+.pointers{
+    padding-top: 85px;
+    padding-bottom: 75px;
+    background-image: url(../images/ntp-2020/ksa-logo.svg);
+    background-repeat: no-repeat;
+    background-position: 50px 330px;
+    img{
+        max-width: 100%;
+    }
+    .charts{
+        background-color: #fff;
+        box-shadow: 0 15px 35px rgba($color:  $Blue003462, $alpha: 0.05);
+        border-radius: 16px;
+        margin-bottom: 40px;
+    }
+}
+
+.ntp-initiatives{
+    margin-bottom: 170px;
+}

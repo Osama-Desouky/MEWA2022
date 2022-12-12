@@ -209,5 +209,106 @@ $("a.fancyboxVideo").fancybox({
     scrollbar: {
       // el: '.swiper-scrollbar',
     },
+  });  
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("scroll", function () {
+    //    console.log(window.scrollY,window.scrollX)
+    if (window.scrollY > 110) {
+      document.querySelector(".scroll-sec").classList.add("fixed-ntp2020");
+    } else {
+      document.querySelector(".scroll-sec").classList.remove("fixed-ntp2020");
+    }
   });
 });
+
+$(function () {
+$("#Challenge-a").on("click", function () {
+  scrollTo("#Challenge", function () {
+    $(".scroll-sec a").removeClass("active");
+    $("#Challenge-a").addClass("active");
+  });
+});
+
+$("#Goals-a").on("click", function () {
+  scrollTo("#Goals", function () {
+    $(".scroll-sec a").removeClass("active");
+    $("#Goals-a").addClass("active");
+  });
+});
+
+$("#Pointers-a").on("click", function () {
+  scrollTo("#Pointers", function () {
+    $(".scroll-sec a").removeClass("active");
+    $("#Pointers-a").addClass("active");
+  });
+});
+
+$("#Initiatives-a").on("click", function () {
+  scrollTo("#Initiatives", function () {
+    $(".scroll-sec a").removeClass("active");
+    $("#Initiatives-a").addClass("active");
+  });
+});
+
+
+$(document).scroll(function () {
+  var scrollToDiv = $(this).scrollTop();
+
+  if (scrollToDiv >= calculateOffset(".challenge") - 500) {
+    $(".scroll-sec a").removeClass("active");
+    $("#Challenge-a").addClass("active");
+  } else $("#Challenge-a").removeClass("active");
+
+  if (scrollToDiv >= calculateOffset(".ntp-goals") - 250) {
+    $(".scroll-sec a").removeClass("active");
+    $("#Goals-a").addClass("active");
+  } else $("#Goals-a").removeClass("active");
+
+  if (scrollToDiv >= calculateOffset(".pointers") - 250) {
+    $(".scroll-sec a").removeClass("active");
+    $("#Pointers-a").addClass("active");
+  } else $("#Pointers-a").removeClass("active");
+
+  if (scrollToDiv >= calculateOffset(".ntp-initiatives") - 250) {
+    $(".scroll-sec a").removeClass("active");
+    $("#Initiatives-a").addClass("active");
+  } else $("#Initiatives-a").removeClass("active");
+
+});
+
+
+
+
+
+
+
+// $(".scroll-sec a").on("click", function () {
+//   $(".scroll-sec a ").removeClass("active");
+//   $(this).addClass("active");
+// });
+
+
+
+
+var calculateOffset = function (el) {
+  if ($(el).length == 0) return;
+  // if ($(window).width() >= 980) return Math.floor($(el).offset().top - 69);
+  return Math.floor($(el).offset().top) -100;
+};
+
+var scrollTo = function (sectionEl = "", callback = function () {}) {
+  $("html, body").animate(
+    {
+      scrollTop:  calculateOffset(sectionEl) - 250,
+    },
+    300,
+    "swing",
+    callback()
+  );
+};
+
+})
