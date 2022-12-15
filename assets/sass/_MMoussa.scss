@@ -3119,7 +3119,7 @@ p + p.main-p{
 
 // telephone-book
 .telephone-book-list{
-    margin-bottom: 200px;
+    // margin-bottom: 200px;
 }
 .telephone-book-card{
     background-color: #fff;
@@ -3133,7 +3133,7 @@ p + p.main-p{
         width: 50px;
         height: 50px;
         margin: 0 auto;
-        transform: translateY(75px);
+        transform: translateY(55px);
         margin-bottom: 10px;
         transition: 1s;
         img{
@@ -3143,7 +3143,7 @@ p + p.main-p{
     }
     .content-box{
         transition: 1s;
-        transform: translateY(95px);
+        transform: translateY(70px);
         h4{
             font-size: 1.25rem;
             font-weight: 700;
@@ -3164,6 +3164,43 @@ p + p.main-p{
             text-align: center;
         }
     }
+    .phone-det{
+        margin-top: 10px;
+        p{
+            font-size: 1rem;
+            font-weight: $w-medium;
+            color: $grayColor; 
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            height: auto;
+            line-height: 24px;
+            max-height: calc(24px * 3);
+
+        }
+        .phone{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-bottom: 15px;
+           
+            img{
+                width: 30px;
+                height: 30px;
+                margin-bottom: 5px;
+            }
+            span{
+                font-size: 1.25rem;
+                font-weight: $w-bold;
+                color: $Blue003462;
+                text-align: center;
+                // margin-top: 5px;
+                // margin-bottom: 20px;
+            }
+        }
+      }
     .hidden-info{
         opacity: 0;
         transform: translateY(210px);
@@ -3208,43 +3245,7 @@ p + p.main-p{
                 line-height: inherit;
             }
         }
-        .phone-det{
-            margin-top: 10px;
-            p{
-                font-size: 1rem;
-                font-weight: $w-medium;
-                color: $grayColor; 
-                margin-top: 20px;
-                margin-bottom: 20px;
-                text-align: center;
-                height: auto;
-                line-height: 24px;
-                max-height: calc(24px * 3);
-
-            }
-            .phone{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-                margin-bottom: 15px;
-               
-                img{
-                    width: 30px;
-                    height: 30px;
-                    margin-bottom: 5px;
-                }
-                span{
-                    font-size: 1.25rem;
-                    font-weight: $w-bold;
-                    color: $Blue003462;
-                    text-align: center;
-                    // margin-top: 5px;
-                    // margin-bottom: 20px;
-                }
-            }
-          }
+       
     }
     &:hover{
         .img-box{
@@ -3510,4 +3511,38 @@ p + p.main-p{
 
 .ntp-initiatives{
     margin-bottom: 170px;
+}
+
+.important-link-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 25px 20px;
+    height: 265px;
+    background-color: #fff;
+    border-radius: 16px;
+    transition: .5s;
+    margin-bottom: 30px;
+    .img-box{
+
+        img{
+            max-width: 100%;
+        }
+    }
+    .content-box{
+        margin-top: 25px;
+        h4{
+            font-size: 1.125rem;
+            font-weight: $w-medium;
+            color: $Blue003462;
+            text-align: center;
+            line-height: 28px;
+            padding: 0 10px;
+            margin-bottom: 0;
+        }
+    }
+    &:hover{
+        box-shadow: 0 5px 55px rgba($color:  #000, $alpha: 0.1);
+    }
 }

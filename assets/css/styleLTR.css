@@ -7036,10 +7036,6 @@ p.p-20 {
   height: 1000px;
 }
 
-.telephone-book-list {
-  margin-bottom: 200px;
-}
-
 .telephone-book-card {
   background-color: #fff;
   width: 100%;
@@ -7055,8 +7051,8 @@ p.p-20 {
   width: 50px;
   height: 50px;
   margin: 0 auto;
-  -webkit-transform: translateY(75px);
-          transform: translateY(75px);
+  -webkit-transform: translateY(55px);
+          transform: translateY(55px);
   margin-bottom: 10px;
   -webkit-transition: 1s;
   transition: 1s;
@@ -7070,8 +7066,8 @@ p.p-20 {
 .telephone-book-card .content-box {
   -webkit-transition: 1s;
   transition: 1s;
-  -webkit-transform: translateY(95px);
-          transform: translateY(95px);
+  -webkit-transform: translateY(70px);
+          transform: translateY(70px);
 }
 
 .telephone-book-card .content-box h4 {
@@ -7093,6 +7089,53 @@ p.p-20 {
   line-height: 26px;
   max-height: calc(26px * 2);
   overflow: hidden;
+  text-align: center;
+}
+
+.telephone-book-card .phone-det {
+  margin-top: 10px;
+}
+
+.telephone-book-card .phone-det p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #646D75;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  height: auto;
+  line-height: 24px;
+  max-height: calc(24px * 3);
+}
+
+.telephone-book-card .phone-det .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.telephone-book-card .phone-det .phone img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+.telephone-book-card .phone-det .phone span {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #003462;
   text-align: center;
 }
 
@@ -7166,53 +7209,6 @@ p.p-20 {
   margin-bottom: 7px;
   color: #646D75;
   line-height: inherit;
-}
-
-.telephone-book-card .hidden-info .phone-det {
-  margin-top: 10px;
-}
-
-.telephone-book-card .hidden-info .phone-det p {
-  font-size: 1rem;
-  font-weight: 500;
-  color: #646D75;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  height: auto;
-  line-height: 24px;
-  max-height: calc(24px * 3);
-}
-
-.telephone-book-card .hidden-info .phone-det .phone {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  margin-bottom: 15px;
-}
-
-.telephone-book-card .hidden-info .phone-det .phone img {
-  width: 30px;
-  height: 30px;
-  margin-bottom: 5px;
-}
-
-.telephone-book-card .hidden-info .phone-det .phone span {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #003462;
-  text-align: center;
 }
 
 .telephone-book-card:hover .img-box {
@@ -7571,6 +7567,52 @@ p.p-20 {
 
 .ntp-initiatives {
   margin-bottom: 170px;
+}
+
+.important-link-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 25px 20px;
+  height: 265px;
+  background-color: #fff;
+  border-radius: 16px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-bottom: 30px;
+}
+
+.important-link-card .img-box img {
+  max-width: 100%;
+}
+
+.important-link-card .content-box {
+  margin-top: 25px;
+}
+
+.important-link-card .content-box h4 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #003462;
+  text-align: center;
+  line-height: 28px;
+  padding: 0 10px;
+  margin-bottom: 0;
+}
+
+.important-link-card:hover {
+  -webkit-box-shadow: 0 5px 55px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 55px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 993px) and (max-width: 1600px) {
