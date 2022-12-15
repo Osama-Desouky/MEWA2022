@@ -7590,6 +7590,7 @@ p.p-20 {
   -webkit-transition: .5s;
   transition: .5s;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .important-link-card .img-box img {
