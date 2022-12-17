@@ -7557,12 +7557,17 @@ p.p-20 {
   max-width: 100%;
 }
 
-.pointers .charts {
+.charts {
   background-color: #fff;
   -webkit-box-shadow: 0 15px 35px rgba(0, 52, 98, 0.05);
           box-shadow: 0 15px 35px rgba(0, 52, 98, 0.05);
   border-radius: 16px;
   margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.charts img {
+  max-width: 100%;
 }
 
 .ntp-initiatives {
@@ -7938,6 +7943,74 @@ p.p-20 {
 
 .trans-card.not-active + .trans-card:nth-child(2) {
   right: 28.75%;
+}
+
+.main-chats-p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #32383D;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.Minister-CV {
+  margin-bottom: 60px;
+}
+
+.Minister-CV .img-box {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.Minister-CV .img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Minister-CV .content-box h3 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #003462;
+  line-height: 60px;
+  margin-bottom: 5px;
+}
+
+.Minister-CV .content-box h5 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #63BE6A;
+  margin-bottom: 5px;
+}
+
+.Minister-CV-content .content-sec {
+  margin-bottom: 60px;
+}
+
+.Minister-CV-content .content-sec h2.with-arrow {
+  font-size: 1.5625rem;
+  font-weight: 700;
+  color: #003462;
+  margin-bottom: 16px;
+}
+
+.Minister-CV-content .content-sec h2.with-arrow img {
+  width: 25px;
+  height: 25px;
+  vertical-align: bottom;
+  margin-left: 15px;
+}
+
+.Minister-CV-content .content-sec p {
+  font-size: 1.0625rem;
+  color: #0B261F;
+  margin-bottom: 15px;
+}
+
+.Minister-CV-content .content-sec p + p {
+  margin-top: 30px;
 }
 
 @media (min-width: 993px) and (max-width: 1600px) {

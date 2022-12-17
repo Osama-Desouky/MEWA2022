@@ -3501,11 +3501,15 @@ p + p.main-p{
     img{
         max-width: 100%;
     }
-    .charts{
-        background-color: #fff;
-        box-shadow: 0 15px 35px rgba($color:  $Blue003462, $alpha: 0.05);
-        border-radius: 16px;
-        margin-bottom: 40px;
+}
+.charts{
+    background-color: #fff;
+    box-shadow: 0 15px 35px rgba($color:  $Blue003462, $alpha: 0.05);
+    border-radius: 16px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    img{
+        max-width: 100%;
     }
 }
 
@@ -3839,4 +3843,66 @@ p + p.main-p{
 
 .trans-card.not-active + .trans-card:nth-child(2){
     #{$start-direction}:  28.75%;
+}
+
+.main-chats-p{
+    font-size: 1rem;
+    font-weight: $w-medium;
+    color: $darkBlue;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.Minister-CV{
+    margin-bottom: 60px;
+    .img-box{
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .content-box{
+        h3{
+            font-size: 1.875rem;
+            font-weight: $w-bold;
+            color: $Blue003462;
+            line-height: 60px;
+            margin-bottom: 5px;
+        }
+        h5{
+            font-size: 1.125rem;
+            font-weight: $w-medium;
+            color: $green63BE6A;
+            margin-bottom: 5px;
+        }
+    }
+}
+.Minister-CV-content{
+    .content-sec{
+        margin-bottom: 60px;
+        h2.with-arrow{
+            font-size: 1.5625rem;
+            font-weight: $w-bold;
+            color: $Blue003462;
+            margin-bottom: 16px;
+            img{
+                width: 25px;
+                height: 25px;
+                vertical-align: bottom;
+                margin-#{$end-direction}: 15px;
+            }
+        }
+        p{
+            font-size: 1.0625rem;
+            color: $color2;
+            margin-bottom: 15px;
+            & + p{
+                margin-top: 30px;
+            }
+        }
+    }
 }
