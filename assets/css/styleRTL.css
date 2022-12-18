@@ -2910,6 +2910,10 @@ footer .reservedBar ul li a::after {
   margin-left: 15px;
 }
 
+.alertInfo .boxAlert strong::before {
+  display: none;
+}
+
 .alertInfo .boxAlert a span {
   color: #63BE6A;
   line-height: normal;
@@ -8011,6 +8015,140 @@ p.p-20 {
 
 .Minister-CV-content .content-sec p + p {
   margin-top: 30px;
+}
+
+.content table.user-sat-table {
+  margin-top: 45px;
+  margin-bottom: 30px;
+}
+
+.content table.user-sat-table tbody td:first-child {
+  padding: 7px 25px;
+}
+
+.main-with-arrow {
+  font-size: 1.5625rem;
+  font-weight: 700;
+  color: #041A2D;
+}
+
+.main-with-arrow img {
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+}
+
+.main-chart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-white-card {
+  background-color: #fff;
+  -webkit-box-shadow: 0 15px 35px rgba(0, 52, 98, 0.05);
+          box-shadow: 0 15px 35px rgba(0, 52, 98, 0.05);
+  border-radius: 16px;
+  margin-bottom: 40px;
+  overflow: hidden;
+  padding: 20px;
+  padding-right: 28px;
+  padding-top: 30px;
+}
+
+.contact-white-card h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #041A2D;
+  margin-bottom: 15px;
+  position: relative;
+  line-height: 47px;
+}
+
+.contact-white-card h4::before {
+  content: "";
+  position: absolute;
+  right: -28px;
+  top: -1px;
+  width: 5px;
+  height: 50px;
+  background-color: #63BE6A;
+  border-radius: 15px 0 0 15px;
+}
+
+.contact-white-card .time {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px solid #E2E5E4;
+}
+
+.contact-white-card .time p {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #32383D;
+  padding: 0 12px;
+}
+
+.contact-white-card .contact-data {
+  padding: 0 12px;
+}
+
+.contact-white-card .contact-data .informations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.contact-white-card .contact-data .informations .img-box {
+  width: 25px;
+  margin-left: 12px;
+}
+
+.contact-white-card .contact-data .informations .img-box img {
+  max-width: 100%;
+}
+
+.contact-white-card .contact-data .informations div span {
+  font-size: 1rem;
+  color: #32383D;
+}
+
+.contact-white-card .contact-data .informations div span.bold {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.contact-white-card .contact-data .informations div span.location {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #63BE6A;
+}
+
+.contact-white-card .contact-data .informations div span.mail {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #003462;
+}
+
+.contact-data-map {
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  margin-bottom: 140px;
+}
+
+.contact-data-map iframe {
+  width: 100%;
+  height: 570px;
 }
 
 @media (min-width: 993px) and (max-width: 1600px) {

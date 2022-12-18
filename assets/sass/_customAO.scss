@@ -2345,6 +2345,9 @@ footer {
     strong {
       color: #32383D;
       margin-#{$end-direction}: 15px;
+      &::before{
+        display: none;
+      }
     }
     a span {
       color: $green63BE6A;
