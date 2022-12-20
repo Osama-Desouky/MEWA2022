@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="Portal-statistics" transform="translate(-1325.999 13906.96)">
+    <g id="Rectangle_16267" data-name="Rectangle 16267" transform="translate(1325.999 -13906.96)" fill="none" stroke="#003462" stroke-width="2">
+      <rect width="48" height="48" rx="8" stroke="none"/>
+      <rect x="1" y="1" width="46" height="46" rx="7" fill="none"/>
+    </g>
+    <line id="Line_8713" data-name="Line 8713" y2="4" transform="translate(1339.499 -13878.46)" fill="none" stroke="#4789c8" stroke-linecap="round" stroke-width="3"/>
+    <line id="Line_8714" data-name="Line 8714" y2="8" transform="translate(1353.499 -13882.46)" fill="none" stroke="#4789c8" stroke-linecap="round" stroke-width="3"/>
+    <line id="Line_8716" data-name="Line 8716" y2="12" transform="translate(1360.499 -13886.46)" fill="none" stroke="#4789c8" stroke-linecap="round" stroke-width="3"/>
+    <line id="Line_8715" data-name="Line 8715" y2="19" transform="translate(1346.499 -13893.46)" fill="none" stroke="#4789c8" stroke-linecap="round" stroke-width="3"/>
+  </g>
+</svg>

@@ -8151,6 +8151,185 @@ p.p-20 {
   height: 570px;
 }
 
+.mainBlueColor {
+  color: #003462;
+}
+
+.Portal-statistics-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 47px 23px 24px;
+  width: 100%;
+  height: 250px;
+  margin-bottom: 30px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  text-align: center;
+}
+
+.Portal-statistics-card .numbers {
+  position: relative;
+  margin-bottom: 23px;
+}
+
+.Portal-statistics-card .numbers::after {
+  content: "";
+  width: 39px;
+  height: 5px;
+  background-color: #BFC8C6;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  border-radius: 8px;
+}
+
+.Portal-statistics-card .numbers h4 {
+  font-size: 2.5rem;
+  line-height: 79px;
+  font-weight: 700;
+  color: #63BE6A;
+}
+
+.Portal-statistics-card .title h6 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #32383D;
+}
+
+.Portal-statistics-card:hover {
+  -webkit-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 50px rgba(0, 0, 0, 0.1);
+}
+
+.Portal-statistics-twoCards {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 25px 30px;
+  height: 380px;
+  margin-top: 32px;
+  margin-bottom: 200px;
+}
+
+.Portal-statistics-twoCards h4 {
+  font-size: 1.5625rem;
+  font-weight: 700;
+  color: #041A2D;
+  margin-bottom: 20px;
+  position: relative;
+  line-height: 50px;
+}
+
+.Portal-statistics-twoCards h4::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 50px;
+  background-color: #63BE6A;
+  border-radius: 15px 0 0 15px;
+  left: -30px;
+  top: 0px;
+}
+
+.Portal-statistics-twoCards p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #32383D;
+  line-height: 34px;
+  margin-bottom: 28px;
+}
+
+.Portal-statistics-twoCards p a.green-a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #63BE6A;
+  margin-left: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Portal-statistics-twoCards p a.green-a img {
+  margin-left: 10px;
+}
+
+.Portal-statistics-twoCards .second-sec {
+  border-top: 1px solid #BFC9C7;
+  padding-top: 28px;
+}
+
+.Portal-statistics-twoCards .second-sec .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.Portal-statistics-twoCards .second-sec .title .img-box {
+  margin-right: 15px;
+}
+
+.Portal-statistics-twoCards .second-sec .title .content-box h6 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #041A2D;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+
+.Portal-statistics-twoCards .second-sec .btns-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Portal-statistics-twoCards .second-sec .btns-sec a {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 24px;
+  display: inline-block;
+}
+
+.Portal-statistics-twoCards .second-sec .btns-sec a img {
+  margin-right: 8px;
+}
+
+.Portal-statistics-twoCards .second-sec .btns-sec a.show {
+  color: #003462;
+}
+
+.Portal-statistics-twoCards .second-sec .btns-sec a.download {
+  color: #008941;
+}
+
+.Portal-statistics-twoCards .second-sec .btns-sec a.download::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
 @media (min-width: 993px) and (max-width: 1600px) {
   .menuBg .navbarCustom .nav-item {
     padding: 0;
