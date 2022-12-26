@@ -1597,6 +1597,8 @@ p + p.main-p{
             bottom: -35px;
             opacity: 0;
             transition: 500ms;
+            #{$start-direction}:50%;
+            transform: translateX(50%);
             img{
                 margin-#{$start-direction}: 12px;
                
@@ -2102,7 +2104,7 @@ p + p.main-p{
             }
             &.level-one-R1{
                 top: 42px;
-                #{$start-direction}:715px;
+                #{$start-direction}:475px;
                 &::before{
                     content: "";
                     width: 105px;
@@ -2116,13 +2118,13 @@ p + p.main-p{
 
                 }
                 &:hover{
-                  #{$start-direction}:705px;
+                  #{$start-direction}:465px;
                 }
                 
             }
             &.level-one-R2{
                 top: 134px;
-                #{$start-direction}:715px;
+                #{$start-direction}:475px;
                 &::before{
                     content: "";
                     width: 105px;
@@ -2135,21 +2137,21 @@ p + p.main-p{
                     animation: line-sub1 0.7s ease-in-out .6s forwards;
                 }
                 &:hover{
-                    #{$start-direction}:705px;
+                    #{$start-direction}:465px;
                 }
             }
             &.level-one-L1{
                 top: 42px;
-                #{$start-direction}:1000px;
+                #{$start-direction}:760px;
                 &:hover{
-                    #{$start-direction}:990px;
+                    #{$start-direction}:750px;
                 }
             }
             &.level-one-L2{
                 top: 134px;
-                #{$start-direction}:1000px;
+                #{$start-direction}:760px;
                 &:hover{
-                    #{$start-direction}: 990px;
+                    #{$start-direction}: 750px;
                 }
             }
         }
@@ -2212,7 +2214,7 @@ p + p.main-p{
             transition: 500ms;
             position: absolute;
             top: 30px;
-            #{$start-direction}:1175px;
+            #{$start-direction}:925px;
             opacity: 0;
             animation: showMe 0.7s ease-in-out 1.5s forwards;
         }
@@ -2233,7 +2235,7 @@ p + p.main-p{
             transition: 500ms;
             position: absolute;
             top: 140px;
-            #{$start-direction}:1080px;
+            #{$start-direction}:837px;
             opacity: 0;
             animation: showMe 0.7s ease-in-out 1.5s forwards;
             &::before{
@@ -2250,7 +2252,7 @@ p + p.main-p{
                 background-color: #E5F3FF;
                 width: 200px;
                 height: 81px;
-                #{$start-direction}:1070px;
+                #{$start-direction}:827px;
                 &::before{
                     width: 50px;
                 }
@@ -2262,7 +2264,7 @@ p + p.main-p{
         height: 165px;
         .left-cards{
             position: absolute;
-            #{$start-direction}: 1030px;
+            #{$start-direction}: 782px;
             width: 600px;
             height: 125px;
             &::before{
@@ -2372,7 +2374,7 @@ p + p.main-p{
         }
         .right-cards{
             position: absolute;
-            #{$start-direction}: 182px;
+            #{$start-direction}: -57px;
             width: 800px;
             height: 125px;
             &::before{
@@ -2520,7 +2522,7 @@ p + p.main-p{
         height: 220px;
         .four-content{
             position: absolute;
-            #{$start-direction}: 992px;
+            #{$start-direction}: 750px;
             top: 100px;
             width: 660px;
             height: 125px;
@@ -4024,7 +4026,7 @@ p + p.main-p{
 }
 
 .mainBlueColor{
-    color: $Blue003462;
+    color: $Blue003462 !important;
 }
 .Portal-statistics-card{
     background-color: #fff;
@@ -4151,14 +4153,7 @@ p + p.main-p{
                 }
                 &.download{
                     color: $color5;
-                    &::before{
-                        content: "";
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        top: 0;
-                        #{$start-direction}:0;
-                    }
+                   
                 }
             }
         }

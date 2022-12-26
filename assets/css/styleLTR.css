@@ -5115,6 +5115,9 @@ p.p-20 {
   opacity: 0;
   -webkit-transition: 500ms;
   transition: 500ms;
+  left: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 .social-card.sharing-card a img {
@@ -5775,7 +5778,7 @@ p.p-20 {
 
 .org-chart .level-one a.level-one-R1 {
   top: 42px;
-  left: 715px;
+  left: 475px;
 }
 
 .org-chart .level-one a.level-one-R1::before {
@@ -5792,12 +5795,12 @@ p.p-20 {
 }
 
 .org-chart .level-one a.level-one-R1:hover {
-  left: 705px;
+  left: 465px;
 }
 
 .org-chart .level-one a.level-one-R2 {
   top: 134px;
-  left: 715px;
+  left: 475px;
 }
 
 .org-chart .level-one a.level-one-R2::before {
@@ -5814,25 +5817,25 @@ p.p-20 {
 }
 
 .org-chart .level-one a.level-one-R2:hover {
-  left: 705px;
+  left: 465px;
 }
 
 .org-chart .level-one a.level-one-L1 {
   top: 42px;
-  left: 1000px;
+  left: 760px;
 }
 
 .org-chart .level-one a.level-one-L1:hover {
-  left: 990px;
+  left: 750px;
 }
 
 .org-chart .level-one a.level-one-L2 {
   top: 134px;
-  left: 1000px;
+  left: 760px;
 }
 
 .org-chart .level-one a.level-one-L2:hover {
-  left: 990px;
+  left: 750px;
 }
 
 .org-chart .level-two {
@@ -5906,7 +5909,7 @@ p.p-20 {
   transition: 500ms;
   position: absolute;
   top: 30px;
-  left: 1175px;
+  left: 925px;
   opacity: 0;
   -webkit-animation: showMe 0.7s ease-in-out 1.5s forwards;
           animation: showMe 0.7s ease-in-out 1.5s forwards;
@@ -5937,7 +5940,7 @@ p.p-20 {
   transition: 500ms;
   position: absolute;
   top: 140px;
-  left: 1080px;
+  left: 837px;
   opacity: 0;
   -webkit-animation: showMe 0.7s ease-in-out 1.5s forwards;
           animation: showMe 0.7s ease-in-out 1.5s forwards;
@@ -5959,7 +5962,7 @@ p.p-20 {
   background-color: #E5F3FF;
   width: 200px;
   height: 81px;
-  left: 1070px;
+  left: 827px;
 }
 
 .org-chart .level-two .top-two-sub:hover::before {
@@ -5973,7 +5976,7 @@ p.p-20 {
 
 .org-chart .level-three .left-cards {
   position: absolute;
-  left: 1030px;
+  left: 782px;
   width: 600px;
   height: 125px;
 }
@@ -6102,7 +6105,7 @@ p.p-20 {
 
 .org-chart .level-three .right-cards {
   position: absolute;
-  left: 182px;
+  left: -57px;
   width: 800px;
   height: 125px;
 }
@@ -6288,7 +6291,7 @@ p.p-20 {
 
 .org-chart .level-four .four-content {
   position: absolute;
-  left: 992px;
+  left: 750px;
   top: 100px;
   width: 660px;
   height: 125px;
@@ -8152,7 +8155,7 @@ p.p-20 {
 }
 
 .mainBlueColor {
-  color: #003462;
+  color: #003462 !important;
 }
 
 .Portal-statistics-card {
@@ -8319,15 +8322,6 @@ p.p-20 {
 
 .Portal-statistics-twoCards .second-sec .btns-sec a.download {
   color: #008941;
-}
-
-.Portal-statistics-twoCards .second-sec .btns-sec a.download::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
 }
 
 @media (min-width: 993px) and (max-width: 1600px) {
