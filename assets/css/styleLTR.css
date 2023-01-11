@@ -4439,6 +4439,10 @@ p + p.main-p {
   max-width: 265px;
 }
 
+.sort-section .sort-search {
+  display: inline-block;
+}
+
 .sort-section .sort-search input {
   min-width: 195px;
   min-height: 48px;
@@ -8322,6 +8326,301 @@ p.p-20 {
 
 .Portal-statistics-twoCards .second-sec .btns-sec a.download {
   color: #008941;
+}
+
+.main-comp {
+  margin-bottom: 65px;
+}
+
+.main-comp p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #32383D;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.main-comp .manasa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-comp .manasa div {
+  background-color: #fff;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+  margin-right: 30px;
+  font-size: 1rem;
+  color: #32383D;
+  padding: 5px 12px;
+  height: 51px;
+  position: relative;
+}
+
+.main-comp .manasa div img {
+  margin-left: 11px;
+}
+
+.main-comp .manasa div:last-child {
+  margin-right: 0px;
+}
+
+.list-consultations .consultations-card {
+  height: 457px;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 13px 12px;
+  margin-bottom: 30px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.list-consultations .consultations-card .hashtags {
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list-consultations .consultations-card .hashtags span {
+  background-color: rgba(99, 190, 106, 0.2);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #003462;
+  margin-right: 6px;
+  width: 88px;
+  height: 37px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 6px;
+}
+
+.list-consultations .consultations-card .img-box {
+  margin-bottom: 15px;
+  padding: 0 11px;
+}
+
+.list-consultations .consultations-card .img-box img {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  height: 56px;
+}
+
+.list-consultations .consultations-card .content-box {
+  margin-bottom: 0;
+  padding: 0 11px;
+}
+
+.list-consultations .consultations-card .content-box h5 {
+  font-size: 0.875rem;
+  line-height: 28px;
+  font-weight: 400;
+  color: #727F7C;
+  margin-bottom: 0;
+}
+
+.list-consultations .consultations-card .content-box h6 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #003462;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+
+.list-consultations .consultations-card .content-box div {
+  margin-bottom: 15px;
+}
+
+.list-consultations .consultations-card .content-box div.address h6 {
+  height: calc(26px *2);
+}
+
+.list-consultations .consultations-card .content-box div.time p.date {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.list-consultations .consultations-card .content-box div.time p.date span {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #32383D;
+}
+
+.list-consultations .consultations-card .content-box div.time p.date span.to {
+  padding-left: 22px;
+  position: relative;
+}
+
+.list-consultations .consultations-card .content-box div.time p.date span.to::before {
+  content: "-";
+  color: #003462;
+  font-size: 1rem;
+  font-weight: 500;
+  position: absolute;
+  left: 5px;
+  top: 0%;
+}
+
+.list-consultations .consultations-card .content-box div.time p.date img {
+  margin-right: 8px;
+}
+
+.list-consultations .consultations-card .card-footer {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border-top: 1px solid #D5DCE2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 11px 0;
+}
+
+.list-consultations .consultations-card .card-footer a {
+  font-size: 1rem;
+  color: #003462;
+}
+
+.list-consultations .consultations-card .card-footer a img {
+  margin-left: 10px;
+}
+
+.list-consultations .consultations-card .card-footer .end-time .end-at {
+  font-size: .75rem;
+  line-height: 24px;
+  font-weight: 500;
+  color: #63BE6A;
+  margin-bottom: 0;
+}
+
+.list-consultations .consultations-card .card-footer .end-time .number {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #003462;
+  margin-bottom: 0;
+  margin-top: -4px;
+}
+
+.list-consultations .consultations-card .card-footer .ended {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #E63E33;
+  background-color: rgba(240, 83, 73, 0.2);
+  border-radius: 6px;
+  height: 37px;
+  width: 88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 8px;
+}
+
+.list-consultations .consultations-card:hover {
+  -webkit-box-shadow: 0 5px 55px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 55px rgba(0, 0, 0, 0.1);
+}
+
+.list-consultations .consultations-card:hover .img-box img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.sort-button {
+  font-size: 1.0625rem;
+  color: #fff;
+  background-color: #63BE6A;
+  border-radius: 8px;
+  height: 48px;
+  width: 119px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.sort-button:hover {
+  -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.Sections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Sections a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #003462;
+  border-radius: 6px;
+  background-color: rgba(99, 190, 106, 0.2);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  height: 37px;
+  min-width: 28px;
+  padding: 0 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 6px;
+}
+
+.Sections a.active {
+  color: #fff;
+  background-color: #003462;
+}
+
+.col-md-3 {
+  width: 25%;
+  max-width: 25% !important;
 }
 
 @media (min-width: 993px) and (max-width: 1600px) {
