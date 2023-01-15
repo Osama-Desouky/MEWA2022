@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="user-octagon" transform="translate(-930 -983)">
+    <circle id="Ellipse_11764" data-name="Ellipse 11764" cx="30" cy="30" r="30" transform="translate(930 983)" fill="rgba(99,190,106,0.2)"/>
+    <g id="user-octagon-2" data-name="user-octagon" transform="translate(943.134 995.638)">
+      <path id="Path_130092" data-name="Path 130092" d="M30.822,12.108V22.616a4.876,4.876,0,0,1-2.412,4.194l-9.125,5.269a4.859,4.859,0,0,1-4.839,0L5.322,26.809A4.838,4.838,0,0,1,2.91,22.616V12.108A4.876,4.876,0,0,1,5.322,7.914l9.125-5.269a4.859,4.859,0,0,1,4.839,0l9.125,5.269A4.857,4.857,0,0,1,30.822,12.108Z" fill="none" stroke="#60ac66" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Path_130093" data-name="Path 130093" d="M13.249,13.5A3.579,3.579,0,1,0,9.67,9.919,3.579,3.579,0,0,0,13.249,13.5Z" transform="translate(3.625 2.327)" fill="none" stroke="#60ac66" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Path_130094" data-name="Path 130094" d="M20.289,18.408c0-2.765-2.75-5.008-6.145-5.008S8,15.643,8,18.408" transform="translate(2.729 6.113)" fill="none" stroke="#60ac66" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    </g>
+  </g>
+</svg>

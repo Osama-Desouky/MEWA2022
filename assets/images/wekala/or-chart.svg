@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="or-chart" transform="translate(-930 -983)">
+    <circle id="Ellipse_11764" data-name="Ellipse 11764" cx="30" cy="30" r="30" transform="translate(930 983)" fill="rgba(99,190,106,0.2)"/>
+    <path id="Path_130050" data-name="Path 130050" d="M16.814,8.53ZM4.265,31.119A3.765,3.765,0,1,0,.5,27.354,3.765,3.765,0,0,0,4.265,31.119Zm12.55,0a3.765,3.765,0,1,0-3.765-3.765A3.765,3.765,0,0,0,16.814,31.119Zm12.55,0A3.765,3.765,0,1,0,25.6,27.354,3.765,3.765,0,0,0,29.364,31.119Zm-25.1-7.53v-5.02a2.51,2.51,0,0,1,2.51-2.51H26.854a2.51,2.51,0,0,1,2.51,2.51v5.02M16.814,8.53V23.589" transform="translate(943 996.5)" fill="none" stroke="#60ac66" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <rect id="Rectangle_16249" data-name="Rectangle 16249" width="11" height="10" rx="4" transform="translate(954.3 995)" fill="none" stroke="#60ac66" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+  </g>
+</svg>

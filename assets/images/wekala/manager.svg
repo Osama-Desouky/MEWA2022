@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="manager" transform="translate(-930 -983)">
+    <circle id="Ellipse_11764" data-name="Ellipse 11764" cx="30" cy="30" r="30" transform="translate(930 983)" fill="#f0b349" opacity="0.84"/>
+    <path id="interface-hierarchy-2--node-organization-links-structure-link-nodes-network-hierarchy" d="M15.8,8.06a3.53,3.53,0,1,0-3.53-3.53A3.53,3.53,0,0,0,15.8,8.06ZM4.03,29.239A3.53,3.53,0,1,0,.5,25.709,3.53,3.53,0,0,0,4.03,29.239Zm11.766,0a3.53,3.53,0,1,0-3.53-3.53A3.53,3.53,0,0,0,15.8,29.239Zm11.766,0a3.53,3.53,0,1,0-3.53-3.53A3.53,3.53,0,0,0,27.562,29.239ZM4.03,22.179V17.473a2.353,2.353,0,0,1,2.353-2.353H25.209a2.353,2.353,0,0,1,2.353,2.353v4.706M15.8,8.06V22.179" transform="translate(944.204 997.88)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+  </g>
+</svg>

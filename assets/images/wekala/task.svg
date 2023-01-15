@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="task" transform="translate(-930 -983)">
+    <circle id="Ellipse_11764" data-name="Ellipse 11764" cx="30" cy="30" r="30" transform="translate(930 983)" fill="rgba(99,190,106,0.2)"/>
+    <g id="task-square" transform="translate(941.73 994.73)">
+      <path id="Path_129900" data-name="Path 129900" d="M17.983,12.91h8.065" transform="translate(0.853 0.566)" fill="none" stroke="#60ac66" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Path_129901" data-name="Path 129901" d="M9.277,13.033l1.152,1.152,3.456-3.456" transform="translate(0.361 0.443)" fill="none" stroke="#60ac66" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Path_129902" data-name="Path 129902" d="M17.983,23.087h8.065" transform="translate(0.853 1.142)" fill="none" stroke="#60ac66" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Path_129903" data-name="Path 129903" d="M9.277,23.21l1.152,1.152,3.456-3.456" transform="translate(0.361 1.019)" fill="none" stroke="#60ac66" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <path id="Path_129904" data-name="Path 129904" d="M2.908,19.728v3.149c0,7.681,3.072,10.753,10.753,10.753h9.217c7.681,0,10.753-3.072,10.753-10.753V13.661c0-7.681-3.072-10.753-10.753-10.753H13.661C5.98,2.908,2.908,5.98,2.908,13.661" fill="none" stroke="#60ac66" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    </g>
+  </g>
+</svg>

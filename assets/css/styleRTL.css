@@ -8623,6 +8623,481 @@ p.p-20 {
   max-width: 25% !important;
 }
 
+.sort-sec2 .search-right .serv-stat-sort select {
+  width: 385px;
+}
+
+.content table.serv-stat-table tbody td,
+.content table.serv-stat-table tbody tr:first-child td,
+.content table.serv-stat-table tbody tr:first-child th {
+  text-align: right;
+  padding: 0.5rem 26px;
+}
+
+.e-service-statistics-main {
+  height: 624px;
+  width: 100%;
+  background-image: url(../images/wekala/wekala-main.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 108px;
+}
+
+.e-service-statistics-main::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: #041a2d;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(4, 26, 45, 0)), to(rgba(4, 26, 45, 0.496236)));
+  background: linear-gradient(90deg, rgba(4, 26, 45, 0) 0%, rgba(4, 26, 45, 0.496236) 100%);
+}
+
+.e-service-statistics-main .content-box {
+  background: #60ac66;
+  background: linear-gradient(96deg, rgba(96, 172, 102, 0) 0%, #60ac66 60%, #60ac66 100%);
+  border-radius: 29px;
+  padding-top: 17px;
+  padding-bottom: 45px;
+  padding-right: 45px;
+  padding-left: 105px;
+  position: relative;
+}
+
+.e-service-statistics-main .content-box h2 {
+  font-size: 3.625rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.e-service-statistics-main .content-box p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.e-service-statistics-main .content-box a.moree {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #fff;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 26px;
+  padding: 8px 25px 15px;
+}
+
+.e-service-statistics-main .content-box a.moree img {
+  margin-right: 50px;
+}
+
+.offset-lg-2 {
+  margin-right: 16.66666667%;
+  margin-left: 0;
+}
+
+.main-head-WZ-icon {
+  font-size: 1.5625rem;
+  font-weight: 700;
+  color: #003462;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.main-head-WZ-icon img {
+  margin-left: 25px;
+  width: 60px;
+  height: 60px;
+}
+
+.wakeel {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.wakeel .main-head-WZ-icon {
+  margin-bottom: 44px;
+}
+
+.wakeel .wakeel-card {
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 25px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 3px 25px rgba(0, 0, 0, 0.08);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 330px;
+}
+
+.wakeel .wakeel-card .img-box {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 305px;
+          flex: 0 0 305px;
+  width: 305px;
+  height: 100%;
+}
+
+.wakeel .wakeel-card .img-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.wakeel .wakeel-card .content-box {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 25px 50px;
+}
+
+.wakeel .wakeel-card .content-box h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #003462;
+  line-height: 40px;
+  margin-bottom: 3px;
+}
+
+.wakeel .wakeel-card .content-box p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #646D75;
+  margin-bottom: 0;
+}
+
+.wakeel .wakeel-card .content-box .contact {
+  margin-top: 39px;
+}
+
+.wakeel .wakeel-card .content-box .contact p {
+  margin-bottom: 15px;
+}
+
+.wakeel .wakeel-card .content-box .contact .phone {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #003462;
+}
+
+.wakeel .wakeel-card .content-box .contact .phone img {
+  margin-left: 15px;
+}
+
+.tasks {
+  margin-bottom: 60px;
+  background-image: url(../images/wekala/circle.svg), url(../images/wekala/circle.svg);
+  background-position: top right+85px, bottom left+85px;
+  background-repeat: no-repeat;
+}
+
+.tasks .main-head-WZ-icon {
+  margin-bottom: 42px;
+}
+
+.tasks ul {
+  counter-reset: li;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tasks ul li {
+  width: 49%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 9px 16px;
+  font-size: 1.125rem;
+  color: #0B261F;
+  margin: .5%;
+  margin-bottom: 25px;
+  padding-right: 75px;
+  position: relative;
+  min-height: 58px;
+}
+
+.tasks ul li::before {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border: 2px solid #4789C8;
+  border-radius: 8px;
+  right: 16px;
+  counter-increment: li;
+  content: counter(li);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #4789C8;
+}
+
+.tasks .show-more {
+  display: block;
+  text-align: center;
+  padding-top: 8px;
+  width: 200px;
+  height: 48px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #78838C;
+  background-color: #E0E5E9;
+  border-radius: 23px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  margin-top: 15px;
+}
+
+.tasks .show-more span {
+  margin: 0 8px;
+}
+
+.tasks .show-more:hover {
+  background-color: #D6DBDF;
+}
+
+.or-chart {
+  height: 525px;
+  padding-top: 68px;
+  background-color: #fff;
+}
+
+.or-chart .main-head-WZ-icon {
+  margin-bottom: 50px;
+}
+
+.wekala-chart {
+  position: relative;
+}
+
+.wekala-chart .main-sec {
+  position: absolute;
+  min-width: 182px;
+  height: 64px;
+  background-color: #63BE6A;
+  border: 2px solid #47AA4F;
+  border-radius: 12px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  line-height: 36px;
+  padding: 10px 5px 18px;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  -webkit-filter: drop-shadow(0 10px 25px rgba(6, 67, 35, 0.16));
+          filter: drop-shadow(0 10px 25px rgba(6, 67, 35, 0.16));
+}
+
+.wekala-chart .main-sec::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 80px;
+  top: 102%;
+  right: 50%;
+  border: 1px solid #AEBDCB;
+}
+
+.wekala-chart .level-one {
+  position: relative;
+  top: 142px;
+}
+
+.wekala-chart .level-one::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  border: 1px solid #AEBDCB;
+  height: 2px;
+  width: 841px;
+}
+
+.wekala-chart .level-one::after {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  top: -4px;
+  right: 50%;
+  -webkit-transform: translateX(40%);
+          transform: translateX(40%);
+  background-color: #4789C8;
+  border-radius: 50%;
+}
+
+.wekala-chart .level-one div {
+  width: 256px;
+  height: 70px;
+  background-color: #fff;
+  border: 2px solid #003462;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  padding: 9px 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #646D75;
+  position: absolute;
+  top: 55px;
+}
+
+.wekala-chart .level-one div::before {
+  content: "";
+  position: absolute;
+  top: -56px;
+  right: 50%;
+  border: 1px solid #AEBDCB;
+  height: 54px;
+  width: 2px;
+}
+
+.wekala-chart .level-one div.one-1 {
+  right: 159px;
+}
+
+.wekala-chart .level-one div.one-2 {
+  right: 440px;
+}
+
+.wekala-chart .level-one div.one-3 {
+  right: 720px;
+}
+
+.wekala-chart .level-one div.one-4 {
+  right: 999px;
+}
+
+.themes {
+  padding-top: 54px;
+  padding-bottom: 66px;
+}
+
+.themes .main-head-WZ-icon {
+  margin-bottom: 66px;
+}
+
+.themes .theme-card {
+  background-color: #fff;
+  border: 1px solid #E2E5E5;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  margin-bottom: 37px;
+}
+
+.themes .theme-card .img-box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.themes .theme-card .img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.themes .theme-card .content-box {
+  padding: 16px;
+  height: 118px;
+}
+
+.themes .theme-card .content-box h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #32383D;
+  line-height: 37px;
+  max-height: calc(37px * 2 + 4px);
+  padding-bottom: 6px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  position: relative;
+  overflow: hidden;
+}
+
+.themes .theme-card .content-box h4::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  border: 1px solid #003462;
+  border-radius: 6px;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.themes .theme-card:hover {
+  -webkit-box-shadow: 0 3px 85px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 85px rgba(0, 0, 0, 0.15);
+}
+
+.themes .theme-card:hover .img-box img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.themes .theme-card:hover .content-box h4 {
+  color: #003462;
+}
+
+.themes .theme-card:hover .content-box h4::before {
+  width: 80px;
+}
+
 @media (min-width: 993px) and (max-width: 1600px) {
   .menuBg .navbarCustom .nav-item {
     padding: 0;
