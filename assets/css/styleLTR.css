@@ -9098,6 +9098,202 @@ p.p-20 {
   width: 80px;
 }
 
+.social-media-2 .socMed-card {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.social-media-2 .socMed-card:first-child {
+  padding-top: 15px;
+}
+
+.social-media-2 .socMed-card:last-child {
+  margin-bottom: 145px;
+}
+
+.social-media-2 .socMed-card .socMed-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  margin-bottom: 75px;
+}
+
+.social-media-2 .socMed-card .socMed-content h2 {
+  font-size: 1.5625rem;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+.social-media-2 .socMed-card .socMed-content h2 img {
+  margin-right: 15px;
+}
+
+.social-media-2 .socMed-card .socMed-content p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #32383D;
+  padding-left: 40px;
+}
+
+.social-media-2 .socMed-card .socMed-img {
+  background-color: #fff;
+  border-radius: 16px;
+  -webkit-box-shadow: 0 15px 35px rgba(0, 52, 98, 0.05);
+          box-shadow: 0 15px 35px rgba(0, 52, 98, 0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 315px;
+}
+
+.social-media-2 .socMed-card .socMed-img h3 {
+  height: 49px;
+  margin-top: 24px;
+  margin-bottom: 0;
+  color: #041A2D;
+  font-size: 1.5625rem;
+  font-weight: 700;
+}
+
+.social-media-2 .socMed-card.blue-bg {
+  background-color: #E1EBF7;
+}
+
+.social-media-2 .socMed-card.blue-bg .row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.social-media-2 .socMed-card.blue-bg .row .offset-lg-1 {
+  margin-right: 8.33333333%;
+  margin-left: 0;
+}
+
+.open-data-lib-p {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  color: #0B261F;
+  margin-bottom: 60px;
+}
+
+.open-data-lib {
+  margin-bottom: 50px;
+}
+
+.open-data-lib tbody tr td {
+  border-left: 1px solid #D1DBD9 !important;
+  border-right: 1px solid #D1DBD9 !important;
+}
+
+.open-data-lib tbody tr td:last-child {
+  border-right: none !important;
+}
+
+.open-data-lib tbody tr td:first-child {
+  border-left: none !important;
+}
+
+.open-data-lib table {
+  padding: 0 50px;
+}
+
+.open-data-lib table tbody {
+  background-color: transparent !important;
+}
+
+.open-data-lib table tbody tr {
+  background-color: transparent !important;
+}
+
+.open-data-lib table tbody tr:first-child {
+  background-color: transparent !important;
+}
+
+.open-data-lib table tbody tr td {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #32383D !important;
+  text-align: left !important;
+  padding: 0 25px;
+  border: none !important;
+}
+
+.open-data-lib table.border-table tbody tr {
+  border-bottom: 1px solid #D1DBD9 !important;
+}
+
+.open-data-lib table.border-table tbody tr:last-child {
+  border: none !important;
+}
+
+.open-data-lib table.border-table tbody tr table tbody tr {
+  border: none !important;
+}
+
+.open-lib-list {
+  margin-bottom: 145px;
+}
+
+.open-lib-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 34px 24px;
+  height: 305px;
+}
+
+.open-lib-card .img-box {
+  margin-bottom: 21px;
+}
+
+.open-lib-card .img-box img {
+  height: 58px;
+}
+
+.open-lib-card .content-box h4 {
+  font-size: 1.5625rem;
+  font-weight: 700;
+  color: #041A2D;
+  margin-bottom: 16px;
+}
+
+.open-lib-card .content-box p {
+  font-size: 1.0625rem;
+  font-weight: 400;
+  color: #0B261F;
+  line-height: 32px;
+}
+
+.open-lib-card .content-box p a {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #63BE6A;
+}
+
+.open-lib-card .content-box p a img {
+  margin-left: 8px;
+}
+
 @media (min-width: 993px) and (max-width: 1600px) {
   .menuBg .navbarCustom .nav-item {
     padding: 0;

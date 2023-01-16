@@ -4781,3 +4781,172 @@ p + p.main-p{
         }
     }
 }
+
+.social-media-2{
+    .socMed-card{
+        padding-top: 75px;
+        padding-bottom: 75px;
+        &:first-child{
+            padding-top: 15px;
+        }
+        &:last-child{
+            margin-bottom: 145px;
+        }
+        .socMed-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            margin-bottom: 75px;
+            h2{
+                font-size: 1.5625rem;
+                margin-bottom: 24px;
+                font-weight: $w-bold;
+                img{
+                 margin-#{$end-direction}: 15px;
+    
+                }
+            }
+            p{
+                font-size: 1rem;
+                font-weight: $w-medium;
+                color: $darkBlue;
+                padding-#{$start-direction}: 40px;
+            }
+        }
+        .socMed-img{
+            background-color: #fff;
+            border-radius: 16px;
+            box-shadow: 0 15px 35px rgba($color: #003462, $alpha: 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 315px;
+            .img-box{
+    
+            }
+            h3{
+                height: 49px;
+                margin-top: 24px;
+                margin-bottom: 0;
+                color: $blue041A2D;
+                font-size: 1.5625rem;
+                font-weight: $w-bold;
+            }
+        }
+        &.blue-bg{
+            background-color: #E1EBF7;
+            .row{
+                flex-direction: row-reverse;
+                .offset-lg-1 {
+                    margin-#{$end-direction}: 8.33333333%;
+                    margin-#{$start-direction}: 0;
+                }
+            }
+        }
+    }
+}
+
+.open-data-lib-p{
+    font-size: 1.0625rem;
+    font-weight: $w-medium;
+    color: $color2;
+    margin-bottom: 60px;
+}
+.open-data-lib{
+    margin-bottom: 50px;
+    tbody{
+        tr{
+            td{
+               border-#{$start-direction}: 1px solid #D1DBD9 !important;
+               border-#{$end-direction}: 1px solid #D1DBD9 !important;
+               &:last-child{
+                 border-#{$end-direction}: none !important;
+               }
+               &:first-child{
+                 border-#{$start-direction}: none !important;
+
+               }
+
+           } 
+        }
+    }
+    table{
+        padding: 0 50px;
+        tbody{
+            background-color: transparent !important;
+            tr{
+                background-color: transparent !important;
+                &:first-child{
+                    background-color: transparent !important;
+                }
+                td{
+                    font-size: 1rem;
+                    font-weight: $w-medium;
+                    color: $darkBlue !important;
+                    text-align: #{$start-direction} !important;
+                    padding: 0 25px;
+                    border: none !important;
+                }
+            }
+        }
+        &.border-table{
+            tbody{
+                tr{
+                    border-bottom: 1px solid #D1DBD9 !important;
+                    &:last-child{
+                        border: none !important;
+
+                    }
+                    table{
+                        tbody{
+                            tr{
+                                border: none !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.open-lib-list{
+    margin-bottom: 145px;
+}
+.open-lib-card{
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 34px 24px;
+    height: 305px;
+
+    .img-box{
+        margin-bottom: 21px;
+        img{
+            height: 58px;
+        }
+    }
+    .content-box{
+        h4{
+            font-size: 1.5625rem;
+            font-weight: $w-bold;
+            color: $blue041A2D;
+            margin-bottom: 16px;
+        }
+        p{
+            font-size: 1.0625rem;
+            font-weight: $w-normal;
+            color: $color2;
+            line-height: 32px;
+            a{
+                font-size: 1rem;
+                font-weight: $w-bold;
+                color: $green63BE6A;
+                img{
+                    margin-#{$start-direction}: 8px;
+                }
+            }
+        }
+    }
+}
