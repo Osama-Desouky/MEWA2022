@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="288" height="304" viewBox="0 0 288 304">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_14252" data-name="Rectangle 14252" width="288" height="304" transform="translate(0 1392.762)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="bg-2" transform="translate(0 -1392.762)" clip-path="url(#clip-path)">
+    <g id="mewa_icon" transform="translate(76.062 1315.045) rotate(30)">
+      <g id="Fill" transform="translate(14.226 42.052)">
+        <path id="Path_5188" data-name="Path 5188" d="M75.534,102.183V0L27.02,35.582A66.142,66.142,0,0,0,0,88.912V266.86l48.5-35.582a66.152,66.152,0,0,0,27.016-53.33V134.2l-31.753-.264Z" transform="translate(0 64.805)" fill="#074269"/>
+        <path id="Path_5189" data-name="Path 5189" d="M27.016,35.582A66.152,66.152,0,0,0,0,88.912v9.432l30.705,30.7H0v103.99l48.479-35.582a66.131,66.131,0,0,0,27.016-53.326V0Z" transform="translate(196.845 98.626)" fill="#074269"/>
+        <path id="Path_5190" data-name="Path 5190" d="M75.516,196.62V0L27.02,35.582A66.134,66.134,0,0,0,0,88.912v78.065L31.757,198.73H0V371.224l48.5-35.582a66.141,66.141,0,0,0,27.016-53.327V227.675H44.461Z" transform="translate(97.556 0)" fill="#074269"/>
+      </g>
+      <g id="Outline" transform="translate(0 0)" opacity="0.2">
+        <path id="Path_5188-2" data-name="Path 5188" d="M75.534,102.183V0L27.02,35.582A66.142,66.142,0,0,0,0,88.912V266.86l48.5-35.582a66.152,66.152,0,0,0,27.016-53.33V134.2l-31.753-.264Z" transform="translate(0 64.805)" fill="none" stroke="#63be6a" stroke-width="1"/>
+        <path id="Path_5189-2" data-name="Path 5189" d="M27.016,35.582A66.152,66.152,0,0,0,0,88.912v9.432l30.705,30.7H0v103.99l48.479-35.582a66.131,66.131,0,0,0,27.016-53.326V0Z" transform="translate(196.845 98.626)" fill="none" stroke="#63be6a" stroke-width="1"/>
+        <path id="Path_5190-2" data-name="Path 5190" d="M75.516,196.62V0L27.02,35.582A66.134,66.134,0,0,0,0,88.912v78.065L31.757,198.73H0V371.224l48.5-35.582a66.141,66.141,0,0,0,27.016-53.327V227.675H44.461Z" transform="translate(97.556 0)" fill="none" stroke="#63be6a" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>
