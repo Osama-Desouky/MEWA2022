@@ -9032,6 +9032,7 @@ p.p-20 {
   -webkit-transition: 500ms;
   transition: 500ms;
   margin-bottom: 37px;
+  position: relative;
 }
 
 .themes .theme-card .img-box {
@@ -9300,6 +9301,7 @@ p.p-20 {
   background-image: url(../images/wekala/bggg.svg);
   height: 676px;
   position: relative;
+  overflow: hidden;
 }
 
 .Administration::after {
@@ -9331,7 +9333,7 @@ p.p-20 {
   background-color: rgba(0, 52, 98, 0.2);
   border-radius: 0 0 40px 40px;
   padding: 33px 90px 37px;
-  margin-bottom: 110px;
+  margin-bottom: 40px;
   color: #fff;
 }
 
@@ -9355,6 +9357,10 @@ p.p-20 {
           justify-content: center;
   height: 267px;
   padding: 24px;
+  margin-top: 70px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  overflow: hidden;
 }
 
 .Administration .admins-card .number {
@@ -9384,10 +9390,131 @@ p.p-20 {
   text-align: center;
 }
 
+.Administration .hidden-content {
+  -webkit-transform: translateY(300px);
+          transform: translateY(300px);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+
+.Administration .hidden-content .title-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Administration .hidden-content .title-sec h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 17px;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.Administration .hidden-content .title-sec h4::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 25px;
+  left: calc(50% - 12.5px);
+  border-radius: 12px;
+  bottom: 0;
+  background-color: #CBA14F;
+}
+
+.Administration .hidden-content .list-sec ul {
+  padding: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.Administration .hidden-content .list-sec ul li {
+  padding-left: 17px;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  color: #fff;
+  display: inline-block;
+  width: 48%;
+  margin-bottom: 20px;
+  position: relative;
+  height: 33px;
+  overflow: hidden;
+  line-height: 33px;
+}
+
+.Administration .hidden-content .list-sec ul li::before {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 5px;
+  left: 0;
+  top: 15px;
+  background-image: url(../images/wekala/li-shape.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.Administration .hidden-content .list-sec ul li:nth-child(odd) {
+  margin-right: .5%;
+}
+
+.Administration .hidden-content .list-sec ul li:nth-child(even) {
+  margin-left: .5%;
+}
+
+.Administration .hidden-content .popup-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Administration .hidden-content .popup-more a {
+  background-color: #E0E5E9;
+  border-radius: 23px;
+  padding: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #003462;
+  height: 48px;
+}
+
+.Administration .hidden-content .popup-more a img {
+  margin-left: 10px;
+  width: 16px;
+  height: 16px;
+}
+
 .Administration .owl-nav .owl-prev, .Administration .owl-nav .owl-next {
   position: absolute;
   background-color: #fff !important;
-  top: 35%;
+  top: 205px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -9401,7 +9528,12 @@ p.p-20 {
 }
 
 .Administration .owl-dots {
-  margin-top: 70px;
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  z-index: -1;
 }
 
 .shared-dev-ideas .with-arrow {
@@ -9917,6 +10049,156 @@ p.p-20 {
 .shared-stats.stats-two {
   padding-top: 80px;
   padding-bottom: 140px;
+}
+
+.custom-width {
+  width: 100% !important;
+  -webkit-transform: unset !important;
+          transform: unset !important;
+  -webkit-transition: unset !important;
+  transition: unset !important;
+  overflow: hidden !important;
+}
+
+.hide-me {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+
+.hovered {
+  width: 100% !important;
+  height: 100%;
+  top: -70px;
+  z-index: 99;
+  height: 465px;
+}
+
+.hovered .admins-card {
+  height: 465px;
+  background-color: #4789C8;
+  border-radius: 16px;
+  padding-top: 27px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 34px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.hovered .admins-card .number {
+  opacity: 0;
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+  display: none;
+}
+
+.hovered .admins-card .title {
+  opacity: 0;
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+  display: none;
+}
+
+.hovered .admins-card .hidden-content {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  display: block;
+}
+
+#detailsModal {
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+#detailsModal .modal-content {
+  padding-bottom: 65px;
+}
+
+#detailsModal .modal-header {
+  border: 0;
+  padding: 32px 32px 20px;
+}
+
+#detailsModal .modal-header h1 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  height: 50px;
+  color: #003462;
+  padding-bottom: 17px;
+  position: relative;
+}
+
+#detailsModal .modal-header h1::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 35px;
+  left: 0;
+  border-radius: 12px;
+  bottom: 0;
+  background-color: #F0B349;
+}
+
+#detailsModal .modal-header .btn-close {
+  margin-right: 0;
+}
+
+#detailsModal .modal-body {
+  padding: 0px 30px 0px;
+}
+
+#detailsModal .modal-body .modal-list ul {
+  padding: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+#detailsModal .modal-body .modal-list ul li {
+  padding-left: 17px;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  color: #0B261F;
+  margin-bottom: 12px;
+  position: relative;
+  line-height: 33px;
+}
+
+#detailsModal .modal-body .modal-list ul li::before {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 5px;
+  left: 0;
+  top: 15px;
+  background-image: url(../images/wekala/li-modal.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#detailsModal ::-webkit-scrollbar {
+  width: 10px;
+}
+
+#detailsModal ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 50px;
+}
+
+#detailsModal ::-webkit-scrollbar-thumb {
+  background: #787878;
+  border-radius: 50px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+#detailsModal ::-webkit-scrollbar-thumb:hover {
+  background: #888;
 }
 
 @media (min-width: 993px) and (max-width: 1600px) {
