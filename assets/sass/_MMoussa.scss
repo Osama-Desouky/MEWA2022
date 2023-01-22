@@ -4397,8 +4397,9 @@ p + p.main-p{
 .e-service-statistics-main{
     height: 624px;
     width: 100%;
-    background-image: url(../images/wekala/wekala-main.jpg);
-    background-repeat: no-repeat;
+    margin-top: -60px;
+    // background-image: url(../images/wekala/wekala-main.jpg);
+    // background-repeat: no-repeat;
     position: relative;
     padding-top: 108px;
     &::before{
@@ -4410,6 +4411,20 @@ p + p.main-p{
         #{$start-direction}:0;
         background: rgb(4,26,45);
         background: linear-gradient(90deg, rgba(4,26,45,0) 0%, rgba(4,26,45,0.4962359943977591) 100%);
+        z-index: 1;
+    }
+    .img-box{
+        position: absolute;
+        top: 0;
+        #{$start-direction}: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
     .content-box{
         background: rgb(96,172,102);
@@ -4420,6 +4435,7 @@ p + p.main-p{
         padding-#{$start-direction}: 45px;
         padding-#{$end-direction}: 105px;
         position: relative;
+        z-index: 1;
         h2{
             font-size: 3.625rem;
             font-weight: $w-bold;
