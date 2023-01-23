@@ -9005,7 +9005,7 @@ p.p-20 {
           justify-content: center;
   color: #646D75;
   position: absolute;
-  top: 55px;
+  top: 50px;
 }
 
 .wekala-chart .level-one div::before {
@@ -9054,7 +9054,7 @@ p.p-20 {
 
 .themes .theme-card .img-box {
   width: 100%;
-  height: 100%;
+  height: 290px;
   overflow: hidden;
 }
 
