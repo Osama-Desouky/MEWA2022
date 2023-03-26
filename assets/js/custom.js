@@ -112,6 +112,7 @@ $("a.fancyboxVideo").fancybox({
     loop: false,
     margin: 35,
     nav: true,
+    autoplay:true,
     navText: [
       '<img src="../assets/images/home/arrowSlider2.svg" />',
       '<img src="../assets/images/home/arrowSlider1.svg" />',
@@ -127,7 +128,7 @@ $("a.fancyboxVideo").fancybox({
         items: 2.2,
       },
       1400: {
-        items: 2.5
+        items: 3
       },
     },
   });

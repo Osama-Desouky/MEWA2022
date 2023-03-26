@@ -1914,9 +1914,19 @@ footer {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
-  padding-bottom: 90px;
-  padding-top: 70px;
+  padding-bottom: 50px;
+  padding-top: 45px;
+.row{
+  justify-content: space-between;
 
+  // .col-lg-9{
+  //   width: 1275px;
+  // }
+
+}
+.owl-carousel-center .owl-stage{
+  margin-#{$start-direction}:0 !important;
+}
   .ADSBox {
     padding-top: 70px;
     .font18P {
@@ -1925,7 +1935,7 @@ footer {
     }
   }
   .boxADSSlide {
-    height: 550px;
+    height: 505px;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -2005,6 +2015,7 @@ footer {
   }
   .col-md-9 {
     position: relative;
+    padding-#{$end-direction}:0 ;
   }
   .owl-nav {
     .owl-prev,
@@ -2023,7 +2034,7 @@ footer {
   }
   .owl-dots {
     text-align: #{$start-direction};
-    padding-#{$start-direction}: 28%;
+    padding-#{$start-direction}: 20%;
     span {
       background: $green63BE6A !important;
       opacity: 0.5;
