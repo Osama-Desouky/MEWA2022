@@ -1103,17 +1103,18 @@ footer .reservedBar ul li a::after {
           transform: translateX(-50%);
   content: "";
   height: 40px;
-  height: 4px;
+  height: 3px;
   background: #63BE6A;
   -webkit-transition: all 0.5s linear;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   width: 18px;
-  bottom: 0;
+  bottom: 4.5px;
+  border-radius: 4px;
 }
 
 .borderWidth:hover::after {
-  width: 70%;
+  width: 90%;
 }
 
 .chatNow {
@@ -1772,9 +1773,9 @@ footer .reservedBar ul li a::after {
   margin-bottom: 30px;
 }
 
-.eventsSection #home .owl-carousel.owl-rtl .owl-item {
-  -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+.eventsSection .patternBox {
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .eventsSection .patternBox .boxImgPT {
@@ -1823,6 +1824,8 @@ footer .reservedBar ul li a::after {
   overflow: hidden;
   font-size: 1.25rem;
   margin-bottom: 19px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .eventsSection .patternBox .boxTxtPT .locationDate {
@@ -1841,6 +1844,10 @@ footer .reservedBar ul li a::after {
   width: 65%;
 }
 
+.eventsSection .patternBox .boxTxtPT .locationDate .dateBox img {
+  max-width: 20px;
+}
+
 .eventsSection .patternBox .boxTxtPT .locationDate .dateBox:first-of-type {
   margin-left: 10px;
   width: 35%;
@@ -1857,39 +1864,46 @@ footer .reservedBar ul li a::after {
           align-items: center;
 }
 
+.eventsSection .patternBox:hover {
+  background-color: #fff;
+  display: block;
+  border-radius: 16px;
+}
+
 .eventsSection .patternBox:hover .boxImgPT > img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
+.eventsSection .patternBox:hover .boxTxtPT .font20Bold, .eventsSection .patternBox:hover .boxTxtPT footer .row .logoFooter h4, footer .row .logoFooter .eventsSection .patternBox:hover .boxTxtPT h4 {
+  color: #003462;
+}
+
 .eventsSection .event2Ctr .event2Box {
-  background: #ffffff;
+  background: transparent;
   border-radius: 16px;
-  padding: 25px 20px 30px;
-  -webkit-box-shadow: 0 3px 25px #d7e1ee;
-          box-shadow: 0 3px 25px #d7e1ee;
-  border: 3px solid transparent;
+  padding: 0;
+  padding-bottom: 25px;
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
 
-.eventsSection .event2Ctr .event2Box:hover {
-  border: 3px solid #4789c8;
-}
-
 .eventsSection .event2Ctr .event2Box .EVImg {
-  margin-bottom: 16px;
+  margin-bottom: 12px;
+  background-color: #63BE6A;
+  border-radius: 16px;
+  height: 193px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .eventsSection .event2Ctr .event2Box .EVImg .Date2Box {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  background: #63BE6A;
-  border: 5px solid #003462;
   border-radius: 50%;
-  width: 108px;
-  height: 108px;
+  width: 100%;
+  height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1900,18 +1914,32 @@ footer .reservedBar ul li a::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+}
+
+.eventsSection .event2Ctr .event2Box .EVImg .Date2Box::before {
+  content: "";
+  position: absolute;
+  bottom: 45px;
+  width: 25px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 .eventsSection .event2Ctr .event2Box .EVImg .Date2Box strong {
   font-size: 2.5rem;
   font-weight: bold;
   color: #fff;
+  height: 35px;
 }
 
 .eventsSection .event2Ctr .event2Box .EVImg .Date2Box span {
   color: #fff;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   margin-top: 5px;
 }
 
@@ -1921,11 +1949,12 @@ footer .reservedBar ul li a::after {
 }
 
 .eventsSection .event2Ctr .event2Box .font20Bold, .eventsSection .event2Ctr .event2Box footer .row .logoFooter h4, footer .row .logoFooter .eventsSection .event2Ctr .event2Box h4 {
-  color: #515558;
+  color: #32383D;
   line-height: 1.8;
   height: 80px;
-  margin-bottom: 10px;
+  margin-bottom: 19px;
   overflow: hidden;
+  padding: 0 16px;
 }
 
 .eventsSection .event2Ctr .event2Box .locationDate {
@@ -1938,35 +1967,38 @@ footer .reservedBar ul li a::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 16px;
 }
 
 .eventsSection .event2Ctr .event2Box .locationDate .dateBox span {
   white-space: nowrap;
-  margin-right: 14px;
+  margin-right: 8px;
+  font-size: 1rem;
 }
 
 .eventsSection .event2Ctr .event2Box .locationDate .dateBox.addCln {
-  background: #e0f2e1;
+  background: rgba(99, 190, 106, 0.2);
   border-radius: 9px;
   padding: 10px 11px;
 }
 
-.eventsSection .event2Ctr .container {
-  margin-left: 0;
-  max-width: 1730px;
-  position: relative;
+.eventsSection .event2Ctr .event2Box:hover {
+  background-color: #fff;
+  -webkit-box-shadow: 0 15px 50px rgba(0, 52, 98, 0.15);
+          box-shadow: 0 15px 50px rgba(0, 52, 98, 0.15);
 }
 
-.eventsSection .event2Ctr .container::after {
-  position: absolute;
-  content: "";
-  width: 100px;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.2)));
-  background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
-  z-index: 1;
+.eventsSection .event2Ctr .event2Box:hover .EVImg {
+  background-color: #003462;
+}
+
+.eventsSection .event2Ctr .event2Box:hover .EVImg .Date2Box::before {
+  width: 90px;
+}
+
+.eventsSection .event2Ctr .container {
+  max-width: 1415px;
+  position: relative;
 }
 
 .eventsSection .event2Ctr .owl-prev,
@@ -1981,15 +2013,11 @@ footer .reservedBar ul li a::after {
 }
 
 .eventsSection .event2Ctr .owl-next {
-  left: 78px;
-}
-
-.eventsSection .owl-carousel-event1 .owl-item {
-  background-color: #fff;
+  left: -45px;
 }
 
 .eventsSection .owl-carousel-event1 .owl-stage-outer {
-  padding: 20px 0px 35px 0px;
+  padding: 10px 0px 35px 0px;
 }
 
 .eventsSection .owl-carousel-event1 .owl-stage-outer .owl-item {
@@ -1998,13 +2026,8 @@ footer .reservedBar ul li a::after {
   border-radius: 16px;
 }
 
-.eventsSection .owl-carousel-event1 .owl-stage-outer .owl-item:hover {
-  -webkit-box-shadow: 0 10px 40px #00346238;
-          box-shadow: 0 10px 40px #00346238;
-}
-
 .eventsSection .owl-carousel-event2 .owl-stage-outer {
-  padding: 30px 0px 35px 0px;
+  padding: 10px 0px 75px 0px;
 }
 
 .eventsSection .actionBF {
@@ -2485,6 +2508,11 @@ footer .reservedBar ul li a::after {
           transform: translateY(-10px);
   -webkit-transition: 0.25s;
   transition: 0.25s;
+}
+
+.ADSSecti .boxADSSlide:hover .ADBoxTxt img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .ADSSecti .boxADSSlide:hover::after {
@@ -3289,6 +3317,11 @@ footer .row .footerLinks .twoCol ul li:nth-of-type(odd) {
 }
 
 /* end fixing issue in live demo */
+.owl-carousel-center .owl-stage > .owl-item:last-child {
+  -webkit-transform: translateX(15px);
+          transform: translateX(15px);
+}
+
 .interactive-map {
   margin-top: -140px;
   background: #f3f6fb;

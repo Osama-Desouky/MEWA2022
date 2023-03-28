@@ -169,9 +169,9 @@ $("a.fancyboxVideo").fancybox({
     },
   });
   $(".owl-carousel-event2").owlCarousel({
-    loop: true,
-    margin: 40,
-    stagePadding: 25,
+    loop: false,
+    margin: 48,
+    stagePadding: 30,
     rtl: true,
     nav: true,
     navText: [
@@ -181,13 +181,13 @@ $("a.fancyboxVideo").fancybox({
     // items:3.5,
     responsive: {
       0: {
-        items: 1.2,
+        items: 1,
       },
       1000: {
-        items: 2.5,
+        items: 2,
       },
       1500: {
-        items: 3.5,
+        items: 3,
       },
     },
   });
