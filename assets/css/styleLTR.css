@@ -1893,8 +1893,12 @@ footer .reservedBar ul li a::after {
 .eventsSection .event2Ctr .event2Box .EVImg {
   margin-bottom: 12px;
   background-color: #63BE6A;
+  background-image: url(../images/home/pattern-ev.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 16px;
   height: 193px;
+  padding: 20px 50px;
   -webkit-transition: 300ms;
   transition: 300ms;
 }
@@ -1904,7 +1908,7 @@ footer .reservedBar ul li a::after {
   display: -ms-inline-flexbox;
   display: inline-flex;
   border-radius: 50%;
-  width: 100%;
+  width: 49%;
   height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1919,12 +1923,13 @@ footer .reservedBar ul li a::after {
   position: relative;
 }
 
-.eventsSection .event2Ctr .event2Box .EVImg .Date2Box::before {
+.eventsSection .event2Ctr .event2Box .EVImg .Date2Box:first-child::before {
   content: "";
   position: absolute;
-  bottom: 45px;
-  width: 25px;
-  height: 5px;
+  top: 40%;
+  left: -1.5px;
+  width: 3px;
+  height: 37px;
   background-color: #fff;
   border-radius: 4px;
   -webkit-transition: 500ms;
@@ -1992,10 +1997,6 @@ footer .reservedBar ul li a::after {
 
 .eventsSection .event2Ctr .event2Box:hover .EVImg {
   background-color: #003462;
-}
-
-.eventsSection .event2Ctr .event2Box:hover .EVImg .Date2Box::before {
-  width: 90px;
 }
 
 .eventsSection .event2Ctr .container {

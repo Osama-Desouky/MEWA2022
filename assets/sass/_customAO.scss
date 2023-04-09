@@ -1450,29 +1450,36 @@ footer {
       .EVImg {
         margin-bottom: 12px;
         background-color: $green63BE6A;
+        background-image: url(../images/home/pattern-ev.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
         border-radius: 16px;
         height: 193px;
+        padding: 20px 50px;
         transition: 300ms;
         .Date2Box {
           display: inline-flex;
           // background: $green63BE6A;
           // border: 5px solid $Blue003462;
           border-radius: 50%;
-          width: 100%;
+          width: 49%;
           height: 100%;
           align-items: center;
           justify-content: center;
           flex-direction: column;
           position: relative;
-          &::before{
-            content: "";
-            position: absolute;
-            bottom: 45px;
-            width: 25px;
-            height: 5px;
-            background-color: #fff;
-            border-radius: 4px;
-            transition: 500ms;
+          &:first-child{
+            &::before{
+              content: "";
+              position: absolute;
+              top: 40%;
+              left: -1.5px;
+              width: 3px;
+              height: 37px;
+              background-color: #fff;
+              border-radius: 4px;
+              transition: 500ms;
+            }
           }
           strong {
             font-size: 2.5rem;
@@ -1523,11 +1530,11 @@ footer {
        box-shadow: 0 15px 50px rgba($color: $Blue003462, $alpha: 0.15);
        .EVImg {
         background-color: $Blue003462;
-        .Date2Box{
-          &::before{
-            width: 90px;
-          }
-        }
+        // .Date2Box{
+        //   &::before{
+        //     width: 90px;
+        //   }
+        // }
       }
       }
     }
