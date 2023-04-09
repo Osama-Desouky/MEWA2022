@@ -1579,6 +1579,22 @@ footer {
       //   box-shadow: 0 10px 40px #00346238;
       // }
     }
+    .owl-nav{
+      margin-top: 0;
+    }
+    .owl-prev,
+    .owl-next {
+      position: absolute;
+      top: 190px;
+      background-color: #fff !important;
+    }
+    .owl-prev {
+      #{$start-direction}: -45px;
+    }
+    .owl-next {
+      #{$end-direction}: -45px;
+    }
+    
   }
   .owl-carousel-event2 {
     .owl-stage-outer {
@@ -1718,6 +1734,24 @@ footer {
     }
     &::after {
       #{$start-direction}: -134px;
+    }
+  }
+
+  .owl-carousel-news{
+    .owl-nav{
+      margin-top: 0;
+    }
+    .owl-prev,
+    .owl-next {
+      position: absolute;
+      top: 190px;
+      background-color: #fff !important;
+    }
+    .owl-prev {
+      #{$start-direction}: -55px;
+    }
+    .owl-next {
+      #{$end-direction}: -55px;
     }
   }
 }
@@ -1869,6 +1903,8 @@ footer {
           overflow: hidden;
           position: relative;
           border-radius: 15px;
+          width: 335px;
+          height: 247px;
           &::before {
             position: absolute;
             content: '';
@@ -1893,9 +1929,9 @@ footer {
           padding: 24px 16px;
           color: $Blue003462;
           font-weight: bold;
-          font-size: 1.75rem;
+          font-size: 1.375rem;
           text-align: center;
-          line-height: 35px;
+          line-height: 26px;
           margin: 0;
           // line-height: 35px;
           // max-height: 100px;
@@ -1906,6 +1942,9 @@ footer {
 
       }
     }
+  }
+  .actionBF{
+    text-align: center;
   }
 }
 .mediaCenter .homeGallaryWrapper.videoFB .boxHG > a .boxImg::before {
@@ -2113,7 +2152,7 @@ footer {
     background-size: cover;
     border: 2px solid #fff;
     border-radius: 16px;
-    padding: 15px 35px;
+    padding: 35px;
     box-shadow: 30px 15px 60px rgba(0, 0, 0, 0.1);
     a {
       display: inline-flex;
@@ -2171,6 +2210,7 @@ footer {
           align-items: center;
           justify-content: center;
           border-radius: 6px;
+          padding-bottom: 4px;
         }
         a {
           font-size: 1rem;;
@@ -2208,7 +2248,7 @@ footer {
   background: #023663;
 }
 .owl-carousel-center .owl-stage .owl-item:not(.active) + .owl-item.active {
-  transform: scaleY(1.15) scaleX(1.1);
+  transform: scaleY(1.1) scaleX(1.1);
 
   transition: 0.25s;
 

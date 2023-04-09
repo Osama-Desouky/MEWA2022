@@ -137,7 +137,11 @@ $("a.fancyboxVideo").fancybox({
     loop: false,
     margin: 40,
     rtl: true,
-    nav: false,
+    nav: true,
+    navText: [
+      '<img src="../assets/images/home/arrowSlider1.svg" />',
+      '<img src="../assets/images/home/arrowSlider2.svg" />',
+    ],
     responsive: {
       0: {
         items: 1,
@@ -155,7 +159,11 @@ $("a.fancyboxVideo").fancybox({
     margin: 40,
     stagePadding: 30,
     rtl: true,
-    nav: false,
+    nav: true,
+    navText: [
+      '<img src="../assets/images/home/arrowSlider1.svg" />',
+      '<img src="../assets/images/home/arrowSlider2.svg" />',
+    ],
     responsive: {
       0: {
         items: 1,
@@ -259,6 +267,14 @@ $("#Initiatives-a").on("click", function () {
 });
 
 
+$(".MainHeader .headerIcons .scrollDown a").on("click", function () {
+  console.log("1234");
+  scrollTo(".servicesBg", function () {
+    // $(".scroll-sec a").removeClass("active");
+    // $("#Initiatives-a").addClass("active");
+  });
+});
+
 $(document).scroll(function () {
   var scrollToDiv = $(this).scrollTop();
 
@@ -281,6 +297,9 @@ $(document).scroll(function () {
     $(".scroll-sec a").removeClass("active");
     $("#Initiatives-a").addClass("active");
   } else $("#Initiatives-a").removeClass("active");
+
+
+
 
 });
 
@@ -311,7 +330,7 @@ var scrollTo = function (sectionEl = "", callback = function () {}) {
     },
     300,
     "swing",
-    callback()
+    // callback()
   );
 };
 
