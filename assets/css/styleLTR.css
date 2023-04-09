@@ -1927,7 +1927,7 @@ footer .reservedBar ul li a::after {
   content: "";
   position: absolute;
   top: 40%;
-  left: -1.5px;
+  right: -1.5px;
   width: 3px;
   height: 37px;
   background-color: #fff;
