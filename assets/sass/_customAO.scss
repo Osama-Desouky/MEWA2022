@@ -591,6 +591,7 @@ footer {
     }
     .logoFooter {
       max-width: 470px;
+      margin-bottom: 50px;
       img {
         max-width: 100%;
       }
@@ -623,18 +624,22 @@ footer {
       display: flex;
       list-style: none;
       padding: 0;
+      flex-wrap: wrap;
+      justify-content: start;
       li {
-        margin-#{$end-direction}: 35px;
+        margin-#{$end-direction}: 15px;
+        margin-bottom: 5px !important;
         a {
-          width: 48px;
-          height: 48px;
+          width: 43px;
+          height: 43px;
           background: #e7ebef;
           border-radius: 8px;
           display: inline-flex;
           justify-content: center;
           align-items: center;
+          margin-bottom: 0;
           img {
-            max-width: 25px;
+            max-width: 23px;
             width: 100%;
           }
         }
@@ -666,21 +671,21 @@ footer {
       }
       .twoCol {
         display: flex;
-        ul {
-          &:first-of-type {
-            margin-#{$end-direction}: 37px;
-          }
-        }
+        // ul {
+        //   &:first-of-type {
+        //     margin-#{$end-direction}: 20px;
+        //   }
+        // }
       }
       &.contactUsCl {
         ul {
           li {
-            margin-bottom: 25px;
+            margin-bottom: 0px;
             a {
               display: flex;
               line-height: 1.8;
               img {
-                margin-#{$end-direction}: 11px;
+                // margin-#{$end-direction}: 11px;
               }
               span {
                 // font-weight: bold;
@@ -693,6 +698,10 @@ footer {
         }
       }
     }
+  }
+  .lastUpdateDiv{
+    margin-top: 20px;
+
   }
   .lastUpdate {
     display: flex;
@@ -740,11 +749,12 @@ footer {
       list-style: none;
       padding: 0;
       display: flex;
+      justify-content: space-between;
       li {
         @extend .font16Roma;
         font-size: 0.9375rem;
         &:first-of-type {
-          margin-#{$end-direction}: 62px;
+          margin-#{$end-direction}: 30px;
         }
         &:last-of-type {
           a {
@@ -756,18 +766,18 @@ footer {
         a {
           @extend .font16Roma;
           font-size: 0.9375rem;
-          margin-#{$end-direction}: 46px;
+          margin-#{$end-direction}: 0px;
           position: relative;
-          &::after {
-            position: absolute;
-            content: "";
-            #{$end-direction}: -23px;
-            height: 20px;
-            opacity: 0.5;
-            width: 1px;
-            background: #fff;
-            top: 8px;
-          }
+          // &::after {
+          //   position: absolute;
+          //   content: "";
+          //   #{$end-direction}: -23px;
+          //   height: 20px;
+          //   opacity: 0.5;
+          //   width: 1px;
+          //   background: #fff;
+          //   top: 8px;
+          // }
         }
       }
     }
@@ -2744,12 +2754,12 @@ h2, h3, .ms-h2, .ms-h3, .ms-headerFont {
 footer .row .footerLinks .twoCol {
   display: block;
 }
-footer .row .footerLinks .twoCol ul li{
-  width: 55%;
-}
-footer .row .footerLinks .twoCol ul li:nth-of-type(odd) {
-  float: #{$end-direction};
-}
+// footer .row .footerLinks .twoCol ul li{
+//   width: 55%;
+// }
+// footer .row .footerLinks .twoCol ul li:nth-of-type(odd) {
+//   float: #{$end-direction};
+// }
 
 /* end fixing issue in live demo */
 

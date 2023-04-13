@@ -29,7 +29,7 @@
     <div class="navBar">
       <div class="customContainer container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-5">
             <div class="linksNB">
               <ul>
                 <li>
@@ -53,7 +53,39 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-lg-4">
+            <div class="top-weather">
+              <div class="weather-widget">
+                <div class="dropdown">
+                    <a href="javascript:;" class="notification dropdown-toggle" data-toggle="dropdown" tabindex="0">
+                        <img src="../assets/images/weather_notif.svg" alt="icon weather" title="icon weather">
+                    </a>
+                    <div class="dropdown-menu">
+                        <h4>
+                            <img src="../assets/images/weather_report.svg" alt="icon weather" title="icon weather">
+                            <span id="ctl00_ctl59_weatherDailyReportTitle">تنبيهات الطقس</span>
+                        </h4>
+            
+                        <p id="ctl00_ctl59_weatherDailyReportBody">بمشيئة الله تعالى يستمر التوقع بهطول أمطار رعدية متوسطة إلى غزيرة تؤدي إلى جريان السيول مصحوبة بزخات من البرد ورياح نشطة مثيرة للأتربة والغبار تحد من مدى الرؤية الأفقية على أجزاء من مناطق المدينة المنورة، مكة المكرمة، الباحة، عسير، جازان ونجران كذلك على أجزاء من مناطق الحدود الشمالية، القصيم، حائل، الرياض والشرقية.  في حين لا تزال الفرصة مهيأة  لهطول أمطار رعدية مسبوقة برياح نشطة مثيرة للأتربة والغبار  تؤدي إلى شبة انعدام في مدى الرؤية الأفقية على أجزاء من منطقتي تبوك و الجوف يلي ذلك انخفاض في درجات الحرارة .</p>
+                        <span id="ctl00_ctl59_weatherDailyReportSource">المصدر : المركز الوطني للأرصاد</span>
+                  <a href="https://ncm.gov.sa/Ar/alert/Pages/default.aspx" id="ctl00_ctl59_moreInfoLink" target="_blank" tabindex="0">للمزيد اضغط هنا</a>
+                    </div>
+                </div>
+            
+                <div class="weather">
+            
+                    <span id="ctl00_ctl59_tempSlotOne" class="small">23</span>
+                    <span>/</span>
+                    <span id="ctl00_ctl59_tempSlotTwo">35</span>
+                    <img src="../assets/images/weather_icon.svg" alt="icon weather" title="icon weather">
+                </div>
+                <div class="select-region">
+                    <select name="ctl00$ctl59$ddlWeatherCity" id="ctl00_ctl59_ddlWeatherCity" tabindex="0"><option value="12">الرياض</option><option value="13">جدة</option><option value="14">الدمام</option><option value="15">مكة</option><option value="16">الباحة</option><option value="17">سكاكا</option><option value="18">عرعر</option><option value="19">تبوك</option><option value="20">حائل</option><option value="21">الطائف</option><option value="22">أبها</option><option value="23">المدينة المنورة</option><option value="24">جازان</option><option value="25">نجران</option><option value="26">ينبع</option><option value="27">بريدة</option><option value="34">شرورة</option><option value="70">ظهران</option><option value="72">عرفات</option><option value="73">منى</option><option value="74">مزدلفة</option><option value="75">الخرج</option><option value="77">المجمعة</option><option value="79">وادي الدواسر</option><option value="80">الدوادمي</option><option value="81">طريف</option><option value="86">القنفذة</option><option value="88">العلا</option><option value="94">حفر الباطن</option><option value="102">خميس مشيط</option><option value="103">بيشة</option><option value="107">الوجه</option><option value="112">رفحا</option><option value="113">القريات</option><option value="125">الاحساء</option><option value="133">السودة</option><option value="134">روضة التنهات</option><option value="135">صحراء الدهناء</option><option value="137">الصمان</option></select>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-3">
             <div class="linksNB textLeft">
               <ul>
                 <li>
@@ -872,26 +904,69 @@
       </a>
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-lg-5">
+          <div class="col-12">
             <div class="logoFooter">
               <img src="../assets/images/home/Logo-group.svg" alt="" />
-              <h4>اشترك في النشرة البريدية</h4>
             </div>
             <!-- end logo -->
-            <div class="SearchCustom">
-              
-              <form class="forGroup">
-                <input
-                 type="email"
-                  class="searchInput"
-                  placeholder="أدخل كلمة البحث..."
-                />
-                <button type="submit" class="searchSubmit">
-                  <img src="../assets/images/home/arrowleft.svg" alt="" />
-                </button>
-              </form>
+
+          </div>
+          <!-- end col -->
+          <div class="col-md-6 col-lg-3">
+            <div class="footerLinks ">
+              <h4>
+                نظرة عامة
+              </h4>
+              <div class="twoCol">
+                <ul>
+                  <li><a href="#">حول البوابة</a></li>
+                  <li><a href="#">كيفية الاستخدام </a></li>
+                  <li><a href="#">سياسة الخصوصية</a></li>
+                  <li><a href="#">الأخبار والفعاليات</a></li>
+                  <li><a href="#">اتفاقية مستوى الخدمة</a></li>
+                  <li><a href="#">الأخبار والفعاليات</a></li>
+                  <li><a href="#">إمكانية الوصول</a></li>
+                </ul>
+              </div>
+
             </div>
-            <!-- end subscribe -->
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="footerLinks ">
+              <h4>المساعدة والدعم</h4>
+              <div class="twoCol">
+                <ul>
+                  <li><a href="#">الإبلاغ عن حالة فساد</a></li>
+                  <li><a href="#">كيف يمكننا مساعدتك</a></li>
+                  <li><a href="#">الاسئلة الشائعة</a></li>
+                  <li><a href="#">تقديم شكوى</a></li>
+                  <li><a href="#">اتصل بنا</a></li>
+                  <li><a href="#">الدعم الفني بلغة الإشارة</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="footerLinks ">
+              <h4>روابط هامة</h4>
+              <div class="twoCol">
+                <ul>
+                  <li><a href="#">المنصة الوطنية الموحدة</a></li>
+                  <li><a href="#">الاستراتيجية الوطنية للبيانات والذكاء الاصطناعي</a></li>
+                  <li><a href="#">منصة البيانات المفتوحة</a></li>
+                  <li><a href="#">منصة المشاركة المجتمعية</a></li>
+                  <li><a href="#">منصة اعتماد</a></li>
+                  <li><a href="#">قائمة التطبيقات الحكومية</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <!-- end col -->
+          <div class="col-md-6 col-lg-3">
+            <div class="footerLinks contactUsCl">
+              <h4> ​تابعنا على</h4>
             <ul class="socialIcon">
               <li>
                 <a href=""
@@ -913,113 +988,96 @@
                   ><img src="../assets/images/home/Fsnapchat.svg" alt=""
                 /></a>
               </li>
+              <li>
+                <a href=""
+                  ><img src="../assets/images/home/rss.svg" alt=""
+                /></a>
+              </li>
             </ul>
             <!-- end social -->
-          </div>
-          <!-- end col -->
-          <div class="col-md-6 col-lg-4">
-            <div class="footerLinks ">
-              <h4>روابط هامة</h4>
-              <div class="twoCol">
-                <ul>
-                  <li><a href="#">حول البوابة</a></li>
-                  <li><a href="#">الجهات الشقيقة </a></li>
-                  <li><a href="#">دليل الهاتف </a></li>
-                  <li><a href="#">ميثاق العملاء </a></li>
-                  <li><a href="#">المكتبة الإلكترونية </a></li>
-                  <li><a href="#">صوت المواطن</a></li>
-                </ul>
-                <ul>
-                  <li><a href="#">المناسبات العالمية </a></li>
-                  <li><a href="#">منصة فروسية </a></li>
-                  <li><a href="#">الابلاغ على فساد </a></li>
-                  <li><a href="#">استطلاعات الرأي </a></li>
-                  <li><a href="#">المنصة الوطنية الموحدة</a></li>
-                </ul>
-              </div>
-
+              
             </div>
-          </div>
-          <!-- end col -->
-          <div class="col-md-6 col-lg-3">
-            <div class="footerLinks contactUsCl">
-              <h4> كيف تصل إلى مواقعنا</h4>
+            <div class="footerLinks Accessibility">
+              <h4> ​إمكانية الوصول</h4>
+              <div>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <img src="../assets/images/home/eye-no.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="../assets/images/home/voiceIcon.svg" alt="">
+                    </a>
+                  </li>
+                </ul>
+                <ul class="fontUl">
+                  <li>
+                    <a href="#">
+                      <img src="../assets/images/home/increasFont.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="../assets/images/home/font-default.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="../assets/images/home/decreasFont.svg" alt="">
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+            
+            </div>
+
+
+            <div class="footerLinks mobile-Apps">
+              <h4> ​حمل تطبيق الجوال</h4>
               <ul>
                 <li>
                   <a href="#">
-                    <img src="../assets/images/home/location.svg" alt="" />
-                    <span
-                      >وزارة البيئة والمياه والزراعة - الرياض - حي الملك عبدالله
-                      - الطريق الدائري الشرقي</span
-                    >
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="fontBold">
-                    <img src="../assets/images/home/footerPhone.svg" alt="" />
-                    <span>الرقم الموحد <strong>939</strong></span>
+                    <img src="../assets/images/home/app-store.svg" alt="">
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="../assets/images/home/footermail.svg" alt="" />
-                    <span>info@mewa.gov.sa</span>
+                    <img src="../assets/images/home/google-play.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../assets/images/home/app-gallery.svg" alt="">
                   </a>
                 </li>
               </ul>
             </div>
           </div>
           <!-- end col -->
-        </div>
-        <!-- end row -->
-        <div class="row">
-          <div class="col-md-3 col-md-3">
+          <div class="col-12 lastUpdateDiv ">
             <div class="lastUpdate">
               <img src="../assets/images/home/Update.svg" alt="" />
               <p>آخر تحديت للموقع فى 11/09/1443 06:43 ص</p>
             </div>
           </div>
-          <!-- end col -->
-          <div class="col-md-6">
-            <div class="websiteSupport">
-              <ul>
-                <li><img src="../assets/images/home/FSlogo1.svg" alt="" /></li>
-                <li><img src="../assets/images/home/FSlogo2.svg" alt="" /></li>
-                <li><img src="../assets/images/home/FSlogo3.svg" alt="" /></li>
-                <li><img src="../assets/images/home/FSlogo4.svg" alt="" /></li>
-              </ul>
-              <ul>
-                <li>هذا الموقع يدعم متصفحات</li>
-                <li><img src="../assets/images/home/FSlogo01.svg" alt="" /></li>
-                <li><img src="../assets/images/home/FSlogo02.svg" alt="" /></li>
-                <li><img src="../assets/images/home/FSlogo03.svg" alt="" /></li>
-                <li><img src="../assets/images/home/FSlogo04.svg" alt="" /></li>
-                <li><img src="../assets/images/home/FSlogo05.svg" alt="" /></li>
-              </ul>
-            </div>
-          </div>
-          <!-- end col -->
-          <div class="col-md-3">
-            <div class="imgsFooter">
-              <img src="../assets/images/home/ls1.svg" alt="" />
-              <img src="../assets/images/home/ls2.svg" alt="" />
-              <img src="../assets/images/home/ls3.svg" alt="" />
-            </div>
-          </div>
         </div>
         <!-- end row -->
+
         <div class="row">
           <div class="col-md-12">
             <div class="reservedBar">
               <ul>
                 <li>
-                  جميع الحقوق محفوظة 2022 © لوزارة البيئة والمياه والزراعة
-                  المملكة العربية السعودية
+                  © ​MEWA جميع الحقوق محفوظة
                 </li>
-                <li><a href="#">سياسة الخصوصية</a></li>
-                <li><a href="#">الشروط والاحكام</a></li>
-                <li><a href="#">الأسئلة الشائعة</a></li>
+               
                 <li><a href="#">خريطة الموقع</a></li>
+                <li>
+                  ​التطوير والصيانة - وزارة البيئة و المياه و الزراعة
+                </li>
               </ul>
             </div>
           </div>

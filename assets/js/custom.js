@@ -381,4 +381,15 @@ $(document).ready(function () {
       // console.log(currentFontSize);
   
     }
-  
+
+    $(".weather-widget .notification").on("click", function () {
+      console.log("dddd");
+      $(".weather-widget .dropdown").toggleClass("open");
+    })
+
+
+    $(document).click(function(e) {
+      if (!$(e.target).is('.weather-widget .dropdown ,  .weather-widget .dropdown * ')) {
+      $(".weather-widget .dropdown").removeClass("open");
+      }
+      });
