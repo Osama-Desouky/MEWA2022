@@ -308,7 +308,9 @@ if( $('table').length ){
   $('table').parent().addClass('tableRes')
 
 }
-
+$('.toggleTopMenu').click(function() {
+  $(this).parent().next().toggleClass('TTMSow')
+})
 
 
 

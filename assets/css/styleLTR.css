@@ -10884,7 +10884,7 @@ footer .row .Accessibility ul.fontUl::before {
   .briefNama .font35pxBold {
     font-size: 25px;
   }
-  .owl-carousel .owl-item .dateBox img {
+  .ADSSecti .owl-carousel .owl-item .dateBox img {
     display: block;
     width: 20px;
   }
@@ -11560,13 +11560,17 @@ footer .row .Accessibility ul.fontUl::before {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    border-top: 1px solid #0034622e;
+    width: 95%;
+    padding-top: 5px;
+    margin-top: 10px;
   }
   .menuBg .navbarCustom .navbar-brand.borderWidth img {
-    width: 120px;
-    margin-top: 15px;
+    width: 90px;
+    margin-top: 0;
   }
   .flexMenu {
     display: -webkit-box;
@@ -11577,6 +11581,13 @@ footer .row .Accessibility ul.fontUl::before {
             align-items: center;
     -webkit-transform: translateX(-10px);
             transform: translateX(-10px);
+  }
+  .searchMob:hover,
+  .searchMob:focus {
+    -webkit-box-shadow: unset !important;
+            box-shadow: unset !important;
+    background-color: unset;
+    border-color: unset;
   }
   .searchMob {
     background: unset;
@@ -11630,6 +11641,57 @@ footer .row .Accessibility ul.fontUl::before {
   }
   .mediaCenter .homeGallaryWrapper .boxHG {
     margin-right: 0px;
+  }
+  .mediaCenter .boxCounter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menuBg .navbarCustom .nav-item.dropdown .nav-link::after {
+    position: absolute;
+    right: 0;
+  }
+  .navbar-light .navbar-toggler {
+    border-color: #003462;
+  }
+  .hamburger .line {
+    width: 24px;
+    height: 2px;
+    background-color: #003462;
+    display: block;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .menuBg .navbar-light .navbar-toggler:not(.collapsed) .hamburger .line:nth-child(2) {
+    opacity: 0;
+  }
+  .menuBg .navbar-light .navbar-toggler:not(.collapsed) .hamburger .line:nth-child(1) {
+    -webkit-transform: translateY(7px) rotate(45deg);
+            transform: translateY(7px) rotate(45deg);
+  }
+  .menuBg .navbar-light .navbar-toggler:not(.collapsed) .hamburger .line:nth-child(3) {
+    -webkit-transform: translateY(-7px) rotate(-45deg);
+            transform: translateY(-7px) rotate(-45deg);
+  }
+  .navBar {
+    position: relative;
+  }
+  .customContainer .col-md-7 {
+    display: none;
+  }
+  .customContainer .col-md-7.TTMSow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .toggleTopMenu {
+    position: absolute;
+    right: 13px;
+    top: -4px;
+    color: #fff;
+    font-size: 35px;
+    line-height: .5;
   }
   /* end 992px */
 }
@@ -11920,11 +11982,6 @@ footer .row .Accessibility ul.fontUl::before {
   }
   .alertEvaluation .right {
     text-align: center;
-  }
-  .breadcrumbSec .socialBC {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
   }
   .breadcrumbSec .socialBC > li:hover > .innderSocial {
     -webkit-transform: scale(0.8);
@@ -12223,11 +12280,6 @@ footer .row .Accessibility ul.fontUl::before {
   .news-details .h2-main {
     font-size: 25px;
     line-height: 1.5;
-  }
-  .owl-carousel .owl-item img {
-    width: 100%;
-    margin: 0 auto;
-    max-width: 100%;
   }
   .News-slider .fancybox::after {
     bottom: 0px;
@@ -12664,8 +12716,12 @@ footer .row .Accessibility ul.fontUl::before {
     height: 90px;
   }
   .tabsCustom .nav-item .nav-link {
-    margin-left: 10px;
+    margin-right: 10px;
     min-width: auto;
+    padding: 9px 15px 13px 15px;
+  }
+  .mediaCenter .boxCounter {
+    margin: 0 0 40px;
   }
   .mediaCenter .patternCr {
     padding: 20px 15px;
@@ -12675,6 +12731,19 @@ footer .row .Accessibility ul.fontUl::before {
   }
   .normal-list ul {
     padding: 0 30px;
+  }
+  .newSection {
+    overflow: hidden;
+  }
+  .newSection .patternCr::before {
+    right: -145px;
+    bottom: 50px;
+  }
+  .eventsSection .patternBox .boxTxtPT .locationDate .dateBox {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50% !important;
   }
   /* end 600px */
 }
