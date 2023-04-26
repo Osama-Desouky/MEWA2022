@@ -131,7 +131,7 @@
   }
   .ADSSecti .container {
     margin-#{$end-direction}: 0;
-    max-width: 1800px;
+    max-width: 1700px;
   }
 }
 
@@ -752,6 +752,11 @@
 
 
 /* ------------------------------------------------------ start  */
+
+.social-card {
+  margin-bottom: 30px;
+  padding: 48px 20px;
+}
 @media (max-width: 1600px) {
   .briefNama .briefImg img {
     width: 100%;
@@ -769,9 +774,30 @@
   .eventsSection .event2Ctr .owl-prev {
     right: 0;
   }
+  .or-chart {
+    overflow: auto;
+  }
+  .or-chart .wekala-chart {
+    width: 1420px;
+  }
+  .orgContainer {
+    overflow: auto;
+    padding: 0 50px;
+  }
+  .orgContainer > .container {
+    max-width: unset;
+    width: 1445px;
+  }
+  .navBar .linksNB ul li {
+    padding-right: 7px;
+  }
+  .navBar .linksNB ul li.paddingGap {
+    padding-right: 10px;
+  }
 }
 
 @media (max-width: 1300px) {
+
   .list-cards .col-lg-4.col-md-6 {
     flex: 0 0 auto;
     width: 50%;
@@ -829,8 +855,30 @@
   .challenge .white-card .content-box {
     padding: 20px 30px;
   }
+  .orgContainer > .container {
+    zoom: .8;
+  }
   .challenge .white-card .img-box img {
     max-width: 100%;
+  }
+  .badge-white a,
+  .badge-white .img-box {
+    flex-shrink: 0;
+  }
+  .shared-stats .stats-list {
+    flex-wrap: wrap;
+  }
+  .send-idea .form-cont {
+    width: 100%;
+  }
+  .trans-card .content-box {
+    padding: 70px 20px;
+  }
+  .trans-card .content-box .hidden-content .second-title {
+    font-size: 17px;
+  }
+  .trans-card .content-box .hidden-content a.initiativesDetails--link {
+    font-size: 14px;
   }
   /* end 1300px */
 }
@@ -848,9 +896,101 @@
   .mezanya-main .col-12  {
     overflow-y: auto;
   }
+  .orgContainer > .container {
+    zoom: .6;
+  }
+  .social-card h3,
+  .social-card.sharing-card h3 {
+    font-size: 25px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .trans-card .content-box .card-title {
+    font-size: 20px;
+}
     /* end 1200px */
 }
 @media (max-width: 992px) {
+  .trans-card .content-box {
+    padding: 30px 10px;
+  }
+  .list-trans {
+    height: 100%;
+  } 
+  .trans-card,
+  .trans-card .img-box::before,
+  .trans-card .img-box img {
+    height: 30%;
+  }
+  
+  .trans-card {
+    position: unset;
+    width: 100% !important;
+  }
+  .trans-card .content-box .icon {
+    top: 130px;
+  }
+  .trans-card .content-box .icon img {
+    width: 35px;
+  }
+  .trans-card .content-box .card-title {
+    top: 175px;
+    font-size: 17px;
+    line-height: 1.2;
+  }
+  .trans-card .content-box .card-title::after {
+    width: 24px;
+    top: 1px;
+  }
+  .trans-card.not-active,
+  .trans-card.is-active {
+    width: 100% !important;
+  }
+  .trans-card.is-active .img-box::before,
+  .trans-card.is-active  .img-box img ,
+  .trans-card.is-active {
+    height: 65%;
+  }
+  .trans-card.is-active .content-box .card-title {
+    width: 80%;
+    line-height: 1.2;
+    font-size: 18px;
+  }
+  .trans-card .content-box .hidden-content .second-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .trans-card.is-active  .content-box .card-title::after {
+    width: 20px;
+    top: 2px;
+  }
+  .trans-card.is-active .content-box .hidden-content {
+    transform: translateY(170px);
+  }
+  .org-chart .main-sec-chart .saudi-head {
+    font-size: 30px;
+  }
+   
+  .org-chart .level-two .top-two-head {
+    font-size: 22px !important;
+  }
+  .org-chart .level-two .top-two-sub,
+  .org-chart .level-three .left-cards a,
+  .org-chart .level-one a {
+    font-size: 15px !important;
+  }
+  .org-chart .level-four .four-content a,
+  .org-chart .level-three .right-cards a {
+    font-size: 14px !important;
+  }
+  .wakeel .offset-lg-2 {
+    margin-right: unset;
+    margin-left: unset;
+}
+
+.tasks ul li {
+  width: 100%;
+}
   .side-navigation {
     margin-bottom: 20px;
   }
@@ -956,6 +1096,32 @@
     margin-left: 20px;
     margin-bottom: 34px;
   }
+  .menuBg.fixedTop {
+    position: unset;
+  }
+  .menuBg .navbarCustom .dropdown-menu div[class*="col"] {
+    padding: 0 10px;
+  }
+  .menuBg .navbarCustom .nav-item,
+  .menuBg .navbarCustom .nav-item .nav-link {
+    justify-content: right;
+    text-align: right;
+  }
+  .menuBg .navbarCustom .navbar-brand.borderWidth {
+    width: 100%;
+    display: flex;
+  }
+  // .menuBg .navbarCustom .nav-item:nth-last-of-type(1) {
+  //   left: 102px;
+  // }
+  // .menuBg .navbarCustom .nav-item:nth-last-of-type(2) {
+  //   left: 80px;
+  // }
+  // .menuBg .navbarCustom .nav-item:nth-last-of-type(1),
+  // .menuBg .navbarCustom .nav-item:nth-last-of-type(2) {
+  //   position: absolute;
+  //   top: 20px;
+  // }
   /* end 992px */
 }
 @media (max-width: 767px) {
@@ -975,6 +1141,22 @@
   .breadcrumbSec .socialBC > li > a > img {
     width: 16px;
   }
+  .feedback-slider .owl-nav,
+  .owl-carousel-creative .owl-nav,
+  .owl-carousel-initiatives .owl-nav {
+    position: relative;
+    top: -36px;
+    margin: 20px auto;
+    width: 20px;
+    transform: scale(.8);
+  }
+  .feedback-slider.arrowz-news .owl-theme .owl-nav {
+    width: 80px;
+    margin-top: 70px;
+  }
+  .arrowz-news .owl-carousel .owl-nav button.owl-next {
+    top: -20px;
+  }
   body .header-with-arrow,
   body .top-section .content-box h2 {
     font-size: 20px;
@@ -986,6 +1168,12 @@
   .list-card .content-box p,
   .EServicesRow .flexWrpper .box span,
   .Evaluation .alertEvaluation .left p,
+  .privacy .content-box ul li,
+  .shared-dev .main-top p,
+  .tasks ul li,
+  .feedback-slider .feedback-card .content-box h5,
+  .wakeel .wakeel-card .content-box p,
+  .wakeel .wakeel-card .content-box .contact p,
   .top-section .content-box p {
     font-size: 16px;
   }
@@ -993,6 +1181,9 @@
   .competitions .content-box p,
   .customTab .nav-link,
   .content table tbody td,
+.shared-dev-ideas p,
+.social-media-2 .socMed-card .socMed-content p,
+.send-idea .form-cont label,
   .list-card .content-box .hidden-details .phone-det p,
   .under-const .content-box a.back-home {
     font-size: 14px;
@@ -1001,18 +1192,82 @@
   .list-card .content-box h4,
   .list-with-header ul li .number,
   .content table caption,
+  .Administration .admins-card .title,
+  .wakeel .wakeel-card .content-box .contact .phone,
+  .wakeel .wakeel-card .content-box h4,
+  .Portal-statistics-twoCards .second-sec .title .content-box h6,
   .list-card .content-box .hidden-details .phone-det .phone span,
   body .wekala-card .content-box h4 {
     font-size: 18px;
   }
+  .Portal-statistics-twoCards h4,
+  .current-initiatives .current-card .title,
+  .shared-dev .main-top h2.with-arrow,
+  .send-idea .form-cont h4,
+  .social-media-2 .socMed-card .socMed-content h2,
+  .social-card h3,
+  .social-media-2 .socMed-card .socMed-img h3,
+  .social-card.sharing-card h3,
+  .feedback-main-content .h2-main,
   .headingArrow {
     font-size: 20px;
+  }
+
+  .h2-main {
+    font-size: 28px;
+  }
+  /* end 22222222222222222222222222222222222222222222222222222222 */
+
+  .shared-dev-ideas p,
+  .shared-dev .main-top p {
+    line-height: 1.8;
+  }
+  .Portal-statistics-twoCards .second-sec .title .content-box h6 {
+    line-height: 1.5;
   }
   .EServicesRow .headingArrow {
     margin-bottom: 30px;
   }
   .EServicesRow .flexWrpper .box h5 {
     font-size: 25px;
+  }
+  .social-media {
+    padding-bottom: 25px;
+    padding-top: 20px;
+  }
+  .social-media p,
+  p.p-20 {
+    margin-bottom: 30px;
+  }
+  .feedback-main-content .h2-main,
+  .social-media-2 .socMed-card .socMed-content h2 {
+    margin-bottom: 10px;
+  }
+  .social-media-2 .socMed-card .socMed-content {
+    margin-bottom: 40px;
+  }
+  .social-card {
+    padding: 25px;
+    margin-bottom: 30px;
+  }
+  .social-media-2 .socMed-card:first-child {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+  .social-media-2 .socMed-card {
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+  .social-card .img-box {
+    max-width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  .social-card.sharing-card {
+    padding: 25px;
+    height: auto;
+    min-height: 230px;
+    margin-bottom: 30px;
   }
   .pagination > span {
     flex-wrap: wrap;
@@ -1023,6 +1278,41 @@
   .competitions .content-box {
     margin-bottom: 40px;
     overflow: auto;
+  }
+  .shared-stats .shared-dev-ideas {
+    margin-bottom: 20px;
+  }
+  .send-idea .form-cont input, .send-idea .form-cont textarea {
+    min-height: 40px;
+  }
+  .shared-stats .stats-list .stats-card .img-box {
+    width: 90px;
+    height: 90px;
+  }
+  .send-idea .send .send-button {
+    font-size: 16px;
+    width: auto;
+    height: 45px;
+    padding: 0 25px;
+  }
+  .send-idea .send .send-button img {
+    margin-right: 15px;
+    width: 15px;
+  }
+  .shared-stats .stats-list .stats-card .content-box h5.number {
+    line-height: 1.5;
+    font-size: 28px;
+  }
+  .shared-stats .stats-list .stats-card {
+    height: auto;
+    padding: 20px 10px;
+  }
+  .shared-stats .stats-list .stats-card .content-box p {
+    font-size: 16px;
+  }
+  .creative {
+    padding-top: 30px;
+    padding-bottom: 50px;
   }
   .pagination li a,
   .pagination-count span.number,
@@ -1106,9 +1396,22 @@
   body .years-list ul {
     margin: 30px 20px;
   }
+  .Administration .main-head-WZ-icon {
+    padding: 22px 70px 28px;
+    margin-bottom: 0;
+  }
+  .Administration {
+    height: auto;
+    padding-bottom: 50px;
+  }
   body .years-list ul li .date::before {
     height: 400%;
     display: none;
+  }
+  .tasks ul li::before {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
   }
   body .wekalat::after {
     right: 47px;
@@ -1216,6 +1519,7 @@
   .under-const .content-box h4 {
     font-size: 30px;
     text-align: center;
+    margin: 0 20px;
   }
   .competitions {
     padding: 30px 0;
@@ -1240,9 +1544,12 @@
     width: auto;
     padding: 10px 15px;
   }
-  .sort-section select {
+  body .sort-section select {
     background-position: 11px 18px;
   }
+  .sort-sec2 .search-right .serv-stat-sort select {
+    width: 100%;
+}
   .consultations-tabs .customTab-two,.consultations-tabs .customTab {
     margin: 0;
   }
@@ -1361,21 +1668,21 @@
     margin: 0 auto;
     max-width: 100%;
   }
-  .arrowz-news .owl-carousel .owl-nav button.owl-next {
-    right: -5px;
-  }
-  .arrowz-news .owl-carousel .owl-nav button.owl-prev {
-    left: -5px;
-  }
-  .arrowz-news .owl-carousel .owl-nav button.owl-prev {
-    transform: scale(.7) translateY(-50%);
-  }
-  .arrowz-news .owl-carousel .owl-nav button.owl-next {
-    transform: scale(0.7) rotate(180deg) translateY(50%);
-  }
-  .arrowz-news .owl-carousel .owl-nav button {
-    transform: unset;
-  }
+  // .arrowz-news .owl-carousel .owl-nav button.owl-next {
+  //   right: -5px;
+  // }
+  // .arrowz-news .owl-carousel .owl-nav button.owl-prev {
+  //   left: -5px;
+  // }
+  // .arrowz-news .owl-carousel .owl-nav button.owl-prev {
+  //   transform: scale(.7) translateY(-50%);
+  // }
+  // .arrowz-news .owl-carousel .owl-nav button.owl-next {
+  //   transform: scale(0.7) rotate(180deg) translateY(50%);
+  // }
+  // .arrowz-news .owl-carousel .owl-nav button {
+  //   transform: unset;
+  // }
   .News-slider .fancybox::after {
     bottom: 0px;
     right: 20px;
@@ -1425,7 +1732,9 @@
     max-width: 100%;
   }
   .alertInfo .boxAlert {
-    word-break: break-all;
+    word-break: break-word;
+    flex-direction: column;
+    text-align: center;
   }
   .Minister-CV {
     margin-bottom: 30px;
@@ -1446,6 +1755,250 @@
   .fancybox-skin .fancybox-next span, .fancybox-skin .fancybox-prev span {
     zoom: .6;
   }
+  .Portal-statistics-card {
+    padding: 30px 23px 24px;
+    height: 220px;
+  }
+  .Portal-statistics-card .numbers h4 {
+    font-size: 30px;
+  }
+  .Portal-statistics-card .title h6 {
+    font-size: 16px;
+  }
+  .Portal-statistics-twoCards h4 {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+  .Portal-statistics-twoCards {
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+  .Portal-statistics-twoCards p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  .Portal-statistics-twoCards .second-sec .btns-sec {
+    justify-content: center;
+  }
+  .Portal-statistics-twoCards .second-sec .btns-sec a img {
+    width: 30px;
+  }
+  .Portal-statistics-twoCards p a.green-a,
+  .Portal-statistics-twoCards .second-sec .btns-sec a {
+    font-size: 14px;
+  }
+  .Portal-statistics-twoCards p a.green-a img {
+    width: 25px;
+    margin-top: 6px;
+  }
+  .charts {
+    margin-bottom: 30px;
+  }
+  .top-section {
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+  .privacy .content-box p + p {
+    margin-top: 0;
+  }
+  .badge-white {
+    flex-direction: column;
+  }
+  .alertInfo .boxAlert strong,
+  .badge-white .content {
+    font-size: 14px;
+    padding: 10px 0;
+    text-align: center;
+}
+.shared-dev-ideas .with-arrow {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+.creative .shared-dev-ideas span {
+  font-size: 14px;
+  display: block;
+}
+.creative .creative-card .hashtags span {
+  padding: 0 18px;
+  font-size: 12px;
+}
+.creative .creative-card .title {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.social-media {
+  padding-bottom: 20px;
+}
+.social-media-2 .socMed-card.blue-bg .row .offset-lg-1,
+.socMed-card .offset-lg-1 {
+  margin-right: unset;
+    margin-left: unset;
+}
+.social-media-2 .socMed-card .socMed-img {
+  height: 200px;
+}
+.social-media-2 .socMed-card .socMed-img .img-box img {
+  width: 40px;
+}
+.social-media-2 .socMed-card:last-child {
+  margin-bottom: 40px;
+}
+.sort-section .sort-search input,
+.sort-sec2 .search-right select {
+  width: 100%;
+}
+.sort-section .sort-search input::placeholder {
+  color: black
+}
+.sort-sec2 .sort-filter, .sort-sec2 .sort-search {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.sort-sec2 .search-right select {
+  min-height: 40px;
+}
+.sort-sec2 .search-right .search-butn {
+  width: auto;
+  height: 40px;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.list-system-cards .system-card {
+  height: auto;
+  margin-bottom: 30px;
+}
+.list-system-cards .system-card .content-box h4 {
+  font-size: 16px;
+  height: auto;
+  line-height: 1.6;
+}
+.list-system-cards .system-card .content-box .sys-btns .sys-share span,
+.list-system-cards .system-card .content-box .sys-btns .download {
+  font-size: 14px;
+  margin: 0;
+}
+.list-system-cards .system-card .content-box .sys-btns .sys-share .share img,
+.list-system-cards .system-card .content-box .sys-btns .download img {
+  width: 30px;
+}
+.list-system-cards .system-card .content-box .sys-btns .sys-share .innderSocial {
+  zoom: .8;
+}
+.list-system-cards {
+  margin-top: 16px;
+} 
+.media-center-list .media-card {
+  margin-bottom: 30px;
+  height: auto;
+}
+.media-center-list .media-card .content-box h3 {
+  font-size: 16px;
+}
+.wakeel .wakeel-card {
+  display: block;
+  height: auto;
+}
+.wakeel .wakeel-card .img-box {
+  width: 100%;
+}
+.wakeel .wakeel-card .img-box {
+  padding: 20px;
+}
+.e-service-statistics-main {
+  height: 500px;
+  padding-top: 45px;
+  }
+  .e-service-statistics-main .content-box {
+    padding-right: 22px;
+    padding-left: 70px;
+  }
+  .e-service-statistics-main .content-box h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .e-service-statistics-main .content-box a.moree {
+    font-size: 14px;
+  }
+  .e-service-statistics-main .content-box a.moree img {
+    margin-right: 15px;
+    width: 14px;
+}
+.wakeel {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.wakeel .main-head-WZ-icon {
+  margin-bottom: 30px;
+}
+.main-head-WZ-icon img {
+  margin-left: 15px;
+  width: 45px;
+  height: 45px;
+}
+.main-head-WZ-icon {
+  font-size: 20px;
+}
+.wakeel .wakeel-card .content-box {
+  padding: 5px 20px 25px 20px;
+}
+.tasks .main-head-WZ-icon {
+    margin-bottom: 15px;
+}
+.feedback-slider .feedback-card .content-box .stars-container {
+  height: 35px;
+}
+.owl-carousel .owl-item img {
+  width: 60%;
+  max-width: 60%;
+} 
+.feedback-slider .feedback-card .content-box .stars-container .star {
+  margin-left: 10px;
+  margin-top: 12px;
+}
+.feedback-slider .feedback-card .content-box .hidden-sec a {
+  font-size: 14px;
+}
+.feedback-slider .feedback-card .content-box .hidden-sec a img {
+  margin-right: 7px;
+  width: 15px;
+  margin-top: 8px;
+}
+footer .lastUpdateDiv {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+footer .row .logoFooter {
+  margin-bottom: 30px;
+}
+footer .row .footerLinks h4 {
+  margin-bottom: 15px;
+}
+footer .row .footerLinks ul li {
+  margin-bottom: 0px;
+}
+.navBar .linksNB ul li {
+  padding-right: 10px;
+}
+.top-weather {
+  margin: 5px 0;
+}
+.modalSearch .modal-dialog .modal-content .SearchCustom {
+  width: 100%;
+  height: 50px;
+}
+.SearchCustom .searchSubmit {
+  width: 55px;
+}
+.SearchCustom .searchSubmit img {
+  width: 20px;
+}
+.SearchCustom .boxSloce button img {
+  width: 22px;
+}
   /* end 600px */
 }
 

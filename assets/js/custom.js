@@ -112,6 +112,7 @@ $("a.fancyboxVideo").fancybox({
     loop: false,
     margin: 35,
     nav: true,
+    autoplay:true,
     navText: [
       '<img src="../assets/images/home/arrowSlider2.svg" />',
       '<img src="../assets/images/home/arrowSlider1.svg" />',
@@ -127,7 +128,7 @@ $("a.fancyboxVideo").fancybox({
         items: 2.2,
       },
       1400: {
-        items: 2.5
+        items: 3
       },
     },
   });
@@ -136,7 +137,11 @@ $("a.fancyboxVideo").fancybox({
     loop: false,
     margin: 40,
     rtl: true,
-    nav: false,
+    nav: true,
+    navText: [
+      '<img src="../assets/images/home/arrowSlider1.svg" />',
+      '<img src="../assets/images/home/arrowSlider2.svg" />',
+    ],
     responsive: {
       0: {
         items: 1,
@@ -154,7 +159,11 @@ $("a.fancyboxVideo").fancybox({
     margin: 40,
     stagePadding: 30,
     rtl: true,
-    nav: false,
+    nav: true,
+    navText: [
+      '<img src="../assets/images/home/arrowSlider1.svg" />',
+      '<img src="../assets/images/home/arrowSlider2.svg" />',
+    ],
     responsive: {
       0: {
         items: 1,
@@ -168,9 +177,9 @@ $("a.fancyboxVideo").fancybox({
     },
   });
   $(".owl-carousel-event2").owlCarousel({
-    loop: true,
-    margin: 40,
-    stagePadding: 25,
+    loop: false,
+    margin: 48,
+    stagePadding: 30,
     rtl: true,
     nav: true,
     navText: [
@@ -180,13 +189,13 @@ $("a.fancyboxVideo").fancybox({
     // items:3.5,
     responsive: {
       0: {
-        items: 1.2,
+        items: 1,
       },
       1000: {
-        items: 2.5,
+        items: 2,
       },
       1500: {
-        items: 3.5,
+        items: 3,
       },
     },
   });
@@ -258,6 +267,14 @@ $("#Initiatives-a").on("click", function () {
 });
 
 
+$(".MainHeader .headerIcons .scrollDown a").on("click", function () {
+  console.log("1234");
+  scrollTo(".servicesBg", function () {
+    // $(".scroll-sec a").removeClass("active");
+    // $("#Initiatives-a").addClass("active");
+  });
+});
+
 $(document).scroll(function () {
   var scrollToDiv = $(this).scrollTop();
 
@@ -280,6 +297,9 @@ $(document).scroll(function () {
     $(".scroll-sec a").removeClass("active");
     $("#Initiatives-a").addClass("active");
   } else $("#Initiatives-a").removeClass("active");
+
+
+
 
 });
 
@@ -310,7 +330,7 @@ var scrollTo = function (sectionEl = "", callback = function () {}) {
     },
     300,
     "swing",
-    callback()
+    // callback()
   );
 };
 
@@ -361,4 +381,15 @@ $(document).ready(function () {
       // console.log(currentFontSize);
   
     }
-  
+
+    $(".weather-widget .notification").on("click", function () {
+      console.log("dddd");
+      $(".weather-widget .dropdown").toggleClass("open");
+    })
+
+
+    $(document).click(function(e) {
+      if (!$(e.target).is('.weather-widget .dropdown ,  .weather-widget .dropdown * ')) {
+      $(".weather-widget .dropdown").removeClass("open");
+      }
+      });
