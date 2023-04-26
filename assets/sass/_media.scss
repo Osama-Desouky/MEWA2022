@@ -138,6 +138,7 @@
 // responsive media
 
 @media (max-width: 1400px) {
+
   .container {
     // border: 1px solid red;
   }
@@ -199,7 +200,7 @@
   .interactive-map {
     .map-bg {
       .svg-map {
-        margin-right: 0;
+        margin-#{$start-direction}: 0;
       }
       height: auto;
       .col-lg-8 {
@@ -626,10 +627,10 @@
       }
     }
     .swiper-button-prev {
-      left: 0;
+      #{$end-direction}: 0;
     }
     .swiper-button-next {
-      left: 0;
+      #{$end-direction}: 0;
     }
   }
   .happeningNow.openUpSection {
@@ -752,27 +753,49 @@
 
 
 /* ------------------------------------------------------ start  */
-
+.tableRes {
+  overflow-y: auto;
+}
+.searchMob,
+.langMob {
+  display: none;
+}
+.customContainer .col-md-7 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.customContainer .col-md-7 .top-weather {
+  margin-#{$end-direction}: 20px;
+}
 .social-card {
   margin-bottom: 30px;
   padding: 48px 20px;
 }
 @media (max-width: 1600px) {
+  .eventsSection {
+
+  }
+  .eventsSection .owl-carousel-event1 .owl-next {
+    #{$end-direction}: -20px;
+  }
+  .eventsSection .owl-carousel-event1 .owl-prev {
+    #{$start-direction}: -20px;
+  }
   .briefNama .briefImg img {
     width: 100%;
   }
   .patternCr::after {
     top: 0;
-    right: 5px;
+    #{$start-direction}: 5px;
   }
   .newSection .patternCr::after {
-    right: 0;
+    #{$start-direction}: 0;
   }
   .newSection .patternCr::before {
-    left: 0;
+    #{$end-direction}: 0;
   }
   .eventsSection .event2Ctr .owl-prev {
-    right: 0;
+    #{$start-direction}: 0;
   }
   .or-chart {
     overflow: auto;
@@ -789,22 +812,47 @@
     width: 1445px;
   }
   .navBar .linksNB ul li {
-    padding-right: 7px;
+    padding-#{$start-direction}: 7px;
   }
   .navBar .linksNB ul li.paddingGap {
-    padding-right: 10px;
+    padding-#{$start-direction}: 10px;
   }
 }
-
+@media (max-width: 1400px) {
+  .mediaCenter .patternCr::before {
+    #{$end-direction}: 0px;
+  }
+  .eventsSection .event2Ctr .owl-next {
+    #{$end-direction}: 0;
+  }
+  .newSection .owl-carousel-news .owl-prev {
+    #{$start-direction}: -15px;
+  }
+  .newSection .owl-carousel-news .owl-next {
+    #{$end-direction}: -15px;
+  }
+  .eventsSection .owl-carousel-event1 .owl-next {
+    #{$end-direction}: 15px;
+  }
+  
+  .eventsSection .owl-carousel-event1 .owl-prev {
+    #{$start-direction}: 15px;
+  }
+}
 @media (max-width: 1300px) {
-
+  .mediaCenter .homeGallaryWrapper .boxHG {
+    margin-#{$end-direction}: 10px;
+  }
+  .mediaCenter .homeGallaryWrapper .boxHG > a .boxImg {
+    width: 100%;
+  }
   .list-cards .col-lg-4.col-md-6 {
     flex: 0 0 auto;
     width: 50%;
   }
   .mediaCenter .patternCr::before {
-    right: unset;
-    left: 0;
+    #{$start-direction}: unset;
+    #{$end-direction}: 0;
   }
   .servicesBg .sevBob .sevUl {
     padding: 0;
@@ -816,14 +864,14 @@
     justify-content: center;
   }
   // .wekalat .wekalat-list {
-  //   padding-left: 20px;
+  //   padding-#{$end-direction}: 20px;
   // }
   // .years-list ul {
   //   margin: 48px 22px;
   // }
   body .wekalat .wekalat-list {
     flex-wrap: wrap;
-    padding-left: 20px;
+    padding-#{$end-direction}: 20px;
   }
   body .wekalat .wekalat-list .wekala-card {
     width: 30%;
@@ -847,10 +895,10 @@
     font-size: 1.3rem;
   }
   .arrowz-news .owl-carousel .owl-nav button.owl-next {
-    right: -25px;
+    #{$start-direction}: -25px;
   }
   .arrowz-news .owl-carousel .owl-nav button.owl-prev {
-    left: -25px;
+    #{$end-direction}: -25px;
   }
   .challenge .white-card .content-box {
     padding: 20px 30px;
@@ -880,6 +928,7 @@
   .trans-card .content-box .hidden-content a.initiativesDetails--link {
     font-size: 14px;
   }
+
   /* end 1300px */
 }
 @media (max-width: 1200px) {
@@ -894,7 +943,7 @@
     font-size: 16px;
   }
   .mezanya-main .col-12  {
-    overflow-y: auto;
+    // overflow-y: auto;
   }
   .orgContainer > .container {
     zoom: .6;
@@ -908,9 +957,26 @@
   .trans-card .content-box .card-title {
     font-size: 20px;
 }
+.navBar .linksNB ul li.paddingGap,
+.navBar .linksNB.textLeft ul li a span {
+  padding-#{$start-direction}: 5px;
+}
+.weather-widget .select-region select {
+  min-width: 90px;
+  margin-#{$start-direction}: 5px;
+  padding-#{$start-direction}: 8px;
+}
     /* end 1200px */
 }
 @media (max-width: 992px) {
+  .menuBg .navbarCustom .dropdown-menu .row {
+    padding-bottom: 10px;
+  }
+  .customContainer .col-md-7 {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    margin: 10px 0 5px 0;
+  }
   .trans-card .content-box {
     padding: 30px 10px;
   }
@@ -984,8 +1050,8 @@
     font-size: 14px !important;
   }
   .wakeel .offset-lg-2 {
-    margin-right: unset;
-    margin-left: unset;
+    margin-#{$start-direction}: unset;
+    margin-#{$end-direction}: unset;
 }
 
 .tasks ul li {
@@ -1004,7 +1070,7 @@
     width: 100%;
     max-width: 100% !important;
     margin-bottom: 20px;
-    text-align: right;
+    text-align: #{$start-direction};
   }
   .board-members {
     padding: 30px 0;
@@ -1015,7 +1081,7 @@
     width: 100%;
   }
   .board-members .offset-md-3 {
-    margin-left: 0;
+    margin-#{$end-direction}: 0;
   }
   .board-members .main-card,
   .list-cards .list-card {
@@ -1031,12 +1097,13 @@
   .list-with-header ul li p {
     font-size: 16px;
     height: auto;
+
   }
   .ADSSecti .col-md-3 {
     max-width: 100% !important;
   }
   .font35pxBold {
-    font-size: 30px;
+    font-size: 28px;
   }
   .font18P {
     font-size: 16px;
@@ -1044,9 +1111,12 @@
   .HappensNowPuple {
     transform: scale(0.8);
   }
+  .mediaCenter .tabsCustom {
+    margin-bottom: 15px;
+  }
   .mediaCenter .homeGallaryWrapper {
     flex-wrap: wrap;
-    margin: 35px 0 77px 0;
+    margin: 15px 0 5px 0;
   }
   .Evaluation .alertEvaluation {
     display: block;
@@ -1063,7 +1133,7 @@
     flex-wrap: wrap;
   }
   .Evaluation .evaDetails .right .evaluationBox {
-    margin-left: 20px;
+    margin-#{$end-direction}: 20px;
     margin-bottom: 10px;
   }
   body .wekalat .wekalat-list .wekala-card {
@@ -1082,7 +1152,7 @@
     width: 100%;
   }
   .challenge .col-lg-10.offset-lg-1 {
-    margin-right: 0;
+    margin-#{$start-direction}: 0;
   }
   .challenge .white-card .img-box img ,
   .challenge .white-card .img-box {
@@ -1093,7 +1163,7 @@
     justify-content: flex-start;
   }
   .scroll-sec ul li {
-    margin-left: 20px;
+    margin-#{$end-direction}: 20px;
     margin-bottom: 34px;
   }
   .menuBg.fixedTop {
@@ -1104,18 +1174,76 @@
   }
   .menuBg .navbarCustom .nav-item,
   .menuBg .navbarCustom .nav-item .nav-link {
-    justify-content: right;
-    text-align: right;
+    justify-content: #{$start-direction};
+    text-align: #{$start-direction};
   }
   .menuBg .navbarCustom .navbar-brand.borderWidth {
     width: 100%;
     display: flex;
+    justify-content: center;
   }
+  .menuBg .navbarCustom .navbar-brand.borderWidth img {
+    width: 120px;
+    margin-top: 15px;
+  }
+  .flexMenu {
+    display: flex;
+    align-items: center;
+    transform: translateX(-10px);
+  }
+  .searchMob {
+    background: unset;
+    border: unset;
+    height: 100%;
+    padding: 0;
+    border-radius: unset;
+  }
+  .langMob {
+    font-size: 1rem;
+    color: #003462;
+    font-family: "SSTArabic";
+    font-weight: 500;
+  }
+
+  .searchMob,
+.langMob {
+  display: block;
+  }
+    .menuBg .navbarCustom .nav-item:nth-last-of-type(1),
+  .menuBg .navbarCustom .nav-item:nth-last-of-type(2) {
+    display: none;
+  }
+  .navbar-toggler:focus {
+    box-shadow: unset;
+}
+.customContainer .col-md-7 .top-weather {
+  margin-#{$end-direction}: 20px;
+  justify-content: #{$start-direction};
+}
+.ADSSecti .boxADSSlide .ADBoxTxt .dateBox img {
+  display: inline-flex;
+    margin: unset;
+}
+.menuBg .navbarCustom .navbar-nav {
+  margin-top: 20px;
+}
+.mediaCenter .homeGallaryWrapper .boxHG {
+  margin-bottom: 20px;
+}
+.mediaCenter .homeGallaryWrapper .boxHG {
+  max-height: unset;
+}
+.mediaCenter .homeGallaryWrapper .boxHG > a .boxImg::before {
+  transform: translate(-50%, -50%) scale(.6);
+}
+.mediaCenter .homeGallaryWrapper .boxHG {
+  margin-#{$end-direction}: 0px;
+}
   // .menuBg .navbarCustom .nav-item:nth-last-of-type(1) {
-  //   left: 102px;
+  //   #{$end-direction}: 102px;
   // }
   // .menuBg .navbarCustom .nav-item:nth-last-of-type(2) {
-  //   left: 80px;
+  //   #{$end-direction}: 80px;
   // }
   // .menuBg .navbarCustom .nav-item:nth-last-of-type(1),
   // .menuBg .navbarCustom .nav-item:nth-last-of-type(2) {
@@ -1125,6 +1253,16 @@
   /* end 992px */
 }
 @media (max-width: 767px) {
+  .main-comp {
+    margin-bottom: 30px;
+}
+  .menuBg .navbarCustom > .navbar-brand img {
+    width: 100%;
+}
+.menuBg .navbarCustom > .navbar-brand {
+  margin: 0;
+  width: 60%;
+}
   .list-consultations .col-lg-4 {
     width: 100%;
 }
@@ -1150,6 +1288,28 @@
     width: 20px;
     transform: scale(.8);
   }
+  .owl-carousel-event2 .owl-stage-outer {
+    padding: 10px 0px 0 0px !important
+  }
+  .owl-carousel-center .owl-nav,
+  .owl-carousel-event2 .owl-nav,
+  .owl-carousel-event1 .owl-nav,
+  .owl-carousel-news .owl-nav {
+    width: 140px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 45px !important;
+    top: -200px;
+    transform: scale(.8);
+  }
+  .owl-carousel-center .owl-nav {
+    top: -45px;
+    margin-top:0px !important;
+    display: none;
+  }
+  .owl-carousel-news .owl-nav {
+    width: 100px;
+  }
   .feedback-slider.arrowz-news .owl-theme .owl-nav {
     width: 80px;
     margin-top: 70px;
@@ -1157,13 +1317,13 @@
   .arrowz-news .owl-carousel .owl-nav button.owl-next {
     top: -20px;
   }
+
   body .header-with-arrow,
   body .top-section .content-box h2 {
     font-size: 20px;
     margin-bottom: 10px;
   }
   .main-p,
-  .boxTagsShared a span,
   .under-const .content-box p,
   .list-card .content-box p,
   .EServicesRow .flexWrpper .box span,
@@ -1175,13 +1335,14 @@
   .wakeel .wakeel-card .content-box p,
   .wakeel .wakeel-card .content-box .contact p,
   .top-section .content-box p {
-    font-size: 16px;
+    font-size: 16px !important;
   }
   .list-card .content-box .hidden-details .description,
   .competitions .content-box p,
   .customTab .nav-link,
   .content table tbody td,
 .shared-dev-ideas p,
+.boxTagsShared a span,
 .social-media-2 .socMed-card .socMed-content p,
 .send-idea .form-cont label,
   .list-card .content-box .hidden-details .phone-det p,
@@ -1296,7 +1457,7 @@
     padding: 0 25px;
   }
   .send-idea .send .send-button img {
-    margin-right: 15px;
+    margin-#{$start-direction}: 15px;
     width: 15px;
   }
   .shared-stats .stats-list .stats-card .content-box h5.number {
@@ -1340,7 +1501,7 @@
   .pagination-count {
     position: unset;
     margin-top: 15px;
-    left: 0;
+    #{$end-direction}: 0;
     top: 25%;
 }
   .page-section {
@@ -1367,7 +1528,7 @@
     margin: 20px 0;
   }
   .under-const .content-box a.back-home img {
-    margin-right: 14px;
+    margin-#{$start-direction}: 14px;
     width: 18px;
   }
   .Evaluation .alertEvaluation .right strong {
@@ -1389,9 +1550,12 @@
 
   .list-with-header ul li .number {
     flex-shrink: 0;
+    margin-#{$end-direction}: 15px;
+    margin-bottom: 8px;
   }
   body .years-list ul li {
     font-size: 14px;
+    display: block;
   }
   body .years-list ul {
     margin: 30px 20px;
@@ -1414,27 +1578,28 @@
     font-size: 16px;
   }
   body .wekalat::after {
-    right: 47px;
+    #{$start-direction}: 47px;
     bottom: 73px;
     display: none;
   }
   body .wekalat::before {
-    right: 52px;
+    #{$start-direction}: 52px;
     display: none;
   }
   body .wekalat .wekalat-list {
     width: 100%;
-    padding-right: 50px;
+    padding-#{$start-direction}: 0px;
   }
   body .years-list ul li .date {
     width: 56px;
     height: 56px;
     flex: 0;
     font-size: 16px;
+    margin-bottom: 10px;
   }
   body .wekalat .wekalat-list .wekala-card {
     width: 90%;
-    margin-left: 0;
+    margin-#{$end-direction}: 0;
     margin-bottom: 15px;
   }
   .MainHeader .boxHeader > img {
@@ -1451,13 +1616,13 @@
   }
   .HappensNowPuple {
     z-index: 99;
-    left: -30px;
+    #{$end-direction}: -30px;
     bottom: -30px;
     transform: scale(0.6);
   }
   .chatNow {
     transform: scale(0.7);
-    right: -20px;
+    #{$start-direction}: -20px;
     bottom: 0;
   }
   body .MainHeader .boxHeader .headerText {
@@ -1474,30 +1639,30 @@
   }
   .ADSSecti .owl-carousel-center .owl-stage-outer {
     padding: 20px 0;
-    margin-right: 0;
-    padding-right: 20px;
+    margin-#{$start-direction}: 0;
+    padding-#{$start-direction}: 20px;
   }
   .ADSSecti .owl-nav .owl-next {
-    right: 0px;
+    #{$start-direction}: 0px;
   }
   .ADSSecti .boxADSSlide .ADBoxTxt h1 {
     font-size: 14px;
     padding: 0 12px;
   }
   .eventsSection .event2Ctr .owl-prev {
-    right: 0;
+    #{$start-direction}: 0;
   }
   .eventsSection .event2Ctr .owl-next {
-    left: 60px;
+    #{$end-direction}: 0px;
   }
   .mediaCenter .homeGallaryWrapper .boxHG > a .titleG {
     font-size: 20px;
   }
   .tabsCustom .nav-item {
-    margin-left: 0;
+    margin-#{$end-direction}: 0;
   }
   .scrollTop {
-    left: -25px;
+    #{$end-direction}: -25px;
     top: -25px;
     transform: rotate(-90deg) scaleX(0.9);
   }
@@ -1566,7 +1731,7 @@
     height: 80px;
   } 
   .customTab .nav-link:not(:last-of-type) {
-    margin-left: 0;
+    margin-#{$end-direction}: 0;
   }
   .numSectionTabs {
     padding-bottom: 0;
@@ -1664,15 +1829,15 @@
     line-height: 1.5;
   }
   .owl-carousel .owl-item img {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     max-width: 100%;
   }
   // .arrowz-news .owl-carousel .owl-nav button.owl-next {
-  //   right: -5px;
+  //   #{$start-direction}: -5px;
   // }
   // .arrowz-news .owl-carousel .owl-nav button.owl-prev {
-  //   left: -5px;
+  //   #{$end-direction}: -5px;
   // }
   // .arrowz-news .owl-carousel .owl-nav button.owl-prev {
   //   transform: scale(.7) translateY(-50%);
@@ -1685,7 +1850,7 @@
   // }
   .News-slider .fancybox::after {
     bottom: 0px;
-    right: 20px;
+    #{$start-direction}: 20px;
     transform: scale(.6);
   }
   .main-p2 {
@@ -1697,7 +1862,7 @@
   .ntp-header img {
     width: 45px;
     height: 45px;
-    margin-left: 15px;
+    margin-#{$end-direction}: 15px;
   }
   .scroll-sec ul li a img {
     width: 20px;
@@ -1725,7 +1890,7 @@
     margin-top: 15px;
   }
   .open-data-top p {
-    padding-right: 0;
+    padding-#{$start-direction}: 0;
     line-height: 1.6;
   }
   .open-data-top .data-card .content-box {
@@ -1735,6 +1900,7 @@
     word-break: break-word;
     flex-direction: column;
     text-align: center;
+    display: flex;
   }
   .Minister-CV {
     margin-bottom: 30px;
@@ -1835,8 +2001,8 @@
 }
 .social-media-2 .socMed-card.blue-bg .row .offset-lg-1,
 .socMed-card .offset-lg-1 {
-  margin-right: unset;
-    margin-left: unset;
+  margin-#{$start-direction}: unset;
+    margin-#{$end-direction}: unset;
 }
 .social-media-2 .socMed-card .socMed-img {
   height: 200px;
@@ -1913,8 +2079,8 @@
   padding-top: 45px;
   }
   .e-service-statistics-main .content-box {
-    padding-right: 22px;
-    padding-left: 70px;
+    padding-#{$start-direction}: 22px;
+    padding-#{$end-direction}: 70px;
   }
   .e-service-statistics-main .content-box h2 {
     font-size: 30px;
@@ -1924,7 +2090,7 @@
     font-size: 14px;
   }
   .e-service-statistics-main .content-box a.moree img {
-    margin-right: 15px;
+    margin-#{$start-direction}: 15px;
     width: 14px;
 }
 .wakeel {
@@ -1935,7 +2101,7 @@
   margin-bottom: 30px;
 }
 .main-head-WZ-icon img {
-  margin-left: 15px;
+  margin-#{$end-direction}: 15px;
   width: 45px;
   height: 45px;
 }
@@ -1951,19 +2117,16 @@
 .feedback-slider .feedback-card .content-box .stars-container {
   height: 35px;
 }
-.owl-carousel .owl-item img {
-  width: 60%;
-  max-width: 60%;
-} 
+
 .feedback-slider .feedback-card .content-box .stars-container .star {
-  margin-left: 10px;
+  margin-#{$end-direction}: 10px;
   margin-top: 12px;
 }
 .feedback-slider .feedback-card .content-box .hidden-sec a {
   font-size: 14px;
 }
 .feedback-slider .feedback-card .content-box .hidden-sec a img {
-  margin-right: 7px;
+  margin-#{$start-direction}: 7px;
   width: 15px;
   margin-top: 8px;
 }
@@ -1981,7 +2144,7 @@ footer .row .footerLinks ul li {
   margin-bottom: 0px;
 }
 .navBar .linksNB ul li {
-  padding-right: 10px;
+  padding-#{$start-direction}: 10px;
 }
 .top-weather {
   margin: 5px 0;
@@ -1998,6 +2161,102 @@ footer .row .footerLinks ul li {
 }
 .SearchCustom .boxSloce button img {
   width: 22px;
+}
+.weather-widget {
+  zoom: .8;
+}
+.list-consultations .consultations-card .hashtags {
+  margin-bottom: 15px;
+}
+.list-consultations .consultations-card .hashtags span {
+  width: auto;
+  height: 37px;
+  padding: 0 10px;
+  font-size: 13px;
+}
+.sort-section select, .sort-section .sort-search input,
+.Sections a ,
+.sort-section label,
+.list-consultations .consultations-card .card-footer a {
+  font-size: 14px;
+}
+.boxTagsShared a {
+  margin-bottom: 10px;
+    margin-#{$end-direction}: 5px;
+}
+.customContainer .col-md-7 {
+  align-items: revert;
+}
+.homeTenders .boxTags {
+  padding: 15px;
+}
+.homeTenders .boxTags a span {
+  font-size: 14px;
+}
+.happeningNow .boxHN .moreBox .btnArrow span {
+  font-size: 14px;
+}
+.eventsSection .event2Ctr .event2Box .EVImg,
+.eventsSection .patternBox .boxImgPT > img {
+  height: 200px;
+}
+.eventsSection .tabsCustom {
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+.eventsSection .event2Ctr .event2Box .EVImg {
+  padding: 20px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.eventsSection .event2Ctr .event2Box .EVImg .Date2Box:first-child::before {
+  top: 28%;
+  #{$end-direction}: -4.5px;
+}
+.newSection .boxNews .newsImg {
+  height: 230px;
+}
+.homeTenders {
+  background-color: #edf0f5;
+  padding: 30px 0 50px;
+}
+.newSection .boxNews .newsTxt .titleNews {
+  font-size: 18px;
+}
+.list-with-header ul li {
+  width: 100%;
+}
+.MainHeader .boxHeader .headerText .btnArrow span {
+  font-size: 14px;
+  margin-top: -6px;
+} 
+.MainHeader .boxHeader .headerText .btnArrow  img{
+  width: 15px;
+  margin: 0 5px;
+}
+.servicesBg .sevBob {
+  height: 200px;
+}
+.newSection .boxNews {
+  height: auto;
+  margin-bottom: 25px;
+} 
+.servicesBg .sevBob > img {
+  height: 90px;
+}
+.tabsCustom .nav-item .nav-link {
+  margin-left: 10px;
+  min-width: auto;
+}
+.mediaCenter .patternCr {
+  padding: 20px 15px;
+}
+.list-cards-two .wekala-card {
+  margin-bottom: 10px;
+}
+.normal-list ul {
+  padding: 0 30px;
 }
   /* end 600px */
 }

@@ -4237,14 +4237,15 @@ p + p.main-p{
 }
 .list-consultations{
     .consultations-card{
-        height: 457px;
+        height: 325px;
         background-color: #fff;
         border-radius: 16px;
         padding: 13px 12px;
         margin-bottom: 30px;
         transition: 500ms;
+        overflow: hidden;
         .hashtags{
-            margin-bottom: 15px;
+            margin-bottom: 30px;
             display: flex;
             justify-content: end;
             align-items: center;
@@ -4293,6 +4294,7 @@ p + p.main-p{
                 &.address{
                     h6{
                         height: calc(26px *2);
+                        overflow: hidden;
 
                     }
                 }

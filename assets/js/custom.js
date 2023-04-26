@@ -304,7 +304,10 @@ $(document).scroll(function () {
 });
 
 
+if( $('table').length ){
+  $('table').parent().addClass('tableRes')
 
+}
 
 
 
