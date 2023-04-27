@@ -11140,6 +11140,96 @@ body .content .ms-rtestate-field h2 {
   min-width: unset;
 }
 
+@media (max-width: 1650px) {
+  .interactive-map .map-bg .svg-map svg {
+    -webkit-transform: translate(-50px, 9px);
+            transform: translate(-50px, 9px);
+  }
+}
+
+@media (max-width: 1401px) {
+  .interactive-map .map-bg .svg-map svg {
+    -webkit-transform: unset;
+            transform: unset;
+  }
+  .interactive-map .map-bg .svg-map {
+    margin-left: 108px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .interactive-map .map-bg .svg-map {
+    margin-left: 0;
+  }
+  .interactive-map .map-bg .svg-map svg {
+    -webkit-transform: translate(-35px, 9px);
+            transform: translate(-35px, 9px);
+  }
+}
+
+@media (max-width: 992px) {
+  .interactive-map .map-bg .svg-map {
+    width: 910px;
+    -webkit-transform: scale(0.7) translate(156px, 10px);
+            transform: scale(0.7) translate(156px, 10px);
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .marker-with-popup .map-popup {
+    top: -272px;
+    left: -155px;
+  }
+  .interactive-map .map-bg .svg-map {
+    -webkit-transform: scale(0.55) translate(395px, 10px);
+            transform: scale(0.55) translate(395px, 10px);
+  }
+  .interactive-map .map-bg .main-content {
+    margin-left: 40px;
+  }
+  .interactive-map .map-bg .main-content h2 {
+    font-size: 28px;
+  }
+  .interactive-map .map-bg .navigation-links {
+    margin-left: 0;
+    width: 90%;
+    margin: 40px auto 0 auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .interactive-map .map-bg .col-lg-8 {
+    height: 319px;
+  }
+  .marker-with-popup .map-popup {
+    zoom: 1.3;
+  }
+  .interactive-map .map-bg {
+    padding-top: 35px;
+  }
+  .interactive-map .map-bg .navigation-links a {
+    font-size: 16px;
+    height: 50px;
+    padding: 10px 20px;
+  }
+  .interactive-map .map-bg .svg-map {
+    margin-top: -65px;
+    -webkit-transform: scale(0.35) translate(97%, 0);
+            transform: scale(0.35) translate(97%, 0);
+  }
+}
+
+@media (max-width: 350px) {
+  .interactive-map .map-bg .main-content h2 {
+    font-size: 25px;
+  }
+  .interactive-map .map-bg .svg-map {
+    -webkit-transform: scale(0.3) translate(120%, 0);
+            transform: scale(0.3) translate(120%, 0);
+  }
+}
+
 @media (max-width: 1600px) {
   .eventsSection .owl-carousel-event1 .owl-next {
     left: -20px;
@@ -11575,9 +11665,9 @@ body .content .ms-rtestate-field h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: right;
-        -ms-flex-pack: right;
-            justify-content: right;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
     border-top: 1px solid #0034622e;
     width: 95%;
     padding-top: 5px;
