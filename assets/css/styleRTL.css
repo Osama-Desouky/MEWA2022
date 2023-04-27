@@ -11136,6 +11136,10 @@ body .content .ms-rtestate-field h2 {
   display: inline-block;
 }
 
+.customContainer .navbar-light .navbar-toggler {
+  min-width: unset;
+}
+
 @media (max-width: 1600px) {
   .eventsSection .owl-carousel-event1 .owl-next {
     left: -20px;
@@ -11203,6 +11207,9 @@ body .content .ms-rtestate-field h2 {
 }
 
 @media (max-width: 1300px) {
+  footer .row .footerLinks ul li {
+    font-size: 0;
+  }
   .mediaCenter .homeGallaryWrapper .boxHG {
     margin-left: 10px;
   }
@@ -11605,7 +11612,8 @@ body .content .ms-rtestate-field h2 {
     border-radius: unset;
   }
   .flexMenu .nav-link {
-    font-size: 1rem;
+    font-size: 16px;
+    padding: 0;
     color: #003462;
     font-family: "SSTArabic";
     font-weight: 500;
