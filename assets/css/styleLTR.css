@@ -10706,9 +10706,6 @@ footer .row .Accessibility ul.fontUl::before {
 }
 
 @media (max-width: 992px) {
-  .interactive-map {
-    display: none;
-  }
   .servicesBg .patternCr::after {
     top: 44px;
   }
@@ -11100,16 +11097,20 @@ footer .row .Accessibility ul.fontUl::before {
 
 /* -------------------------------------------------------------------------------------------------------*/
 /* ------------------------------------------------------ start  */
+.visionPage h2 {
+  display: inline-block;
+}
+
 .tableRes {
   overflow-y: auto;
 }
 
 .searchMob,
-.langMob {
+.flexMenu .nav-link {
   display: none;
 }
 
-.customContainer .col-md-7 {
+.customContainer .col-lg-7 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11119,8 +11120,11 @@ footer .row .Accessibility ul.fontUl::before {
           flex-direction: row-reverse;
 }
 
-.customContainer .col-md-7 .top-weather {
+.customContainer .col-lg-7 .top-weather {
   margin-right: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .social-card {
@@ -11264,7 +11268,7 @@ footer .row .Accessibility ul.fontUl::before {
     padding: 20px 30px;
   }
   .orgContainer > .container {
-    zoom: .8;
+    zoom: 0.8;
   }
   .challenge .white-card .img-box img {
     max-width: 100%;
@@ -11307,7 +11311,7 @@ footer .row .Accessibility ul.fontUl::before {
     font-size: 16px;
   }
   .orgContainer > .container {
-    zoom: .6;
+    zoom: 0.6;
   }
   .social-card h3,
   .social-card.sharing-card h3 {
@@ -11334,7 +11338,7 @@ footer .row .Accessibility ul.fontUl::before {
   .menuBg .navbarCustom .dropdown-menu .row {
     padding-bottom: 10px;
   }
-  .customContainer .col-md-7 {
+  .customContainer .col-lg-7 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -11596,14 +11600,14 @@ footer .row .Accessibility ul.fontUl::before {
     padding: 0;
     border-radius: unset;
   }
-  .langMob {
+  .flexMenu .nav-link {
     font-size: 1rem;
     color: #003462;
     font-family: "SSTArabic";
     font-weight: 500;
   }
   .searchMob,
-  .langMob {
+  .flexMenu .nav-link {
     display: block;
   }
   .menuBg .navbarCustom .nav-item:nth-last-of-type(1),
@@ -11614,7 +11618,7 @@ footer .row .Accessibility ul.fontUl::before {
     -webkit-box-shadow: unset;
             box-shadow: unset;
   }
-  .customContainer .col-md-7 .top-weather {
+  .customContainer .col-lg-7 .top-weather {
     margin-right: 20px;
     -webkit-box-pack: left;
         -ms-flex-pack: left;
@@ -11677,10 +11681,10 @@ footer .row .Accessibility ul.fontUl::before {
   .navBar {
     position: relative;
   }
-  .customContainer .col-md-7 {
+  .customContainer .col-lg-7 {
     display: none;
   }
-  .customContainer .col-md-7.TTMSow {
+  .customContainer .col-lg-7.TTMSow {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -11691,7 +11695,7 @@ footer .row .Accessibility ul.fontUl::before {
     top: -4px;
     color: #fff;
     font-size: 35px;
-    line-height: .5;
+    line-height: 0.5;
   }
   /* end 992px */
 }
@@ -11940,7 +11944,8 @@ footer .row .Accessibility ul.fontUl::before {
   .Evaluation .tagHeading::after, .Evaluation .tagHeading::before {
     width: calc(35% - 45px);
   }
-  .pagination .NextPagi, .pagination .prePagi {
+  .pagination .NextPagi,
+  .pagination .prePagi {
     padding: 0 12px;
   }
   .pagination-count {
@@ -12168,7 +12173,8 @@ footer .row .Accessibility ul.fontUl::before {
   .sort-sec2 .search-right .serv-stat-sort select {
     width: 100%;
   }
-  .consultations-tabs .customTab-two, .consultations-tabs .customTab {
+  .consultations-tabs .customTab-two,
+  .consultations-tabs .customTab {
     margin: 0;
   }
   .sort-section select,
@@ -12366,7 +12372,7 @@ footer .row .Accessibility ul.fontUl::before {
   }
   .fancybox-skin .fancybox-next span,
   .fancybox-skin .fancybox-prev span {
-    zoom: .6;
+    zoom: 0.6;
   }
   .Portal-statistics-card {
     padding: 30px 23px 24px;
@@ -12513,7 +12519,7 @@ footer .row .Accessibility ul.fontUl::before {
     width: 30px;
   }
   .list-system-cards .system-card .content-box .sys-btns .sys-share .innderSocial {
-    zoom: .8;
+    zoom: 0.8;
   }
   .list-system-cards {
     margin-top: 16px;
@@ -12623,7 +12629,7 @@ footer .row .Accessibility ul.fontUl::before {
     width: 22px;
   }
   .weather-widget {
-    zoom: .8;
+    zoom: 0.8;
   }
   .list-consultations .consultations-card .hashtags {
     margin-bottom: 15px;
@@ -12634,7 +12640,8 @@ footer .row .Accessibility ul.fontUl::before {
     padding: 0 10px;
     font-size: 13px;
   }
-  .sort-section select, .sort-section .sort-search input,
+  .sort-section select,
+  .sort-section .sort-search input,
   .Sections a,
   .sort-section label,
   .list-consultations .consultations-card .card-footer a {
@@ -12644,7 +12651,7 @@ footer .row .Accessibility ul.fontUl::before {
     margin-bottom: 10px;
     margin-right: 5px;
   }
-  .customContainer .col-md-7 {
+  .customContainer .col-lg-7 {
     -webkit-box-align: revert;
         -ms-flex-align: revert;
             align-items: revert;
