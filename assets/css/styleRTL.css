@@ -11118,18 +11118,22 @@ footer .row .Accessibility ul.fontUl::before {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-}
-
-.customContainer .col-lg-7 .top-weather {
-  margin-left: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
+.customContainer .col-lg-7 .top-weather {
+  margin-left: 20px;
+}
+
 .social-card {
   margin-bottom: 30px;
   padding: 48px 20px;
+}
+
+body .content .ms-rtestate-field h2 {
+  display: inline-block;
 }
 
 @media (max-width: 1600px) {
