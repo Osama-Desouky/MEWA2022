@@ -3525,9 +3525,9 @@ footer .row .footerLinks .twoCol {
 }
 
 .marker-with-popup .map-popup .content-box a.close-pop {
-  float: left;
+  float: right;
   margin-top: -10px;
-  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .marker-with-popup .map-popup .content-box h2 {
@@ -3613,67 +3613,67 @@ footer .row .footerLinks .twoCol {
 }
 
 .marker-with-popup.reyadh {
-  left: 415px;
+  right: 415px;
   top: 215px;
 }
 
 .marker-with-popup.makkah {
-  left: 550px;
+  right: 550px;
   top: 255px;
 }
 
 .marker-with-popup.madinah {
-  left: 655px;
+  right: 655px;
   top: 200px;
 }
 
 .marker-with-popup.tabuk {
-  left: 780px;
+  right: 780px;
   top: 132px;
 }
 
 .marker-with-popup.haael {
-  left: 580px;
+  right: 580px;
   top: 120px;
 }
 
 .marker-with-popup.qasim {
-  left: 510px;
+  right: 510px;
   top: 145px;
 }
 
 .marker-with-popup.algouf {
-  left: 690px;
+  right: 690px;
   top: 70px;
 }
 
 .marker-with-popup.shamalya {
-  left: 530px;
+  right: 530px;
   top: 50px;
 }
 
 .marker-with-popup.sharqia {
-  left: 230px;
+  right: 230px;
   top: 200px;
 }
 
 .marker-with-popup.nagran {
-  left: 380px;
+  right: 380px;
   top: 330px;
 }
 
 .marker-with-popup.asser {
-  left: 490px;
+  right: 490px;
   top: 320px;
 }
 
 .marker-with-popup.gazan {
-  left: 502px;
+  right: 502px;
   top: 375px;
 }
 
 .marker-with-popup.baaha {
-  left: 560px;
+  right: 560px;
   top: 305px;
 }
 

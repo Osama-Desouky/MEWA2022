@@ -153,9 +153,9 @@
             padding-#{$end-direction}:30px ;
     
             a.close-pop {
-                float: left;
+                float: #{$end-direction};
                 margin-top: -10px;
-                margin-left: -20px;
+                margin-#{$end-direction}: -20px;
             }
             
             h2{
@@ -236,55 +236,55 @@
         }
     }
     &.reyadh{
-        #{$start-direction}: 415px;
+       right: 415px;
         top: 215px;
     }
     &.makkah{
-        #{$start-direction}: 550px;
+       right: 550px;
         top: 255px
     }
     &.madinah{
-        #{$start-direction}: 655px;
+       right: 655px;
         top: 200px
     }
     &.tabuk{
-        #{$start-direction}: 780px;
+       right: 780px;
         top: 132px
     }
     &.haael{
-        #{$start-direction}: 580px;
+       right: 580px;
         top: 120px;
     }
     &.qasim{
-        #{$start-direction}: 510px;
+       right: 510px;
         top: 145px;
     }
     &.algouf{
-        #{$start-direction}: 690px;
+       right: 690px;
         top: 70px
     }
     &.shamalya{
-        #{$start-direction}: 530px;
+       right: 530px;
         top: 50px;
     }
     &.sharqia{
-        #{$start-direction}: 230px;
+       right: 230px;
         top: 200px;
     }
     &.nagran{
-        #{$start-direction}: 380px;
+       right: 380px;
         top: 330px;
     }
     &.asser{
-        #{$start-direction}: 490px;
+       right: 490px;
         top: 320px;
     }
     &.gazan{
-        #{$start-direction}: 502px;
+       right: 502px;
         top: 375px;
     }
     &.baaha{
-        #{$start-direction}: 560px;
+       right: 560px;
         top: 305px;
     }
 }
