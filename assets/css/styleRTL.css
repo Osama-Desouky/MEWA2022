@@ -11858,7 +11858,6 @@ body .content .ms-rtestate-field h2 {
   .owl-carousel-center .owl-nav {
     top: -45px;
     margin-top: 0px !important;
-    display: none;
   }
   .owl-carousel-news .owl-nav {
     width: 100px;
@@ -12862,4 +12861,107 @@ body .content .ms-rtestate-field h2 {
 }
 
 /* ------------------------------------------------------ end  */
+.news-card .img-box img {
+  /* Abdulhamid asked to be fill not cover */
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+@media (max-width: 600px) {
+  .MainHeader .boxHeader {
+    height: 335px;
+  }
+  .ms-acal-month .ms-acal-month-top span,
+  .ms-cal-nav, .ms-cal-navselected,
+  .ms-acal-rootdiv div {
+    font-size: 11px;
+  }
+  .ms-acal-item {
+    height: 22px !important;
+  }
+  #AsynchronousViewDefault_CalendarView .ms-acal-header table td:nth-child(2),
+  #AsynchronousViewDefault_CalendarView .ms-acal-header table td:nth-child(1) {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  #AsynchronousViewDefault_CalendarView .ms-acal-header table td:nth-child(1) {
+    left: 45px;
+  }
+  .pagination .NextPagi,
+  .pagination .prePagi {
+    padding: 0 3px;
+  }
+  .content table tbody tr:first-child td, .content table tbody tr:first-child th {
+    padding: 10px;
+  }
+  .ms-core-listMenu-root li {
+    border-bottom: 1px solid #eff5f9;
+  }
+}
+
+@media (max-width: 992px) {
+  /* image gallery */
+  .nl-form {
+    padding: 30px;
+  }
+  .nl-form .col-md-12 .alert {
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 14px;
+  }
+  .ms-WPBody .cbq-layout-main.row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
+  .menuBg .navbarCustom .nav-item.dropdown .nav-link::after {
+    display: none;
+  }
+  .menuBg .navbarCustom .colMenu h4,
+  .navbar-nav .dropdown {
+    position: relative;
+  }
+  .Appended2,
+  .Appended {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    z-index: 999;
+    background: transparent;
+    width: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 18px;
+    font-family: "SSTArabic";
+    font-weight: 900;
+  }
+  .Appended2 {
+    background: transparent;
+    left: -10px;
+  }
+  .menuBg .navbarCustom .dropdown-menu {
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+    padding: 1px 0;
+  }
+  .openMenu {
+    color: #61b254;
+  }
+  .menuBg .navbarCustom .colMenu ul {
+    display: none;
+  }
+  .menuBg .navbarCustom .dropdown-menu .row .col-lg-3 {
+    width: 100%;
+    float: unset;
+  }
+}
 /*# sourceMappingURL=styleRTL.css.map */

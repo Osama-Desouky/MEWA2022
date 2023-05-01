@@ -122,10 +122,10 @@ $("a.fancyboxVideo").fancybox({
     // responsiveClass:true,
     responsive: {
       0: {
-        items: 1.2,
+        items: 1,
       },
       1000: {
-        items: 2.2,
+        items: 2,
       },
       1400: {
         items: 3
@@ -226,16 +226,16 @@ $("a.fancyboxVideo").fancybox({
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  window.addEventListener("scroll", function () {
-    //    console.log(window.scrollY,window.scrollX)
-    if (window.scrollY > 110) {
-      document.querySelector(".scroll-sec").classList.add("fixed-ntp2020");
-    } else {
-      document.querySelector(".scroll-sec").classList.remove("fixed-ntp2020");
-    }
-  });
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   window.addEventListener("scroll", function () {
+//     //    console.log(window.scrollY,window.scrollX)
+//     if (window.scrollY > 110) {
+//       document.querySelector(".scroll-sec").classList.add("fixed-ntp2020");
+//     } else {
+//       document.querySelector(".scroll-sec").classList.remove("fixed-ntp2020");
+//     }
+//   });
+// });
 
 $(function () {
 $("#Challenge-a").on("click", function () {
@@ -398,3 +398,19 @@ $(document).ready(function () {
       $(".weather-widget .dropdown").removeClass("open");
       }
       });
+
+      if ($(window).width() < 992) {
+        $(".navbar-nav .colMenu h4").append("<span class='Appended2 '>+</span>")
+        $(".Appended2").on("click", function () {
+         
+          $(this).toggleClass('openMenu').parent().next().slideToggle()
+          
+        });
+        $(".navbar-nav .dropdown ").append("<span class='Appended'>+</span>")
+        $(".Appended").on("click", function () {
+         
+          $(this).toggleClass('openMenu').prev('.dropdown-menu').slideToggle()
+          
+        });
+      }
+
