@@ -3646,7 +3646,7 @@ body .or-chart-col4L1 .wekala-chart .level-one .centerMid::before {
 
 .adminHeadCard {
   font-weight: 700;
-  color: #003462;
+  color: #003462 !important;
   border: 3px solid #003462;
 }
 
