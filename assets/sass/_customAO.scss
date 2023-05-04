@@ -3209,9 +3209,16 @@ body .orChartNew .chartAgency div {
     margin-#{$start-direction}: -330px !important;
   }
 }
+.clearBGWithPadding,
+.clearBGWithPadding .container,
+.or-chart {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
 .clearBGWithPadding {
   background: white;
   padding-top: 68px;
+  margin-bottom: -10px !important;
 }
 @media (max-width: 500px) {
   .clearBGWithPadding {
