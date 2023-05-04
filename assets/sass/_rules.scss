@@ -6,6 +6,32 @@ body {
   }
   html[dir="rtl"] body {
     font-family: $font-ar;
+
+  }
+  html[dir="ltr"] body {
+   /* adding style to en style */
+   .wekala-chart .main-sec,
+   .wekala-chart .vice,
+   .wekala-chart .level-one::before {
+    transform: translateX(-50%);
+   }
+   .wekala-chart .level-one::after {
+    transform: translateX(-40%);
+   }
+   .positionAos, body .orChartNew .level1 .AgencyCard::after,
+    body .orChartNew .level2::after, body .orChartNew .level2::before,
+    body .orChartNew .level2 .adminHeadCard:first-of-type::after,
+    body .orChartNew .level3 .AgencyCard::after,
+    body .orChartNew .level3 .borderBOT,
+    body .orChartNew .level3 .borderBottom::before,
+    body .orChartNew .level4 > div:last-of-type::after,
+    body .orChartNew .level4 > div:first-of-type::after,
+    body .orChartNew .level4 .adminCard::after,
+    body .orChartNew .level4 .borderTop::after{
+    transform: translateX(50%);
+   }
+   /* end style to en style */
+
   }
   *,
   *:focus,

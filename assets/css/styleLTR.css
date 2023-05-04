@@ -38,6 +38,38 @@ html[dir="rtl"] body {
   font-family: "SSTArabic";
 }
 
+html[dir="ltr"] body {
+  /* adding style to en style */
+  /* end style to en style */
+}
+
+html[dir="ltr"] body .wekala-chart .main-sec,
+html[dir="ltr"] body .wekala-chart .vice,
+html[dir="ltr"] body .wekala-chart .level-one::before {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+html[dir="ltr"] body .wekala-chart .level-one::after {
+  -webkit-transform: translateX(-40%);
+          transform: translateX(-40%);
+}
+
+html[dir="ltr"] body .positionAos, html[dir="ltr"] body .orChartNew .level1 .AgencyCard::after, html[dir="ltr"] body .orChartNew .level2::after, html[dir="ltr"] body .orChartNew .level2::before, html[dir="ltr"] body .orChartNew .level2 .adminHeadCard:first-of-type::after, html[dir="ltr"] body .orChartNew .level3 .AgencyCard::after, html[dir="ltr"] body .orChartNew .level3 .borderBOT, html[dir="ltr"] body .orChartNew .level3 .borderBottom::before, html[dir="ltr"] body .orChartNew .level4 > div:last-of-type::after,
+html[dir="ltr"] body .orChartNew .level4 > div:first-of-type::after, html[dir="ltr"] body .orChartNew .level4 .adminCard::after, html[dir="ltr"] body .orChartNew .level4 .borderTop::after, html[dir="ltr"] body body .orChartNew .level1 .AgencyCard::after,
+html[dir="ltr"] body body .orChartNew .level2::after, html[dir="ltr"] body body .orChartNew .level2::before,
+html[dir="ltr"] body body .orChartNew .level2 .adminHeadCard:first-of-type::after,
+html[dir="ltr"] body body .orChartNew .level3 .AgencyCard::after,
+html[dir="ltr"] body body .orChartNew .level3 .borderBOT,
+html[dir="ltr"] body body .orChartNew .level3 .borderBottom::before,
+html[dir="ltr"] body body .orChartNew .level4 > div:last-of-type::after,
+html[dir="ltr"] body body .orChartNew .level4 > div:first-of-type::after,
+html[dir="ltr"] body body .orChartNew .level4 .adminCard::after,
+html[dir="ltr"] body body .orChartNew .level4 .borderTop::after {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
 *,
 *:focus,
 *:active,
@@ -3356,6 +3388,546 @@ footer .row .footerLinks .twoCol {
 .owl-carousel-center .owl-stage > .owl-item:last-child {
   -webkit-transform: translateX(15px);
           transform: translateX(15px);
+}
+
+.or-chart-col4L1 .wekala-chart .main-sec,
+.or-chart-col3TwoLevel .wekala-chart .main-sec,
+.or-chart-col4ToUP .wekala-chart .main-sec,
+.or-chart-col3 .wekala-chart .main-sec,
+.or-chart-col7 .wekala-chart .main-sec,
+.or-chart-col5 .wekala-chart .main-sec {
+  padding: 10px 15px 18px;
+}
+
+.or-chart-col4L1 .wekala-chart .level-one,
+.or-chart-col3TwoLevel .wekala-chart .level-one,
+.or-chart-col4ToUP .wekala-chart .level-one,
+.or-chart-col3 .wekala-chart .level-one,
+.or-chart-col7 .wekala-chart .level-one,
+.or-chart-col5 .wekala-chart .level-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.or-chart-col4L1 .wekala-chart .level-one div,
+.or-chart-col3TwoLevel .wekala-chart .level-one div,
+.or-chart-col4ToUP .wekala-chart .level-one div,
+.or-chart-col3 .wekala-chart .level-one div,
+.or-chart-col7 .wekala-chart .level-one div,
+.or-chart-col5 .wekala-chart .level-one div {
+  position: relative !important;
+  margin-top: 5px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.or-chart-col4L1 .wekala-chart .level-one::before,
+.or-chart-col3TwoLevel .wekala-chart .level-one::before,
+.or-chart-col4ToUP .wekala-chart .level-one::before,
+.or-chart-col3 .wekala-chart .level-one::before,
+.or-chart-col7 .wekala-chart .level-one::before,
+.or-chart-col5 .wekala-chart .level-one::before {
+  width: 1163px;
+}
+
+body .or-chart-col4ToUP {
+  height: 480px;
+}
+
+body .or-chart-col4ToUP .wekala-chart .level-one {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+body .or-chart-col4ToUP .wekala-chart .level-one::before {
+  width: 77.3%;
+}
+
+body .or-chart-col4ToUP .wekala-chart .level-one .toUp {
+  margin-top: -95px;
+  font-weight: 700;
+  color: #003462;
+  border: 3px solid #003462;
+}
+
+body .or-chart-col4ToUP .wekala-chart .level-one .one:not(.toUp)::before {
+  top: -155px;
+  height: 153px;
+}
+
+body .or-chart-col3TwoLevel {
+  height: 860px;
+}
+
+body .or-chart-col3TwoLevel .wekala-chart .level-one {
+  width: 65%;
+  margin: 0 auto;
+}
+
+body .or-chart-col3TwoLevel .wekala-chart .level-one-head::before {
+  width: 72%;
+}
+
+body .or-chart-col3TwoLevel .wekala-chart .level-one-head .one {
+  font-weight: 700;
+  color: #003462;
+  border: 3px solid #003462;
+}
+
+body .or-chart-col3TwoLevel .wekala-chart .level-one:not(.level-one-head) {
+  margin-top: 20px;
+}
+
+body .or-chart-col3TwoLevel .wekala-chart .level-one:not(.level-one-head) .one::before {
+  top: -27px;
+  height: 25px;
+}
+
+body .or-chart-col3TwoLevel .wekala-chart .level-one:not(.level-one-head) .emptyCol {
+  visibility: hidden;
+}
+
+body .or-chart-col3TwoLevel .wekala-chart .level-one:not(.level-one-head)::before,
+body .or-chart-col3TwoLevel .wekala-chart .level-one:not(.level-one-head)::after {
+  display: none;
+}
+
+body .or-chart-col7 .wekala-chart .level-one div {
+  width: 185px;
+  padding: 5px 10px;
+}
+
+body .or-chart-col7 .wekala-chart .level-one::before {
+  width: 1231px;
+}
+
+body .or-chart-col4L1 .wekala-chart .vice,
+body .or-chart-col3 .wekala-chart .vice {
+  position: absolute;
+  min-width: 182px;
+  height: 64px;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  top: 0;
+  background-color: #4789C8;
+  border: 2px solid #003462;
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  -webkit-filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.1));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 12px;
+}
+
+body .or-chart-col4L1 .wekala-chart .vice h4,
+body .or-chart-col3 .wekala-chart .vice h4 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+}
+
+body .or-chart-col4L1 .wekala-chart .main-sec,
+body .or-chart-col3 .wekala-chart .main-sec {
+  top: 100px;
+}
+
+body .or-chart-col4L1 .wekala-chart .main-sec::before,
+body .or-chart-col3 .wekala-chart .main-sec::before {
+  height: 45px;
+}
+
+body .or-chart-col4L1 .wekala-chart .main-sec::after,
+body .or-chart-col3 .wekala-chart .main-sec::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 80px;
+  top: -81px;
+  left: 50%;
+  border: 1px solid #AEBDCB;
+}
+
+body .or-chart-col4L1 .wekala-chart .level-one,
+body .or-chart-col3 .wekala-chart .level-one {
+  -webkit-transform: translateY(65px);
+          transform: translateY(65px);
+  width: 65%;
+  margin: 0 auto;
+}
+
+body .or-chart-col4L1 .wekala-chart .level-one::before,
+body .or-chart-col3 .wekala-chart .level-one::before {
+  width: 72%;
+}
+
+body .or-chart-col4L1 {
+  height: 540px;
+}
+
+body .or-chart-col4L1 .wekala-chart .level-one {
+  -webkit-transform: translateY(65px);
+          transform: translateY(65px);
+  width: 100%;
+  margin: 0 auto;
+}
+
+body .or-chart-col4L1 .wekala-chart .level-one::before {
+  width: 82%;
+}
+
+body .or-chart-col4L1 .wekala-chart .level-one .centerMid {
+  margin-top: 100px;
+}
+
+body .or-chart-col4L1 .wekala-chart .level-one .centerMid::before {
+  top: -146px;
+  height: 145px;
+}
+
+.AgencyCard {
+  min-width: 182px;
+  height: 64px;
+  background-color: #63BE6A;
+  border: 2px solid #47AA4F;
+  border-radius: 12px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  line-height: 36px;
+  color: #fff !important;
+  padding: 10px 15px 18px;
+  -webkit-filter: drop-shadow(0 10px 25px rgba(6, 67, 35, 0.16));
+          filter: drop-shadow(0 10px 25px rgba(6, 67, 35, 0.16));
+  margin: 0;
+}
+
+.adminHeadCard,
+.adminCard {
+  width: 256px;
+  height: 70px;
+  background-color: #fff;
+  border: 2px solid #003462;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  padding: 9px 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.adminHeadCard {
+  font-weight: 700;
+  color: #003462;
+  border: 3px solid #003462;
+}
+
+.positionAos, body .orChartNew .level1 .AgencyCard::after, body .orChartNew .level2::after, body .orChartNew .level2::before, body .orChartNew .level2 .adminHeadCard:first-of-type::after, body .orChartNew .level3 .AgencyCard::after, body .orChartNew .level3 .borderBOT, body .orChartNew .level3 .borderBottom::before, body .orChartNew .level4 > div:last-of-type::after,
+body .orChartNew .level4 > div:first-of-type::after, body .orChartNew .level4 .adminCard::after, body .orChartNew .level4 .borderTop::after {
+  position: absolute;
+  content: "";
+  right: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 2px;
+  background: #AEBDCB;
+  top: 62px;
+  height: 80px;
+}
+
+body .orChartNew {
+  height: unset;
+}
+
+body .orChartNew .chartAgency {
+  height: 810px;
+  width: 1440px;
+  overflow: auto;
+  margin-bottom: 30px;
+}
+
+body .orChartNew .level1,
+body .orChartNew .level2,
+body .orChartNew .level3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 50px;
+}
+
+body .orChartNew .level1 .AgencyCard {
+  position: relative;
+}
+
+body .orChartNew .level1 .AgencyCard::after {
+  height: 155px;
+  z-index: -1;
+}
+
+body .orChartNew .level2 {
+  padding-bottom: 70px;
+  position: relative;
+}
+
+body .orChartNew .level2::after {
+  width: 85%;
+  height: 2px;
+  top: 105px;
+}
+
+body .orChartNew .level2::before {
+  background-color: #4789C8;
+  border-radius: 50%;
+  width: 11px;
+  height: 11px;
+  top: 100px;
+  z-index: 5;
+}
+
+body .orChartNew .level2 .adminHeadCard:first-of-type {
+  margin-right: 110px;
+  position: relative;
+}
+
+body .orChartNew .level2 .adminHeadCard:first-of-type::after {
+  width: 108px;
+  height: 2px;
+  right: -58px;
+  top: 35px;
+}
+
+body .orChartNew .level3 {
+  padding-bottom: 70px;
+}
+
+body .orChartNew .level3 .AgencyCard {
+  position: relative;
+  height: 75px;
+  line-height: 1.3;
+}
+
+body .orChartNew .level3 .AgencyCard::after {
+  top: -35px;
+  height: 33px;
+}
+
+body .orChartNew .level3 .AgencyCard:first-of-type {
+  margin-right: 265px;
+}
+
+body .orChartNew .level3 .borderBOT {
+  width: 246px;
+  height: 2px;
+  top: 105px;
+  display: block;
+  margin-right: 2px;
+}
+
+body .orChartNew .level3 .borderBottom::before {
+  top: 73px;
+  height: 33px;
+}
+
+body .orChartNew .level4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .orChartNew .level4 .adminHeadCard,
+body .orChartNew .level4 .adminCard {
+  width: 215px;
+}
+
+body .orChartNew .level4 > div:last-of-type::after,
+body .orChartNew .level4 > div:first-of-type::after {
+  top: -180px;
+  height: 180px;
+  width: 2px;
+}
+
+body .orChartNew .level4 .adminCard {
+  margin-top: 30px;
+  position: relative;
+}
+
+body .orChartNew .level4 .adminCard::after {
+  top: -32px;
+  width: 2px;
+  height: 30px;
+}
+
+body .orChartNew .level4 .borderTop {
+  position: relative;
+}
+
+body .orChartNew .level4 .borderTop::after {
+  top: -36px;
+  height: 36px;
+  width: 2px;
+}
+
+.or-chart.or-chart-col5,
+.or-chart.or-chart-col7,
+.or-chart.or-chart-normal {
+  height: 400px;
+}
+
+.or-chart.or-chart-col3 {
+  height: 450px;
+}
+
+.or-chart .Dfont {
+  font-size: 13px;
+}
+
+.adminHeadCard,
+body .or-chart-col3TwoLevel .wekala-chart .level-one-head .one,
+body .or-chart-col4ToUP .wekala-chart .level-one .toUp {
+  background-color: #deefff !important;
+}
+
+body .orChartNew .chartAgency div {
+  margin: 0 !important;
+}
+
+@media (max-width: 1600px) {
+  .or-chart .wekala-chart {
+    margin-left: -50px;
+  }
+}
+
+@media (max-width: 1410px) {
+  .or-chart .wekala-chart {
+    margin-left: 0px;
+  }
+  body .or-chart-normal .wekala-chart,
+  body .or-chart-col4ToUP .wekala-chart {
+    margin-left: -100px;
+  }
+  body .or-chart-col3 .wekala-chart,
+  body .or-chart-col3TwoLevel .wekala-chart {
+    margin-left: -140px;
+  }
+}
+
+@media (max-width: 992px) {
+  .or-chart {
+    height: 350px;
+  }
+  body .or-chart-col3TwoLevel {
+    height: 685px;
+  }
+  body .or-chart-col4ToUP {
+    height: 475px;
+  }
+  body .or-chart-col4L1 {
+    height: 480px;
+  }
+  .or-chart .main-head-WZ-icon {
+    margin-bottom: 5px;
+  }
+  body .orChartNew .chartAgency {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    margin-left: -270px;
+  }
+  .or-chart .wekala-chart {
+    width: 1420px;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  body .or-chart-col7 .wekala-chart .level-one::before {
+    width: 1225px;
+  }
+  .or-chart-col5 .wekala-chart .level-one::before {
+    width: 1151px;
+  }
+  .or-chart .wekala-chart {
+    margin-left: -330px !important;
+  }
+}
+
+.clearBGWithPadding {
+  background: white;
+  padding-top: 68px;
+}
+
+@media (max-width: 500px) {
+  .clearBGWithPadding {
+    padding-top: 40px;
+  }
+  .or-chart .main-head-WZ-icon {
+    margin-bottom: 20px;
+  }
+  body .or-chart {
+    padding-top: 20px;
+  }
+  body .or-chart-col3TwoLevel {
+    height: 545px;
+    margin-top: -50px;
+  }
+  .or-chart.or-chart-col5,
+  .or-chart.or-chart-col7,
+  .or-chart.or-chart-normal {
+    height: 225px;
+  }
+  body .or-chart-col4ToUP {
+    height: 310px;
+  }
+  .or-chart.or-chart-col3 {
+    height: 260px;
+  }
+  body .or-chart-normal {
+    height: 230px;
+  }
+  .orChartNew > .container {
+    height: 680px;
+    margin-top: -152px;
+  }
+  body .or-chart-col4L1 {
+    height: 315px;
+    padding-top: 0 !important;
+  }
+  body .or-chart-col7 .wekala-chart,
+  body .or-chart-col5 .wekala-chart,
+  body .or-chart-col4L1 .wekala-chart {
+    margin-left: -270px !important;
+  }
 }
 
 .interactive-map {
@@ -12861,107 +13433,4 @@ body .content .ms-rtestate-field h2 {
 }
 
 /* ------------------------------------------------------ end  */
-.news-card .img-box img {
-  /* Abdulhamid asked to be fill not cover */
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-
-@media (max-width: 600px) {
-  .MainHeader .boxHeader {
-    height: 335px;
-  }
-  .ms-acal-month .ms-acal-month-top span,
-  .ms-cal-nav, .ms-cal-navselected,
-  .ms-acal-rootdiv div {
-    font-size: 11px;
-  }
-  .ms-acal-item {
-    height: 22px !important;
-  }
-  #AsynchronousViewDefault_CalendarView .ms-acal-header table td:nth-child(2),
-  #AsynchronousViewDefault_CalendarView .ms-acal-header table td:nth-child(1) {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-  }
-  #AsynchronousViewDefault_CalendarView .ms-acal-header table td:nth-child(1) {
-    left: 45px;
-  }
-  .pagination .NextPagi,
-  .pagination .prePagi {
-    padding: 0 3px;
-  }
-  .content table tbody tr:first-child td, .content table tbody tr:first-child th {
-    padding: 10px;
-  }
-  .ms-core-listMenu-root li {
-    border-bottom: 1px solid #eff5f9;
-  }
-}
-
-@media (max-width: 992px) {
-  /* image gallery */
-  .nl-form {
-    padding: 30px;
-  }
-  .nl-form .col-md-12 .alert {
-    margin-top: 10px;
-    padding: 12px;
-    font-size: 14px;
-  }
-  .ms-WPBody .cbq-layout-main.row {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 0;
-  }
-  .menuBg .navbarCustom .nav-item.dropdown .nav-link::after {
-    display: none;
-  }
-  .menuBg .navbarCustom .colMenu h4,
-  .navbar-nav .dropdown {
-    position: relative;
-  }
-  .Appended2,
-  .Appended {
-    position: absolute;
-    content: '';
-    left: 0;
-    top: 0;
-    z-index: 999;
-    background: transparent;
-    width: 25px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-size: 18px;
-    font-family: "SSTArabic";
-    font-weight: 900;
-  }
-  .Appended2 {
-    background: transparent;
-    left: -10px;
-  }
-  .menuBg .navbarCustom .dropdown-menu {
-    -webkit-box-shadow: unset;
-            box-shadow: unset;
-    padding: 1px 0;
-  }
-  .openMenu {
-    color: #61b254;
-  }
-  .menuBg .navbarCustom .colMenu ul {
-    display: none;
-  }
-  .menuBg .navbarCustom .dropdown-menu .row .col-lg-3 {
-    width: 100%;
-    float: unset;
-  }
-}
 /*# sourceMappingURL=styleLTR.css.map */

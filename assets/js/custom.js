@@ -399,6 +399,10 @@ $(document).ready(function () {
       }
       });
 
+
+
+
+      
       if ($(window).width() < 992) {
         $(".navbar-nav .colMenu h4").append("<span class='Appended2 '>+</span>")
         $(".Appended2").on("click", function () {
