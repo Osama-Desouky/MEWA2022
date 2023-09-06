@@ -2019,14 +2019,14 @@ footer {
   background-position: top;
   padding-bottom: 50px;
   padding-top: 45px;
-.row{
-  justify-content: space-between;
+// .row{
+//   justify-content: space-between;
 
-  // .col-lg-9{
-  //   width: 1275px;
-  // }
+//   // .col-lg-9{
+//   //   width: 1275px;
+//   // }
 
-}
+// }
 .owl-carousel-center .owl-stage{
   margin-#{$start-direction}:0 !important;
 }
@@ -2044,6 +2044,7 @@ footer {
     display: flex;
     z-index: 1;
     align-items: end;
+    justify-content: center;
     border-radius: 16px;
     border: 4px solid #fff;
     &::after {
@@ -2072,6 +2073,7 @@ footer {
       border-radius: 16px;
     }
     .ADBoxTxt {
+      padding: 0 10px;
       h1 {
         font-size: 1.375rem;
         font-weight: bold;
@@ -2114,15 +2116,15 @@ footer {
       }
     }
   }
-  .container {
-    margin-#{$end-direction}: 0;
+  // .container {
+  //   margin-#{$end-direction}: 0;
 
-    max-width: 1450px;
-  }
-  .col-md-9 {
-    position: relative;
-    padding-#{$end-direction}:0 ;
-  }
+  //   max-width: 1450px;
+  // }
+  // .col-md-9 {
+  //   position: relative;
+  //   padding-#{$end-direction}:0 ;
+  // }
   .owl-nav {
     .owl-prev,
     .owl-next {
@@ -2132,15 +2134,15 @@ footer {
       transform: translateY(-50%);
     }
     .owl-next {
-      #{$start-direction}: -20px;
+      #{$start-direction}: -55px;
     }
     .owl-prev {
-      #{$end-direction}: 20px;
+      #{$end-direction}: -55px;
     }
   }
   .owl-dots {
     text-align: #{$start-direction};
-    padding-#{$start-direction}: 20%;
+    padding-#{$start-direction}: 47%;
     span {
       background: $green63BE6A !important;
       opacity: 0.5;
@@ -2151,6 +2153,10 @@ footer {
         // background: $green63BE6A !important;
       }
     }
+  }
+  .actionBF{
+    text-align: center;
+    margin-top: 30px;
   }
 }
 .homeTenders {
@@ -2243,20 +2249,20 @@ footer {
   }
 }
 
-.owl-carousel-center .owl-stage-outer {
-  //  height: 600px;
-  padding: 20px 0;
-  margin-#{$start-direction}: 50px;
-  padding-#{$start-direction}: 20px;
-}
+// .owl-carousel-center .owl-stage-outer {
+//   //  height: 600px;
+//   padding: 20px 0;
+//   margin-#{$start-direction}: 50px;
+//   padding-#{$start-direction}: 20px;
+// }
 .owl-carousel-center .owl-dots.disabled,
 .owl-carousel-center .owl-nav.disabled {
   display: block;
 }
 
 .owl-carousel-center .owl-stage {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .owl-carousel-center .owl-stage .owl-item {
@@ -2264,20 +2270,20 @@ footer {
   border-radius: 16px;
   background: #023663;
 }
-.owl-carousel-center .owl-stage .owl-item:not(.active) + .owl-item.active {
-  transform: scaleY(1.1) scaleX(1.1);
+// .owl-carousel-center .owl-stage .owl-item:not(.active) + .owl-item.active {
+//   transform: scaleY(1.1) scaleX(1.1);
 
-  transition: 0.25s;
+//   transition: 0.25s;
 
-  margin-top: -15px;
-}
+//   margin-top: -15px;
+// }
 
-.owl-carousel-center .owl-stage {
-  margin-#{$start-direction}: -23px !important;
-}
-.ADSSecti .owl-carousel-center .owl-stage > .active:first-of-type {
-  transform: scaleY(1.15) scaleX(1.1);
-}
+// .owl-carousel-center .owl-stage {
+//   margin-#{$start-direction}: -23px !important;
+// }
+// .ADSSecti .owl-carousel-center .owl-stage > .active:first-of-type {
+//   transform: scaleY(1.15) scaleX(1.1);
+// }
 .owl-carousel-center .owl-stage > .active {
   background-color: #fff;
 }
@@ -2780,9 +2786,9 @@ footer .row .footerLinks .twoCol {
 
 
 // for last item in ads slider عشان ميبقاش نصها مختفي
-.owl-carousel-center .owl-stage > .owl-item:last-child {
-  transform: translateX(15px);
-}
+// .owl-carousel-center .owl-stage > .owl-item:last-child {
+//   transform: translateX(15px);
+// }
 
 .or-chart-col4L1,
 .or-chart-col3TwoLevel,

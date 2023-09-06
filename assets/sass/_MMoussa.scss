@@ -3931,7 +3931,7 @@ p + p.main-p{
                 display: inline-block;
                 position: relative;
                 padding-#{$start-direction}:25px ;
-                margin#{$end-direction}:10px ;
+                margin-#{$end-direction}:10px ;
                 &::before{
                     content: "";
                     position: absolute;

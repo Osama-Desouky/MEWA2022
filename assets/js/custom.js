@@ -118,7 +118,7 @@ $("a.fancyboxVideo").fancybox({
       '<img src="../assets/images/home/arrowSlider1.svg" />',
     ],
     rtl: true,
-    stagePadding: 38,
+    stagePadding: 20,
     // responsiveClass:true,
     responsive: {
       0: {
