@@ -22,12 +22,6 @@
   font-weight: 700;
 }
 
-@font-face {
-  font-family: "URWDINArabic";
-  src: url("../fonts/URWDINArabic.ttf");
-  font-weight: 400;
-}
-
 body {
   font-family: "SSTArabic";
   direction: ltr;
@@ -1004,7 +998,6 @@ footer .row .footerLinks ul li a {
   margin-bottom: 3px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  font-family: "URWDINArabic";
 }
 
 footer .row .footerLinks ul li a:hover {
@@ -2120,7 +2113,6 @@ footer .reservedBar ul li a {
 
 .newSection .boxNews .newsImg img {
   width: 100%;
-  height: 100%;
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
@@ -2541,10 +2533,6 @@ footer .reservedBar ul li a {
 .ADSSecti .boxADSSlide > img {
   position: absolute;
   top: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
   z-index: -1;
   border-radius: 16px;
 }
@@ -4963,9 +4951,6 @@ p + p.main-p {
 
 .news-card .img-box img {
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
   -webkit-transition: 500ms;
   transition: 500ms;
 }
@@ -5040,10 +5025,10 @@ p + p.main-p {
 .news-details .h2-main {
   font-size: 1.875rem;
   line-height: 55px;
+  margin-bottom: 25px;
 }
 
 .news-details .date-main {
-  margin-top: 25px;
   margin-bottom: 25px;
 }
 
@@ -5136,6 +5121,8 @@ p + p.main-p {
   max-height: 560px;
   border-radius: 12px;
   overflow: hidden;
+  margin: 0 auto;
+  display: block;
 }
 
 .arrowz-news {
@@ -7474,10 +7461,6 @@ p.p-20 {
 .ads-list .boxADSSlide > img {
   position: absolute;
   top: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
   z-index: -1;
   border-radius: 16px;
   -webkit-transition: 0.25s;
