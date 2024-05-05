@@ -4165,7 +4165,7 @@ body .orChartNew .chartAgency div {
 
 .marker-with-popup.tabuk {
   right: 780px;
-  top: 132px;
+  top: 105px;
 }
 
 .marker-with-popup.haael {
@@ -4179,7 +4179,7 @@ body .orChartNew .chartAgency div {
 }
 
 .marker-with-popup.algouf {
-  right: 690px;
+  right: 670px;
   top: 70px;
 }
 
@@ -4194,22 +4194,22 @@ body .orChartNew .chartAgency div {
 }
 
 .marker-with-popup.nagran {
-  right: 380px;
+  right: 315px;
   top: 330px;
 }
 
 .marker-with-popup.asser {
-  right: 490px;
+  right: 470px;
   top: 320px;
 }
 
 .marker-with-popup.gazan {
-  right: 502px;
+  right: 460px;
   top: 375px;
 }
 
 .marker-with-popup.baaha {
-  right: 560px;
+  right: 525px;
   top: 305px;
 }
 
@@ -11665,6 +11665,9 @@ body .content .ms-rtestate-field h2 {
   .interactive-map .map-bg .svg-map svg {
     -webkit-transform: translate(-50px, 9px);
             transform: translate(-50px, 9px);
+  }
+  .marker-with-popup.shamalya {
+    top: 70px;
   }
 }
 

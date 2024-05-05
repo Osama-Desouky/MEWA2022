@@ -783,6 +783,9 @@ body .content .ms-rtestate-field h2 {
   .interactive-map .map-bg .svg-map svg {
     transform: translate(-50px, 9px);
   }
+  .marker-with-popup.shamalya{
+    top: 70px;
+  }
 }
 @media (max-width: 1401px) {
   .interactive-map .map-bg .svg-map svg {
